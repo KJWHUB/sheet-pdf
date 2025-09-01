@@ -13,13 +13,12 @@ export function PageContainer({ pageNumber, children, className }: PageContainer
   const { PAGE_CONFIG, observeElement, unobserveElement } = usePageCalculation();
 
   useEffect(() => {
-    if (containerRef.current) {
-      observeElement(containerRef.current, `page-${pageNumber}`);
+    const element = containerRef.current;
+    if (element) {
+      observeElement(element, `page-${pageNumber}`);
       
       return () => {
-        if (containerRef.current) {
-          unobserveElement(containerRef.current);
-        }
+        unobserveElement(element);
       };
     }
   }, [pageNumber, observeElement, unobserveElement]);

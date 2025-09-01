@@ -1,10 +1,23 @@
 import { useQuestionStore } from '@/stores/questionStore';
 import { Card } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { QuestionGroup } from './QuestionGroup';
 import { FileText, Download, Edit, Eye } from 'lucide-react';
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+} from '@dnd-kit/core';
+import {
+  SortableContext,
+  sortableKeyboardCoordinates,
+  verticalListSortingStrategy,
+} from '@dnd-kit/sortable';
+import type { DragEndEvent } from '@dnd-kit/core';
 
 export function QuestionPaper() {
   const {
@@ -13,7 +26,15 @@ export function QuestionPaper() {
     editMode,
     setLayoutType,
     setEditMode,
+    reorderQuestionGroups,
   } = useQuestionStore();
+
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
 
   const handleLayoutChange = (value: string) => {
     setLayoutType(value as 'single' | 'double');
@@ -21,6 +42,14 @@ export function QuestionPaper() {
 
   const toggleEditMode = () => {
     setEditMode(!editMode.isEditing);
+  };
+
+  const handleDragEnd = (event: DragEndEvent) => {
+    const { active, over } = event;
+
+    if (over && active.id !== over.id) {
+      reorderQuestionGroups(active.id as string, over.id as string);
+    }
   };
 
   if (!questionPaper) {
@@ -102,14 +131,25 @@ export function QuestionPaper() {
             
             {/* 문제 그룹들 */}
             <div className="space-y-6">
-              {questionPaper.questionGroups.map((group, index) => (
-                <div key={group.id} className={index > 0 ? "mt-8" : ""}>
-                  <QuestionGroup 
-                    group={group}
-                    isFirst={index === 0}
-                  />
-                </div>
-              ))}
+              <DndContext
+                sensors={sensors}
+                collisionDetection={closestCenter}
+                onDragEnd={handleDragEnd}
+              >
+                <SortableContext
+                  items={questionPaper.questionGroups.map(group => group.id)}
+                  strategy={verticalListSortingStrategy}
+                >
+                  {questionPaper.questionGroups.map((group, index) => (
+                    <div key={group.id} className={index > 0 ? "mt-8" : ""}>
+                      <QuestionGroup 
+                        group={group}
+                        isFirst={index === 0}
+                      />
+                    </div>
+                  ))}
+                </SortableContext>
+              </DndContext>
             </div>
           </div>
         </div>

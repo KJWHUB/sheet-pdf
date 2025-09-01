@@ -74,7 +74,7 @@ export function usePageCalculation() {
         resizeObserver.current.disconnect();
       }
     };
-  }, []);
+  }, [recalculatePageLayout]);
 
   // 요소 관찰 시작
   const observeElement = useCallback((element: HTMLElement, elementId: string) => {

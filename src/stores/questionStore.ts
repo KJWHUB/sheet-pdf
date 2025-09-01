@@ -21,6 +21,7 @@ interface QuestionStore {
   setQuestionPaper: (paper: QuestionPaper) => void;
   updateQuestionGroup: (groupId: string, updates: Partial<QuestionGroup>) => void;
   updateSubQuestion: (groupId: string, questionId: string, updates: Partial<SubQuestion>) => void;
+  reorderQuestionGroups: (activeId: string, overId: string) => void;
   
   // Layout Actions
   setLayoutType: (layout: LayoutType) => void;
@@ -68,7 +69,7 @@ const defaultResizeState: ResizeState = {
 
 export const useQuestionStore = create<QuestionStore>()(
   devtools(
-    (set, get) => ({
+    (set) => ({
       // Initial State
       questionPaper: null,
       layoutSettings: defaultLayoutSettings,
@@ -116,6 +117,27 @@ export const useQuestionStore = create<QuestionStore>()(
             },
           };
         }, false, 'updateSubQuestion'),
+      
+      reorderQuestionGroups: (activeId, overId) =>
+        set((state) => {
+          if (!state.questionPaper) return state;
+          
+          const groups = [...state.questionPaper.questionGroups];
+          const activeIndex = groups.findIndex(group => group.id === activeId);
+          const overIndex = groups.findIndex(group => group.id === overId);
+          
+          if (activeIndex !== -1 && overIndex !== -1) {
+            const [removed] = groups.splice(activeIndex, 1);
+            groups.splice(overIndex, 0, removed);
+          }
+          
+          return {
+            questionPaper: {
+              ...state.questionPaper,
+              questionGroups: groups,
+            },
+          };
+        }, false, 'reorderQuestionGroups'),
       
       // Layout Actions
       setLayoutType: (layout) =>

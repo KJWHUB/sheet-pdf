@@ -146,7 +146,7 @@ export const sampleQuestionPaper: QuestionPaper = {
 };
 
 // Mock API function
-export const fetchQuestionPaper = async (id?: string): Promise<QuestionPaper> => {
+export const fetchQuestionPaper = async (): Promise<QuestionPaper> => {
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 500));
   return sampleQuestionPaper;

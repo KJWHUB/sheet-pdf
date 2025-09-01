@@ -24,9 +24,9 @@ export interface ApiSubQuestion {
   purpose?: string | null;
   origin: string;
   isAiGenerated: boolean;
-  tags: any[];
+  tags: unknown[];
   questionNumber: string;
-  similarity?: any | null;
+  similarity?: unknown | null;
   isServable: boolean;
   memo?: string | null;
   humanReview: string;
