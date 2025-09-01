@@ -63,13 +63,13 @@ export function Passage({ passage, groupId }: PassageProps) {
   };
 
   return (
-    <Card className={`
-      passage-container p-4 border-l-4 border-l-blue-200 bg-blue-50/30
-      ${editMode.isEditing && passage.isEditable !== false ? 'cursor-text hover:bg-blue-50/50' : ''}
-      ${isSelected ? 'ring-2 ring-blue-500' : ''}
+    <div className={`
+      passage-container relative
+      ${editMode.isEditing && passage.isEditable !== false ? 'cursor-text hover:bg-gray-50 rounded-md p-2 -m-2' : ''}
+      ${isSelected ? 'ring-2 ring-blue-500 rounded-md p-2 -m-2' : ''}
     `}>
       {passage.title && (
-        <h3 className="font-medium mb-3 text-blue-900">
+        <h3 className="font-medium mb-3 text-gray-900">
           {passage.title}
         </h3>
       )}
@@ -79,7 +79,7 @@ export function Passage({ passage, groupId }: PassageProps) {
         onClick={handleClick}
       >
         <div 
-          className="text-sm leading-relaxed text-gray-800 min-h-[2rem]"
+          className="text-sm leading-relaxed text-gray-900 min-h-[2rem] whitespace-pre-line"
           dangerouslySetInnerHTML={{
             __html: passage.content || '<span class="text-gray-400">지문을 입력하세요...</span>'
           }}
@@ -93,17 +93,17 @@ export function Passage({ passage, groupId }: PassageProps) {
           onChange={(e) => setContent(e.target.value)}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
-          className="min-h-[100px] text-sm leading-relaxed border-0 p-0 bg-transparent resize-none focus-visible:ring-0"
+          className="min-h-[100px] text-sm leading-relaxed border border-gray-300 p-2 bg-white resize-none focus-visible:ring-2 focus-visible:ring-blue-500"
           placeholder="지문을 입력하세요..."
         />
       )}
 
       {/* Edit hint */}
       {editMode.isEditing && passage.isEditable !== false && !isEditing && (
-        <div className="absolute top-2 right-2 text-xs text-blue-600 bg-blue-100 px-2 py-1 rounded">
+        <div className="absolute -top-2 right-0 text-xs text-gray-500 bg-white border border-gray-200 px-2 py-1 rounded shadow-sm">
           클릭하여 편집
         </div>
       )}
-    </Card>
+    </div>
   );
 }

@@ -35,10 +35,10 @@ export function QuestionPaper() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
+    <div className="min-h-screen bg-gray-400 p-6">
       {/* Control Panel */}
       <div className="max-w-6xl mx-auto mb-6">
-        <Card className="p-4">
+        <Card className="p-4 bg-white/95 backdrop-blur">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-4">
               <h1 className="text-lg font-semibold">{questionPaper.title}</h1>
@@ -81,28 +81,46 @@ export function QuestionPaper() {
       </div>
 
       {/* Question Paper Pages */}
-      <div className="max-w-6xl mx-auto">
-        <div 
-          className={`paper-container ${
-            layoutSettings.layout === 'double' ? 'grid grid-cols-2 gap-6' : 'grid grid-cols-1'
-          }`}
-        >
-          {questionPaper.questionGroups.map((group, index) => (
-            <QuestionGroup 
-              key={group.id} 
-              group={group}
-              isFirst={index === 0}
-            />
-          ))}
+      <div className="max-w-4xl mx-auto">
+        <div className="space-y-6">
+          {/* 현재는 단일 페이지로 모든 문제 그룹 표시 */}
+          <div 
+            className="bg-white shadow-2xl border border-gray-300 mx-auto"
+            style={{
+              width: '210mm',
+              minHeight: '297mm',
+              padding: '20mm'
+            }}
+          >
+            {/* 페이지 헤더 */}
+            <div className="print:hidden mb-4 pb-2 border-b border-gray-200">
+              <div className="flex justify-between items-center text-sm text-gray-500">
+                <span>페이지 1</span>
+                <span>{questionPaper.questionGroups.length}개 문제 그룹</span>
+              </div>
+            </div>
+            
+            {/* 문제 그룹들 */}
+            <div className="space-y-6">
+              {questionPaper.questionGroups.map((group, index) => (
+                <div key={group.id} className={index > 0 ? "mt-8" : ""}>
+                  <QuestionGroup 
+                    group={group}
+                    isFirst={index === 0}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Page Info */}
-      <div className="max-w-6xl mx-auto mt-6">
-        <Card className="p-4">
+      <div className="max-w-4xl mx-auto mt-6">
+        <Card className="p-4 bg-white/95 backdrop-blur">
           <div className="flex items-center justify-between text-sm text-muted-foreground">
             <span>총 {questionPaper.questionGroups.length}개 문제 그룹</span>
-            <span>{questionPaper.totalPages} 페이지</span>
+            <span>1 페이지</span>
           </div>
         </Card>
       </div>
@@ -110,19 +128,13 @@ export function QuestionPaper() {
       {/* Print Styles */}
       <style jsx>{`
         @media print {
-          .paper-container {
-            background: white;
-            box-shadow: none;
+          body {
+            background: white !important;
           }
           
-          .no-print {
+          .print\\:hidden {
             display: none !important;
           }
-        }
-        
-        .paper-container {
-          background: white;
-          min-height: 297mm; /* A4 height */
         }
         
         @page {
