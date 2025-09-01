@@ -98,9 +98,10 @@ export function Question({ question, groupId, isFirst = false }: QuestionProps) 
                 ${editMode.isEditing && question.isEditable !== false ? 'hover:bg-gray-50 rounded px-1' : ''}
               `}
               onClick={handleContentClick}
-            >
-              {question.content || '문제 내용을 입력하세요...'}
-            </div>
+              dangerouslySetInnerHTML={{
+                __html: question.content || '<span class="text-gray-400">문제 내용을 입력하세요...</span>'
+              }}
+            />
           ) : (
             <Textarea
               ref={textareaRef}
@@ -232,9 +233,10 @@ function ChoiceItem({ choice, onUpdate, onRemove, isEditing, canRemove }: Choice
               ${isEditing ? 'hover:bg-gray-50 rounded' : ''}
             `}
             onClick={handleClick}
-          >
-            {choice.content || '선택지 내용을 입력하세요...'}
-          </div>
+            dangerouslySetInnerHTML={{
+              __html: choice.content || '<span class="text-gray-400">선택지 내용을 입력하세요...</span>'
+            }}
+          />
         ) : (
           <Input
             ref={inputRef}

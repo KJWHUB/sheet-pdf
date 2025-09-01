@@ -2,27 +2,11 @@ import type { ApiQuestionGroup, ApiSubQuestion, ApiOption } from '@/types/api';
 import type { QuestionPaper, QuestionGroup, SubQuestion, Choice, Passage } from '@/types/question';
 
 /**
- * HTML 태그를 제거하고 텍스트만 추출
+ * HTML 콘텐츠를 그대로 반환 (렌더링용)
  */
-function stripHtml(html: string): string {
+function processHtmlContent(html: string): string {
   if (!html) return '';
-  
-  // 이미지 태그를 특수문자로 변환
-  let text = html.replace(/<img[^>]*>/g, '□');
-  
-  // 기타 HTML 태그 제거
-  text = text.replace(/<[^>]*>/g, '');
-  
-  // HTML 엔티티 디코딩
-  text = text
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, ' ');
-  
-  return text.trim();
+  return html.trim();
 }
 
 /**
@@ -32,7 +16,7 @@ function convertApiOptionToChoice(option: ApiOption): Choice {
   return {
     id: `choice-${option.number}`,
     number: option.number,
-    content: stripHtml(option.content),
+    content: processHtmlContent(option.content),
   };
 }
 
@@ -60,9 +44,9 @@ function convertApiSubQuestionToSubQuestion(apiSubQuestion: ApiSubQuestion, inde
   const choices = apiSubQuestion.options?.map(convertApiOptionToChoice) || [];
   
   // instruction과 question을 합쳐서 content로 사용
-  let content = stripHtml(apiSubQuestion.question);
+  let content = processHtmlContent(apiSubQuestion.question);
   if (apiSubQuestion.instruction && apiSubQuestion.instruction !== apiSubQuestion.question) {
-    content = stripHtml(apiSubQuestion.instruction);
+    content = processHtmlContent(apiSubQuestion.instruction);
   }
   
   return {
@@ -82,7 +66,7 @@ function convertApiSubQuestionToSubQuestion(apiSubQuestion: ApiSubQuestion, inde
 function convertApiPassageToPassage(apiPassage: string, groupId: string): Passage {
   return {
     id: `passage-${groupId}`,
-    content: stripHtml(apiPassage),
+    content: processHtmlContent(apiPassage),
     isEditable: true,
   };
 }

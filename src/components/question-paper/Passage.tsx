@@ -78,9 +78,12 @@ export function Passage({ passage, groupId }: PassageProps) {
         className={`passage-content ${isEditing ? 'hidden' : 'block'}`}
         onClick={handleClick}
       >
-        <div className="text-sm leading-relaxed whitespace-pre-wrap text-gray-800 min-h-[2rem]">
-          {passage.content || '지문을 입력하세요...'}
-        </div>
+        <div 
+          className="text-sm leading-relaxed text-gray-800 min-h-[2rem]"
+          dangerouslySetInnerHTML={{
+            __html: passage.content || '<span class="text-gray-400">지문을 입력하세요...</span>'
+          }}
+        />
       </div>
 
       {isEditing && (
