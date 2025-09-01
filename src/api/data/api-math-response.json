@@ -1,0 +1,2462 @@
+{
+  "data": [
+    {
+      "id": 629687,
+      "sourceId": 33653,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678323,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>분수 \\( \\frac{a}{180} \\)을 소수로 나타내면 유한소수가 되고, 기약분수로 나타내면 \\( \\frac{1}{b} \\)이 된다. \\( 40 &lt; a &lt; 50 \\)일 때, \\( a - b \\)의 값은? (단, \\( a, b \\)는 자연수) [5점]</p></div>",
+          "question": "<div class='question'><p>분수 \\( \\frac{a}{180} \\)을 소수로 나타내면 유한소수가 되고, 기약분수로 나타내면 \\( \\frac{1}{b} \\)이 된다. \\( 40 &lt; a &lt; 50 \\)일 때, \\( a - b \\)의 값은? (단, \\( a, b \\)는 자연수) [5점]</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>41</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>42</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>43</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>44</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>45</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>분수 \\(\\frac{a}{180}\\)이 유한소수가 되려면 기약분수의 분모가 오직 \\(2\\)와 \\(5\\)만을 소인수로 가져야 합니다.</p><ul><li>\\(\\frac{a}{180}\\)을 기약분수로 만들기 위해 분자와 분모를 최대공약수 \\(d=\\gcd(a,180)\\)로 나누면 \\(\\frac{a}{180}=\\frac{a/d}{180/d}=\\frac{1}{b}\\)이 되어야 하므로 분자가 \\(1\\)이어야 하고, 따라서 \\(a=d\\)입니다.</li><li>\\(180=2^2\\cdot3^2\\cdot5\\)이므로 분모 \\(180/d\\)에 남아 있는 소인수가 \\(3\\)가 없어야 유한소수가 됩니다. 즉 \\(d\\)에 \\(3^2=9\\)가 포함되어야 합니다.</li><li>조건 \\(40<a<50\\)인 자연수 \\(a\\)이면서 \\(d=9k\\)이고 \\(a=d\\)인 수를 찾으면, 가능한 \\(d\\)는 \\(9,18,36,45,90,180\\) 중 \\(45\\)뿐입니다. </li><li>따라서 \\(a=45\\)이고,\\[\\frac{45}{180}=\\frac{1}{4}\\]이므로 \\(b=4\\)입니다.</li><li>결론적으로 \\(a-b=45-4=41\\)입니다.</li></ul></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 금광중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 5935,
+              "name": "유리수와 순환소수",
+              "category": "depth2"
+            },
+            {
+              "id": 5948,
+              "name": "유한소수로 나타낼 수 있는 분수",
+              "category": "depth3"
+            },
+            {
+              "id": 5984,
+              "name": "유한소수와 분수5(유한소수가 되는 미지수와 기약분수 표현)",
+              "category": "depth4"
+            },
+            {
+              "id": 5985,
+              "name": "기약분수 표현1(미지수 구하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "7",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 금광중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629464,
+      "sourceId": 33643,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>\\( 3\\sqrt{2} = \\sqrt{a}, \\sqrt{12} = b\\sqrt{3} \\)일 때, \\( a - b \\)의 값은?</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678100,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\( 3\\sqrt{2} = \\sqrt{a}, \\sqrt{12} = b\\sqrt{3} \\)일 때, \\( a - b \\)의 값은?</p></div>",
+          "question": "<div class='question'><p>\\( 3\\sqrt{2} = \\sqrt{a}, \\sqrt{12} = b\\sqrt{3} \\)일 때, \\( a - b \\)의 값은?</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>8</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>10</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>12</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>14</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>16</p>"
+            }
+          ],
+          "choiceAnswer": [5],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>문제에서 주어진 식 \\(3\\sqrt{2} = \\sqrt{a}\\)를 보면 양변을 제곱하여 \\(a\\)의 값을 구할 수 있습니다.</p><ul>  <li>\\(3\\sqrt{2}\\)의 제곱은 \\(9 \\times 2 = 18\\)이므로, \\(a = 18\\)입니다.</li></ul><p>다음으로 주어진 식 \\(\\sqrt{12} = b\\sqrt{3}\\)에서 \\(\\sqrt{12}\\)를 간단히 하면 \\(\\sqrt{12}=\\sqrt{4\\times3}=2\\sqrt{3}\\)가 됩니다.</p><ul>  <li>따라서 \\(2\\sqrt{3} = b\\sqrt{3}\\)에서 \\(b = 2\\)임을 알 수 있습니다.</li></ul><p>이제 \\(a - b = 18 - 2 = 16\\)이므로, 최종 정답은 <strong>16</strong>입니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감정중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            },
+            {
+              "id": 8957,
+              "name": "중3-1",
+              "category": "depth1"
+            },
+            {
+              "id": 9195,
+              "name": "근호를 포함한 식의 계산",
+              "category": "depth2"
+            },
+            {
+              "id": 9196,
+              "name": "근호를 포함한 식의 곱셈과 나눗셈",
+              "category": "depth3"
+            },
+            {
+              "id": 9240,
+              "name": "곱셈과 나눗셈7(분모의 유리화)",
+              "category": "depth4"
+            },
+            {
+              "id": 9243,
+              "name": "분모의 유리화3(유리화 하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "1",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감정중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629451,
+      "sourceId": 33642,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678087,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\(x+y=2, \\; xy=-8\\)일 때, \\(\\frac{y}{x} + \\frac{x}{y}\\)의 값은? (5점)</p></div>",
+          "question": "<div class='question'><p>\\(x+y=2, \\; xy=-8\\)일 때, \\(\\frac{y}{x} + \\frac{x}{y}\\)의 값은? (5점)</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>\\(-\\frac{5}{2}\\)</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>\\(-\\frac{2}{5}\\)</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>\\(\\frac{2}{5}\\)</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>\\(\\frac{5}{2}\\)</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>4</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 식 \\(x+y=2\\), \\(xy=-8\\)이다.</p><ul><li>\\((x+y)^2 = x^2 + 2xy + y^2\\) 이므로 좌변은 \\(2^2 = 4\\), 2xy는 \\(2\\times(-8) = -16\\). 따라서 \\(x^2 + y^2 = 4 - (-16) = 20\\).</li><li>구하려는 식은 \\(\\frac{y}{x} + \\frac{x}{y} = \\frac{y^2 + x^2}{xy}\\) 이므로 분자에 \\(x^2 + y^2 = 20\\), 분모에 \\(xy = -8\\)를 대입하면 \\(\\frac{20}{-8} = -\\frac{5}{2}\\).</li></ul><p>따라서 값은 \\(-\\frac{5}{2}\\)이다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            }
+          ],
+          "questionNumber": "11",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629426,
+      "sourceId": 33641,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678062,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\((-2x^A y)^2 \\div x^3 y^B \\times (-5xy^7) = Cx^4 y^8\\)일 때, \\(A+B+C\\)의 값은? (4점)</p></div>",
+          "question": "<div class='question'><p>\\((-2x^A y)^2 \\div x^3 y^B \\times (-5xy^7) = Cx^4 y^8\\)일 때, \\(A+B+C\\)의 값은? (4점)</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>-16</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>-10</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>0</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>8</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>12</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>문제에서 주어진 식을 단계별로 계산하면 다음과 같습니다.</p><ul><li>먼저 \\((-2x^A y)^2\\)를 전개하면,</li><li>\\[(-2x^A y)^2 = (-2)^2 \\cdot (x^A)^2 \\cdot y^2 = 4x^{2A}y^2.\\]</li><li>따라서 전체 식은</li><li>\\[\\frac{4x^{2A}y^2}{x^3y^B}\\times(-5xy^7)=4x^{2A-3}y^{2-B}\\times(-5x y^7)=-20x^{2A-3+1}y^{2-B+7}=-20x^{2A-2}y^{9-B}.\\]</li><li>이 식이 \\(Cx^4y^8\\)와 같아야 하므로 지수와 계수를 비교하면,</li><li>지수 비교: \\(2A-2=4\\) 이고 \\(9-B=8\\) 이므로</li><li>\\[2A-2=4\\Rightarrow A=3,\\quad9-B=8\\Rightarrow B=1.\\]</li><li>계수 비교: \\(C=-20\\).</li></ul><p>따라서 \\(A+B+C=3+1+(-20)=-16\\) 입니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 6146,
+              "name": "단항식의 계산",
+              "category": "depth2"
+            },
+            {
+              "id": 6147,
+              "name": "지수법칙",
+              "category": "depth3"
+            },
+            {
+              "id": 6148,
+              "name": "지수법칙1(지수의 합)",
+              "category": "depth4"
+            },
+            {
+              "id": 6151,
+              "name": "지수의 합3(간단히 하기. 두 문자 이상)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "12",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629690,
+      "sourceId": 33653,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678326,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>순환소수 \\( 0.\\overline{234} = \\frac{26}{a} \\), \\( 0.1\\overline{5} = \\frac{b}{45} \\)이다. 분수 \\( \\frac{b}{a} \\)를 순환소수로 나타내었을 때, 소수점 아래 40번째 자리의 숫자는? [5점]</p></div>",
+          "question": "<div class='question'><p>순환소수 \\( 0.\\overline{234} = \\frac{26}{a} \\), \\( 0.1\\overline{5} = \\frac{b}{45} \\)이다. 분수 \\( \\frac{b}{a} \\)를 순환소수로 나타내었을 때, 소수점 아래 40번째 자리의 숫자는? [5점]</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>0</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>1</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>3</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>5</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>6</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>문제에서 주어진 순환소수를 분수로 바꿔 계수 a, b를 구한 뒤, \\(\\frac{b}{a}\\)의 소수 전개를 통해 40번째 자리 숫자를 찾는다.</p><ul><li><strong>첫째</strong>,  <p>\\(0.\\overline{234}=\\tfrac{234}{999}\\)이고, 문제에서 \\(0.\\overline{234}=\\tfrac{26}{a}\\)이므로</p>  <p>\\[\\frac{234}{999}=\\frac{26}{a}\\quad\\Longrightarrow\\quad a=\\frac{26\\times999}{234}.\\]</p>  <p>234=26\\times9 이므로</p>  <p>\\[a=\\frac{26\\times999}{26\\times9}=\\frac{999}{9}=111.\\]</p></li><li><strong>둘째</strong>,  <p>\\(0.1\\overline{5}=0.15555\\cdots\\)를 분수로 나타내면</p>  <p>\\[0.1\\overline{5}=\\frac{1}{10}+0.0\\overline{5}=\\frac{1}{10}+\\frac{5}{90}=\frac{9+5}{90}=\frac{14}{90}=\frac{7}{45}.\\]</p>  <p>따라서 \\(b=7\\).</p></li><li><strong>셋째</strong>,  <p>구하는 분수는 \\(\\frac{b}{a}=\\frac{7}{111}\\)이다.</p>  <p>\\(\\frac{1}{111}=0.\\overline{009}\\)이므로 \\(\\frac{7}{111}=7\\times0.\\overline{009}=0.\\overline{063}\\)이다.</p></li><li><strong>넷째</strong>,  <p>순환주기(3자리)인 \\(063\\)이 반복되므로, 40번째 자리는</p>  <p>\\[40\\bmod3=1\\quad\\implies\\text{주기 첫째 자리인 }0.\\]</p></li></ul></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 금광중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 5935,
+              "name": "유리수와 순환소수",
+              "category": "depth2"
+            },
+            {
+              "id": 6044,
+              "name": "순환소수의 분수 표현",
+              "category": "depth3"
+            },
+            {
+              "id": 6094,
+              "name": "분수 표현7(순환소수를 포함한 식의 계산)",
+              "category": "depth4"
+            },
+            {
+              "id": 6102,
+              "name": "식의 계산8(n번째 자리의 숫자 구하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "10",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 금광중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629428,
+      "sourceId": 33641,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>\\((x^2 + 2y)^6 \\left(1 + \\frac{1}{xy^2}\\right)^6\\)을 전개하였을 때, \\(\\frac{x^5}{y^4}\\)의 계수를 구하시오.</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678064,
+          "type": "SHORT",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\((x^2 + 2y)^6 \\left(1 + \\frac{1}{xy^2}\\right)^6\\)을 전개하였을 때, \\(\\frac{x^5}{y^4}\\)의 계수를 구하시오.</p></div>",
+          "question": "<div class='question'><p>\\((x^2 + 2y)^6 \\left(1 + \\frac{1}{xy^2}\\right)^6\\)을 전개하였을 때, \\(\\frac{x^5}{y^4}\\)의 계수를 구하시오.</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "1200",
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 식을 두 이항식의 곱으로 보고 각각 전개한 뒤 원하는 항을 찾습니다.</p><ul>  <li>첫째, \\((x^2+2y)^6\\)을 전개하면    \\[      (x^2+2y)^6 = \\sum_{i=0}^6 \\binom{6}{i}(x^2)^{6-i}(2y)^i                 = \\sum_{i=0}^6 \\binom{6}{i}2^i x^{12-2i}y^i.    \\]</li>  <li>둘째, \\(\\displaystyle\\Bigl(1+\\frac1{xy^2}\\Bigr)^6\\)을 전개하면    \\[      \\Bigl(1+\\frac1{xy^2}\\Bigr)^6 = \\sum_{j=0}^6 \\binom{6}{j}1^{6-j}\\Bigl(\\frac1{xy^2}\\Bigr)^j                                    = \\sum_{j=0}^6 \\binom{6}{j}x^{-j}y^{-2j}.    \\]</li>  <li>이 둘을 곱하면 일반항은    \\[      \\binom{6}{i}2^i\\,\\binom{6}{j}\\,x^{12-2i-j}y^{i-2j}    \\]    꼴이 됩니다.</li>  <li>우리가 찾는 항은 \\(x^5y^{-4}=x^5/ y^4\\) 이므로    \\[      12-2i-j=5,\\quad i-2j=-4    \\]    연립하여 풀면 \\(i=2,\\;j=3\\)이 나옵니다.</li>  <li>따라서 계수는    \\[      \\binom{6}{2}2^2\\cdot\\binom{6}{3} = 15\\times4\\times20 = 1200.    \\]</li></ul></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 6146,
+              "name": "단항식의 계산",
+              "category": "depth2"
+            },
+            {
+              "id": 6285,
+              "name": "단항식의 곱셈과 나눗셈",
+              "category": "depth3"
+            },
+            {
+              "id": 6286,
+              "name": "단항식의 계산1(단항식의 곱셈)",
+              "category": "depth4"
+            },
+            {
+              "id": 6288,
+              "name": "단항식의 곱셈 2(두 식. 간단히 하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "14",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629452,
+      "sourceId": 33642,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>\\((3x+a)(bx-5)\\)를 전개한 식이 \\(6x^2-cx-10\\)일 때, 세 수 \\(a+b+c\\)의 값은?</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678088,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\((3x+a)(bx-5)\\)를 전개한 식이 \\(6x^2-cx-10\\)일 때, 세 수 \\(a+b+c\\)의 값은?</p></div>",
+          "question": "<div class='question'><p>\\((3x+a)(bx-5)\\)를 전개한 식이 \\(6x^2-cx-10\\)일 때, 세 수 \\(a+b+c\\)의 값은?</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>11</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>13</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>15</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>17</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>19</p>"
+            }
+          ],
+          "choiceAnswer": [3],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 식 \\((3x+a)(bx-5)\\)를 전개하면 다음과 같이 됩니다.</p><ul>  <li>x²항: \\(3b x^2\\)</li>  <li>x항: \\(ab x - 15x\\)</li>  <li>상수항: \\(-5a\\)</li></ul><p>따라서 전개한 식은 \\(3b x^2+(ab-15)x-5a\\)가 되고, 이것이 \\(6x^2-cx-10\\)와 같으므로 각 항의 계수를 비교할 수 있습니다.</p><ul>  <li>x²항: \\(3b=6\\) 이므로 \\(b=2\\)입니다.</li>  <li>상수항: \\(-5a=-10\\) 이므로 \\(a=2\\)입니다.</li>  <li>x항: \\(ab-15=-c\\) 이므로 \\(c=15-ab\\). \\(a=2, b=2\\)이므로 \\(ab=4\\)이고, \\(c=15-4=11\\)입니다.</li></ul><p>세 수 \\(a+b+c\\)의 값은 \\(2+2+11=15\\)가 됩니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 6363,
+              "name": "다항식의 계산",
+              "category": "depth2"
+            },
+            {
+              "id": 6364,
+              "name": "다항식의 덧셈과 뺄셈",
+              "category": "depth3"
+            },
+            {
+              "id": 6379,
+              "name": "덧셈과 뺄셈3(이차식)",
+              "category": "depth4"
+            },
+            {
+              "id": 6383,
+              "name": "이차식4(계산 후 계수 구하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "12",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629693,
+      "sourceId": 33653,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678329,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\( \\frac{9^4 + 9^4 + 9^4}{3^2 + 3^2 + 3^2} = 3^a \\)를 만족시키는 자연수 \\( a \\)의 값은? [4점]</p></div>",
+          "question": "<div class='question'><p>\\( \\frac{9^4 + 9^4 + 9^4}{3^2 + 3^2 + 3^2} = 3^a \\)를 만족시키는 자연수 \\( a \\)의 값은? [4점]</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>6</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>7</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>8</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>9</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>10</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 식을 살펴보면 분자와 분모에 공통된 항이 있으므로 다음과 같이 정리할 수 있습니다.</p><ul><li>분자: \\(9^4+9^4+9^4 = 3\\times 9^4\\)</li><li>분모: \\(3^2+3^2+3^2 = 3\\times 3^2\\)</li><li>따라서  \\[    \\frac{9^4+9^4+9^4}{3^2+3^2+3^2}    = \\frac{3\\cdot 9^4}{3\\cdot 3^2}    = \\frac{9^4}{3^2}.  \\]</li><li>여기서 \\(9^4=(3^2)^4=3^8\\) 이므로  \\[    \\frac{9^4}{3^2} = \\frac{3^8}{3^2} = 3^{8-2} = 3^6.  \\]</li></ul><p><strong>따라서 \\(a=6\\) 입니다.</strong></p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 금광중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 6146,
+              "name": "단항식의 계산",
+              "category": "depth2"
+            },
+            {
+              "id": 6147,
+              "name": "지수법칙",
+              "category": "depth3"
+            },
+            {
+              "id": 6238,
+              "name": "지수법칙의 활용2(같은 수의 덧셈식)",
+              "category": "depth4"
+            },
+            {
+              "id": 6239,
+              "name": "같은 수의 덧셈식1(계산하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "13",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 금광중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629702,
+      "sourceId": 33653,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>부등식 \\(1.8 - 0.2x > 0.4(x-3)\\)을 만족시키는 \\(x\\)의 값 중 가장 큰 정수는?</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678338,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>부등식 \\(1.8 - 0.2x > 0.4(x-3)\\)을 만족시키는 \\(x\\)의 값 중 가장 큰 정수는?</p></div>",
+          "question": "<div class='question'><p>부등식 \\(1.8 - 0.2x > 0.4(x-3)\\)을 만족시키는 \\(x\\)의 값 중 가장 큰 정수는?</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>-5</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>-4</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>0</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>4</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>5</p>"
+            }
+          ],
+          "choiceAnswer": [4],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>먼저 주어진 부등식 \\(1.8 - 0.2x > 0.4(x-3)\\) 에서 우변의 괄호를 전개합니다.</p><ul>  <li>\\(0.4(x-3)=0.4x-1.2\\)</li></ul><p>따라서 부등식은 \\(1.8 - 0.2x > 0.4x - 1.2\\)가 됩니다.</p><p>양변에 \\(0.2x\\)와 \\(1.2\\)를 다른 쪽으로 옮기면,</p><ul>  <li>\\(1.8 + 1.2 > 0.4x + 0.2x\\)</li></ul><p>즉, \\(3.0 > 0.6x\\)입니다.</p><p>양변을 \\(0.6\\)으로 나누면 \\(x < \\frac{3.0}{0.6} = 5\\)가 됩니다.</p><p>문제는 \\(x\\)의 값 중 가장 큰 정수를 묻고 있으므로, \\(x\\)는 5 미만의 정수 중에서 가장 큰 값인 \\(4\\)가 됩니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 금광중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            }
+          ],
+          "questionNumber": "22",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 금광중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629435,
+      "sourceId": 33641,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678071,
+          "type": "SHORT",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>[논술형 1] 분수 \\(\\frac{8}{27}\\)에 대하여 다음 물음에 답하시오. (6점)</p><br><p>1-1) 분수 \\(\\frac{8}{27}\\)을 순환소수로 나타내시오. (3점)<br />(단, 숫자 위에 점을 찍어 간단히 나타내시오.)</p></div>",
+          "question": "<div class='question'><p>[논술형 1] 분수 \\(\\frac{8}{27}\\)에 대하여 다음 물음에 답하시오. (6점)</p><br><p>1-1) 분수 \\(\\frac{8}{27}\\)을 순환소수로 나타내시오. (3점)<br />(단, 숫자 위에 점을 찍어 간단히 나타내시오.)</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "0.\\dot{2}96\\dot{6}",
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>분수 \\(\\frac{8}{27}\\)를 소수로 나타내기 위해 분자의 8을 27로 나누어 봅니다.</p><ul>  <li>첫째, 8.000...에서 27을 나누면 소수 첫째자리 몫은 0이고 나머지는 8이므로 소수점 이하 계산을 계속합니다.</li>  <li>둘째, 나머지 8에 0을 붙여 80을 27로 나누면 몫이 2, 나머지가 26이므로 소수 두째자리는 2입니다.</li>  <li>셋째, 남은 나머지 26에 0을 붙여 260을 27로 나누면 몫이 9, 나머지가 17이므로 소수 셋째자리는 9입니다.</li>  <li>넷째, 나머지 17에 0을 붙여 170을 나누면 몫이 6, 나머지가 8이 되고, 이때 나머지가 처음에 나온 8과 같아졌으므로 이후 자리들은 앞에서 구한 296이 반복됩니다.</li></ul><p>따라서 \\(\\frac{8}{27}=0.296296296\\dots\\)이고, 반복부분은 296이므로 점 위 표기법으로는 다음과 같습니다.</p><p style=\"text-align:center;\"><strong>\\(0.\\dot{2}96\\dot{6}\\)</strong></p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            }
+          ],
+          "questionNumber": "21",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629476,
+      "sourceId": 33643,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678112,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>세 수 \\(A=4-\\sqrt{2},\\ B=2,\\ C=2\\sqrt{3}-2\\)에 대하여 대소 관계가 옳은 것은? [5점]</p></div>",
+          "question": "<div class='question'><p>세 수 \\(A=4-\\sqrt{2},\\ B=2,\\ C=2\\sqrt{3}-2\\)에 대하여 대소 관계가 옳은 것은? [5점]</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>\\(A&gt;B&gt;C\\)</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>\\(A&gt;C&gt;B\\)</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>\\(B&gt;A&gt;C\\)</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>\\(C&gt;A&gt;B\\)</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>\\(C&gt;B&gt;A\\)</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 수의 크기를 비교하기 위해 각 수를 근사값으로 계산합니다.</p>\r<ul>\r<li>\\(A = 4 - \\sqrt{2} \\approx 4 - 1.414 = 2.586\\)</li>\r<li>\\(B = 2\\)</li>\r<li>\\(C = 2\\sqrt{3} - 2 \\approx 2\\times1.732 - 2 = 1.464\\)</li>\r</ul>\r<p>따라서 \\(A > B > C\\) 이므로 올바른 대소 관계는 <strong>A&gt;B&gt;C</strong>입니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감정중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            },
+            {
+              "id": 8957,
+              "name": "중3-1",
+              "category": "depth1"
+            },
+            {
+              "id": 8958,
+              "name": "제곱근과 실수",
+              "category": "depth2"
+            },
+            {
+              "id": 9009,
+              "name": "제곱근의 성질과 대소 관계",
+              "category": "depth3"
+            },
+            {
+              "id": 9086,
+              "name": "제곱근의 대소 관계1(기본)",
+              "category": "depth4"
+            },
+            {
+              "id": 9089,
+              "name": "기본3(대소 비교)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "13",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감정중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629475,
+      "sourceId": 33643,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678111,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>다음 두 다항식을 각 항의 계수가 정수인 일차식으로 각각 인수분해할 때, 공통으로 들어 있는 인수는? [4점]</p></div><div class='reference'><p>\\(4x^2+3x-1,\\ 4x(x+3)-(x+3)\\)</p></div>",
+          "question": "<div class='question'><p>다음 두 다항식을 각 항의 계수가 정수인 일차식으로 각각 인수분해할 때, 공통으로 들어 있는 인수는? [4점]</p></div>",
+          "refer": "<div class='reference'><p>\\(4x^2+3x-1,\\ 4x(x+3)-(x+3)\\)</p></div>",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>4x-1</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>x+3</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>4x</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>4x+1</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>4x+1</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>다항식 \\(4x^2+3x-1\\)을 인수분해하면 다음과 같다.</p><ul><li>\\(4x^2+3x-1 = (4x-1)(x+1)\\)</li></ul><p>다항식 \\(4x(x+3)-(x+3)\\)을 인수분해하면</p><ul><li>\\(4x(x+3)-(x+3) = (x+3)(4x-1)\\)</li></ul><p>따라서 두 다항식의 공통 인수는 <strong>4x-1</strong>이다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감정중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            },
+            {
+              "id": 8957,
+              "name": "중3-1",
+              "category": "depth1"
+            },
+            {
+              "id": 9762,
+              "name": "인수분해 공식의 활용",
+              "category": "depth2"
+            },
+            {
+              "id": 9763,
+              "name": "복잡한 식의 인수분해",
+              "category": "depth3"
+            },
+            {
+              "id": 9764,
+              "name": "복잡한 식의 인수분해1(공통인수 묶기)",
+              "category": "depth4"
+            },
+            {
+              "id": 9770,
+              "name": "공통인수 묶기6(두 다항식의 공통인수)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "12",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감정중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629482,
+      "sourceId": 33643,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678118,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\(x=\\frac{1}{\\sqrt{10}+3},\\ y=\\frac{1}{\\sqrt{10}-3}\\)일 때, \\(x^2-y^2\\)의 값은? [5점]</p></div>",
+          "question": "<div class='question'><p>\\(x=\\frac{1}{\\sqrt{10}+3},\\ y=\\frac{1}{\\sqrt{10}-3}\\)일 때, \\(x^2-y^2\\)의 값은? [5점]</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>\\(-12\\sqrt{10}\\)</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>\\(-6\\sqrt{10}\\)</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>\\(2\\sqrt{10}\\)</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>\\(6\\sqrt{10}\\)</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>\\(12\\sqrt{10}\\)</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 식을 보면 <strong>x^2 - y^2</strong>를 구해야 하므로, 차의 제곱과 합의 제곱 관계를 이용할 수 있습니다:</p><ul><li>먼저 x+y를 구합니다:<br>\\[x+y=\\frac{1}{\\sqrt{10}+3}+\\frac{1}{\\sqrt{10}-3}=\\frac{(\\sqrt{10}-3)+(\\sqrt{10}+3)}{(\\sqrt{10}+3)(\\sqrt{10}-3)}=\\frac{2\\sqrt{10}}{10-9}=2\\sqrt{10}.\\]</li><li>다음으로 x−y를 구합니다:<br>\\[x-y=\\frac{1}{\\sqrt{10}+3}-\\frac{1}{\\sqrt{10}-3}=\\frac{(\\sqrt{10}-3)-(\\sqrt{10}+3)}{(\\sqrt{10}+3)(\\sqrt{10}-3)}=\\frac{-6}{10-9}=-6.\\]</li><li>따라서\\[x^2-y^2=(x-y)(x+y)=(-6)\\times(2\\sqrt{10})=-12\\sqrt{10}.\\]</li></ul></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감정중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            },
+            {
+              "id": 8957,
+              "name": "중3-1",
+              "category": "depth1"
+            },
+            {
+              "id": 8958,
+              "name": "제곱근과 실수",
+              "category": "depth2"
+            },
+            {
+              "id": 9009,
+              "name": "제곱근의 성질과 대소 관계",
+              "category": "depth3"
+            },
+            {
+              "id": 9040,
+              "name": "제곱근의 성질5(근호 안이 제곱)",
+              "category": "depth4"
+            },
+            {
+              "id": 9041,
+              "name": "근호 안이 제곱1(주어진 부호. 간단히 하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "19",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감정중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629461,
+      "sourceId": 33642,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2763,
+        "name": "중3수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678097,
+          "type": "SHORT",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>[논술형 1] \\(A, B\\)가 다음과 같을 때, \\(A-B\\)의 값을 구하는 풀이 과정과 답을 쓰시오. (6점)</p></div><div class='reference'><p><table><tr><td>\\(A=-2 \\times \\sqrt{(-5)^2} + (-\\sqrt{12})^2 - (-\\sqrt{7})^2\\)<br>\\(B=\\sqrt{144} - \\sqrt{64 \\div (-\\sqrt{2})^2}\\)</td></tr></table></p></div>",
+          "question": "<div class='question'><p>[논술형 1] \\(A, B\\)가 다음과 같을 때, \\(A-B\\)의 값을 구하는 풀이 과정과 답을 쓰시오. (6점)</p></div>",
+          "refer": "<div class='reference'><p><table><tr><td>\\(A=-2 \\times \\sqrt{(-5)^2} + (-\\sqrt{12})^2 - (-\\sqrt{7})^2\\)<br>\\(B=\\sqrt{144} - \\sqrt{64 \\div (-\\sqrt{2})^2}\\)</td></tr></table></p></div>",
+          "level": 3,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "-17 + 4\\sqrt{2}",
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 식을 단계별로 계산하면 다음과 같다.</p><ul><li><strong>A</strong><br>\\(A = -2 \\times \\sqrt{(-5)^2} + (-\\sqrt{12})^2 - (-\\sqrt{7})^2\\)</li><li>\\(\\sqrt{(-5)^2} = 5\\) 이므로 첫째 항은 \\(-2 \\times 5 = -10\\).<br>\\((-\\sqrt{12})^2 = (\\sqrt{12})^2 = 12\\).<br>\\((-\\sqrt{7})^2 = (\\sqrt{7})^2 = 7\\).<br>따라서 \\(A = -10 + 12 - 7 = -5\\).</li><li><strong>B</strong><br>\\(B = \\sqrt{144} - \\sqrt{64 \\div (-\\sqrt{2})^2}\\)</li><li>\\(\\sqrt{144} = 12\\).<br>\\((-\\sqrt{2})^2 = 2\\) 이므로 안쪽 식은 \\(64 \\div 2 = 32\\).<br>\\(\\sqrt{32} = \\sqrt{16 \\times 2} = 4\\sqrt{2}\\).<br>따라서 \\(B = 12 - 4\\sqrt{2}\\).</li><li><strong>A - B</strong><br>\\(A - B = (-5) - (12 - 4\\sqrt{2}) = -5 - 12 + 4\\sqrt{2} = -17 + 4\\sqrt{2}\\).</li></ul></div>",
+          "purpose": null,
+          "origin": "2025년 3학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2763,
+              "name": "중3수학",
+              "category": "학년"
+            },
+            {
+              "id": 8957,
+              "name": "중3-1",
+              "category": "depth1"
+            },
+            {
+              "id": 8958,
+              "name": "제곱근과 실수",
+              "category": "depth2"
+            },
+            {
+              "id": 9009,
+              "name": "제곱근의 성질과 대소 관계",
+              "category": "depth3"
+            },
+            {
+              "id": 9040,
+              "name": "제곱근의 성질5(근호 안이 제곱)",
+              "category": "depth4"
+            },
+            {
+              "id": 9042,
+              "name": "근호 안이 제곱2(부호 결정 후 간단히 하기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "21",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 3-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629678,
+      "sourceId": 33652,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678314,
+          "type": "SHORT",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>한 자리 자연수 <strong>a</strong>, <strong>b</strong>에 대하여 \\( 0.\\overline{ab} + 0.\\overline{ba} = 1.79 \\)일 때, \\( 0.\\overline{ab} - 0.\\overline{ba} \\)를 순환소수로 나타내시오. (단, <strong>a</strong>, <strong>b</strong>는 홀수)</p></div>",
+          "question": "<div class='question'><p>한 자리 자연수 <strong>a</strong>, <strong>b</strong>에 대하여 \\( 0.\\overline{ab} + 0.\\overline{ba} = 1.79 \\)일 때, \\( 0.\\overline{ab} - 0.\\overline{ba} \\)를 순환소수로 나타내시오. (단, <strong>a</strong>, <strong>b</strong>는 홀수)</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "0.\\overline{18}",
+          "essayAnswer": null,
+          "solution": "<div class='solution'><ul><li>순환소수 \\(0.\\overline{ab}\\)는 두 자리 수 \\(10a+b\\)가 계속 반복되므로 분수로 \\(\\frac{10a+b}{99}\\)로 나타낼 수 있다.</li><li>마찬가지로 \\(0.\\overline{ba}=\\frac{10b+a}{99}\\)이다.</li><li>따라서  \\[    0.\\overline{ab}+0.\\overline{ba}    =\\frac{10a+b}{99}+\\frac{10b+a}{99}    =\\frac{11(a+b)}{99}    =\\frac{a+b}{9}.  \\]</li><li>문제에서 이 합이 \\(1.79\\)이라 주어졌으나, 자연수 \\(a,b\\)의 합이 정수가 되어야 하므로 오타로 보아  \\[    \\frac{a+b}{9}=1.\\overline{7}=\\frac{16}{9}  \\]  로 해석하면 \\(a+b=16\\)가 된다. 홀수인 한 자리 자연수 중 합이 16이 되려면 \\((a,b)=(9,7)\\)이나 \\((7,9)\\)이 가능하다.</li><li>차를 구할 때 양수 값을 얻기 위해 \\((a,b)=(9,7)\\)을 택하면  \\[    0.\\overline{97}-0.\\overline{79}    =\\frac{97}{99}-\\frac{79}{99}    =\\frac{18}{99}    =\\frac{2}{11}    =0.\\overline{18}.  \\]</li></ul></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 귀인중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            }
+          ],
+          "questionNumber": "6",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 귀인중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629433,
+      "sourceId": 33641,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>\\( 2^2 = A, 3^4 = B \\)로 나타낼 때, \\( 18^4 \\)을 \\( A \\)의 거듭제곱과 \\( B \\)의 거듭제곱의 곱의 꼴로 나타내면?</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678069,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\( 2^2 = A, 3^4 = B \\)로 나타낼 때, \\( 18^4 \\)을 \\( A \\)의 거듭제곱과 \\( B \\)의 거듭제곱의 곱의 꼴로 나타내면?</p></div>",
+          "question": "<div class='question'><p>\\( 2^2 = A, 3^4 = B \\)로 나타낼 때, \\( 18^4 \\)을 \\( A \\)의 거듭제곱과 \\( B \\)의 거듭제곱의 곱의 꼴로 나타내면?</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>\\( AB^2 \\)</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>\\( AB^3 \\)</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>\\( A^2B^3 \\)</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>\\( A^2B^3 \\)</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>\\( A^2B^4 \\)</p>"
+            }
+          ],
+          "choiceAnswer": [5],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>먼저 주어진 식에서 \\( A = 2^2 \\)와 \\( B = 3^4 \\)임을 알 수 있습니다.</p><p>\\( 18^4 \\)를 전개하면, \\( 18 = 2 \\times 3^2 \\)이므로 \\( 18^4 = (2 \\times 3^2)^4 = 2^4 \\times 3^8 \\)가 됩니다.</p><p>이제 \\( 2^4 = (2^2)^2 = A^2 \\)이며, \\( 3^8 = (3^4)^2 = B^2 \\)임을 알 수 있으므로 \\( 18^4 = A^2 B^2 \\)입니다.</p><p>따라서 \\( 18^4 \\)를 \\( A \\)의 거듭제곱과 \\( B \\)의 거듭제곱의 곱의 꼴로 나타내면 \\( A^2B^2 \\)가 됩니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 감일백제중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 6146,
+              "name": "단항식의 계산",
+              "category": "depth2"
+            },
+            {
+              "id": 6147,
+              "name": "지수법칙",
+              "category": "depth3"
+            },
+            {
+              "id": 6148,
+              "name": "지수법칙1(지수의 합)",
+              "category": "depth4"
+            },
+            {
+              "id": 6150,
+              "name": "지수의 합2(간단히 하기. 한 문자)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "19",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 감일백제중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629682,
+      "sourceId": 33653,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>\\( x \\)가 20 이하의 자연수일 때, 분수 \\( \\frac{x}{12} \\)를 정수 또는 유한소수로 나타낼 수 있도록 하는 \\( x \\)값의 개수는?</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678318,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>\\( x \\)가 20 이하의 자연수일 때, 분수 \\( \\frac{x}{12} \\)를 정수 또는 유한소수로 나타낼 수 있도록 하는 \\( x \\)값의 개수는?</p></div>",
+          "question": "<div class='question'><p>\\( x \\)가 20 이하의 자연수일 때, 분수 \\( \\frac{x}{12} \\)를 정수 또는 유한소수로 나타낼 수 있도록 하는 \\( x \\)값의 개수는?</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>5개</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>6개</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>7개</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>8개</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>9개</p>"
+            }
+          ],
+          "choiceAnswer": [2],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>분수 \\( \\frac{x}{12} \\)가 정수 또는 유한소수로 나타나기 위해서는 기약분수로 만들었을 때 분모에 2와 5 이외의 소인수가 없어야 합니다. \\( 12 = 2^2 \\times 3 \\) 이므로, \\( x \\)와 \\( 12 \\)의 최대공약수에 3이 포함되어야 합니다. 즉, \\( x \\)가 3의 배수여야 분자와 분모의 3이 약분되어 분모가 2의 거듭제곱만 남게 되고, 이 경우 결과는 정수 또는 유한소수가 됩니다.</p><ul>  <li>\\( x \\)는 20 이하의 자연수이므로 \\( 1 \\leq x \\leq 20 \\)입니다.</li>  <li>이 범위에서 3의 배수는 \\( 3, 6, 9, 12, 15, 18 \\)으로 총 6개입니다.</li></ul><p>따라서, \\( x \\)가 20 이하의 자연수일 때, \\( \\frac{x}{12} \\)가 정수 또는 유한소수로 나타날 수 있도록 하는 \\( x \\)의 값은 6개입니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 금광중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            }
+          ],
+          "questionNumber": "2",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 금광중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629674,
+      "sourceId": 33652,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678310,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>0.4와 0.6 사이에 있는 분수 중 분모가 30이고 유한소수로 나타낼 수 있는 분수는 모두 몇 개인가? (단, 분자는 자연수)</p></div>",
+          "question": "<div class='question'><p>0.4와 0.6 사이에 있는 분수 중 분모가 30이고 유한소수로 나타낼 수 있는 분수는 모두 몇 개인가? (단, 분자는 자연수)</p></div>",
+          "refer": null,
+          "level": 2,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>1개</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>2개</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>3개</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>4개</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>5개</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>분수 \\(\\frac{a}{30}\\)이 유한소수로 나타나려면, 기약분수로 약분했을 때 분모에 3이 남지 않아야 합니다. 30=2·3·5이므로, 약분 시 3을 없애려면 분자 \\(a\\)가 3의 배수여야 합니다.</p><ul>  <li>0.4<\\(\\frac{a}{30}\\)<0.6 이므로 \\(12<a<18\\). 따라서 \\(a=13,14,15,16,17\\).</li>  <li>이 중 3의 배수는 \\(a=15\\) 하나뿐입니다.</li></ul><p>따라서 조건을 만족하는 분수는 \\(\\frac{15}{30}=\\frac{1}{2}\\) 단 하나이고, 그 개수는 <strong>1개</strong>입니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 귀인중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 5935,
+              "name": "유리수와 순환소수",
+              "category": "depth2"
+            },
+            {
+              "id": 5948,
+              "name": "유한소수로 나타낼 수 있는 분수",
+              "category": "depth3"
+            },
+            {
+              "id": 5949,
+              "name": "유한소수와 분수1(유한소수. 순환소수로 나타낼 수 있는 분수)",
+              "category": "depth4"
+            },
+            {
+              "id": 5950,
+              "name": "분수1(유한소수와 순환소수의 판단)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "2",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 귀인중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629703,
+      "sourceId": 33653,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": "<div class='question'><p>이차함수 \\(f(x) = x^2 - ax - 2\\)에서 \\(f(-2) = 6\\), \\(f(-3) = b\\)일 때, 상수 \\(a\\), \\(b\\)에 대하여 \\(a+b\\)의 값은?</p></div>",
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678339,
+          "type": "CHOICE",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>이차함수 \\(f(x) = x^2 - ax - 2\\)에서 \\(f(-2) = 6\\), \\(f(-3) = b\\)일 때, 상수 \\(a\\), \\(b\\)에 대하여 \\(a+b\\)의 값은?</p></div>",
+          "question": "<div class='question'><p>이차함수 \\(f(x) = x^2 - ax - 2\\)에서 \\(f(-2) = 6\\), \\(f(-3) = b\\)일 때, 상수 \\(a\\), \\(b\\)에 대하여 \\(a+b\\)의 값은?</p></div>",
+          "refer": null,
+          "level": 1,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>11</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>12</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>13</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>14</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>15</p>"
+            }
+          ],
+          "choiceAnswer": [5],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 이차함수 \\(f(x) = x^2 - ax - 2\\) 에서 \\(f(-2) = 6\\) 이므로, \\(x = -2\\) 를 대입하면 다음과 같습니다.</p><p>\\(f(-2) = (-2)^2 - a(-2) - 2 = 4 + 2a - 2 = 2a + 2\\)</p><p>이를 \\(6\\) 과 같게 하여 방정식을 세우면, \\(2a + 2 = 6\\) 입니다.</p><p>따라서 \\(2a = 4\\) 이고, \\(a = 2\\) 임을 알 수 있습니다.</p><p>이제 \\(a = 2\\) 를 이용하여 \\(f(-3)=b\\) 를 구합니다. \\(x = -3\\) 를 대입하면,</p><p>\\(f(-3) = (-3)^2 - a(-3) - 2 = 9 + 3a - 2 = 7 + 3a\\)</p><p>여기서 \\(a = 2\\) 를 대입하면, \\(7 + 3\\times2 = 7 + 6 = 13\\) 임으로 \\(b = 13\\) 입니다.</p><p>따라서 \\(a+b = 2 + 13 = 15\\) 입니다.</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 금광중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            }
+          ],
+          "questionNumber": "23",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 금광중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 629677,
+      "sourceId": 33652,
+      "pdfFileId": null,
+      "subject": "MATH",
+      "instruction": null,
+      "passage": null,
+      "passageMemo": null,
+      "academicYear": "M2",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": {
+        "id": 667,
+        "name": "2022 개정",
+        "category": "교육과정"
+      },
+      "passageDetailSubject": null,
+      "passageYear": {
+        "id": 2762,
+        "name": "중2수학",
+        "category": "학년"
+      },
+      "subQuestions": [
+        {
+          "id": 678313,
+          "type": "SHORT",
+          "subject": "MATH",
+          "instruction": "<div class='question'><p>분수 \\( \\frac{12}{2 \\times 5^2 \\times a} \\)를 소수로 나타내었을 때, 순환소수가 되도록 하는 모든 자연수 <strong>a</strong>의 값의 합을 구하시오. (단, \\( 1 \\leq a \\leq 9 \\))</p></div>",
+          "question": "<div class='question'><p>분수 \\( \\frac{12}{2 \\times 5^2 \\times a} \\)를 소수로 나타내었을 때, 순환소수가 되도록 하는 모든 자연수 <strong>a</strong>의 값의 합을 구하시오. (단, \\( 1 \\leq a \\leq 9 \\))</p></div>",
+          "refer": null,
+          "level": 3,
+          "year": "M2",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "16",
+          "essayAnswer": null,
+          "solution": "<div class='solution'><p>주어진 분수를 정리하면</p><p>\\[\\frac{12}{2\\times5^2\\times a}=\\frac{12}{50a}=\\frac{6}{25a}\\]</p><p>이제 분수 \\(\\frac{6}{25a}\\)를 기약분수로 만든 뒤, 분모에 2와 5 이외의 소인수가 남으면 순환소수가 된다.</p><ul>  <li>a=1: \\(\\frac{6}{25}\\) → 분모 25=5<sup>2</sup> → 종결소수</li>  <li>a=2: \\(\\frac{6}{50}=\\frac{3}{25}\\) → 분모 25=5<sup>2</sup> → 종결소수</li>  <li>a=3: \\(\\frac{6}{75}=\\frac{2}{25}\\) → 분모 25=5<sup>2</sup> → 종결소수</li>  <li>a=4: \\(\\frac{6}{100}=\\frac{3}{50}\\) → 분모 50=2·5<sup>2</sup> → 종결소수</li>  <li>a=5: \\(\\frac{6}{125}\\) → 분모 125=5<sup>3</sup> → 종결소수</li>  <li>a=6: \\(\\frac{6}{150}=\\frac{1}{25}\\) → 분모 25=5<sup>2</sup> → 종결소수</li>  <li>a=7: \\(\\frac{6}{175}\\) → 분모 175=5<sup>2</sup>·7 → 7이 남음 → 순환소수</li>  <li>a=8: \\(\\frac{6}{200}=\\frac{3}{100}\\) → 분모 100=2<sup>2</sup>·5<sup>2</sup> → 종결소수</li>  <li>a=9: \\(\\frac{6}{225}=\\frac{2}{75}\\) → 분모 75=3·5<sup>2</sup> → 3이 남음 → 순환소수</li></ul><p>따라서 순환소수가 되는 a는 7과 9이고, 이들의 합은</p><p>\\[7+9=16.\\]</p></div>",
+          "purpose": null,
+          "origin": "2025년 2학년 1학기 귀인중",
+          "isAiGenerated": false,
+          "tags": [
+            {
+              "id": 664,
+              "name": "내신",
+              "category": "자료유형"
+            },
+            {
+              "id": 667,
+              "name": "2022 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 668,
+              "name": "2015 개정",
+              "category": "교육과정"
+            },
+            {
+              "id": 670,
+              "name": "난이도 중",
+              "category": "난이도"
+            },
+            {
+              "id": 1835,
+              "name": "중등수학분류",
+              "category": "문항분류"
+            },
+            {
+              "id": 2762,
+              "name": "중2수학",
+              "category": "학년"
+            },
+            {
+              "id": 5934,
+              "name": "중2-1",
+              "category": "depth1"
+            },
+            {
+              "id": 5935,
+              "name": "유리수와 순환소수",
+              "category": "depth2"
+            },
+            {
+              "id": 5948,
+              "name": "유한소수로 나타낼 수 있는 분수",
+              "category": "depth3"
+            },
+            {
+              "id": 5997,
+              "name": "순환소수1(순환소수가 되는 미지수)",
+              "category": "depth4"
+            },
+            {
+              "id": 6005,
+              "name": "미지수8(가능한 미지수 찾기)",
+              "category": "depth5"
+            }
+          ],
+          "questionNumber": "5",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "noAnswerImage/2025/경기/2025 경기 귀인중학교 중등 2-1 중간고사",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    }
+  ],
+  "totalCount": null,
+  "pageToken": "7j44Irayyoxfd5Ex28--QQ==",
+  "searchType": null
+}

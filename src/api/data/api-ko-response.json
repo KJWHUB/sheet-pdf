@@ -1,0 +1,1068 @@
+{
+  "data": [
+    {
+      "id": 1667008,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) 봄나무/이상국나무는 몸이 아팠다<br>눈보라에 상처를 입은 곳이나<br>빗방울들에게 얻어맞았던 곳들이<br>오래전부터 근지러웠다<br>땅속 깊은 곳을 오르내리며<br>겨우내 몸을 덥히던 물이<br>이제는 갑갑하다고<br>한사코 나가고 싶어 하거나<br>살을 에는 바람과 외로움을 견디며<br>봄이 오면 정말 좋은 일이 있을 거라고<br>스스로에게 했던 말들이<br>그를 못 견디게 들볶았기 때문이다<br>그런 마음의 헌데 자리가 아플 때마다<br>그는 하나씩 이파리를 피웠다<br>(나) 벼락/이성미<br>밤하늘을 그어 버리는<br>노란 손톱자국<br>놀란 거인이 쿵쿵거리며 달려 나온다<br>(다) 포근한 봄/오규원<br>눈이 내린다<br>봄이라서<br>봄빛처럼 포근한 봄<br>담장 위에 쌓이는 봄눈<br>나무 위에 쌓이는 봄눈<br>마당 위에 쌓이는 봄눈<br>그리고<br>마루에서 졸다가 깬<br>눈을 하고 앉은<br>새끼 고양이의 눈 속에도<br>내리는 봄눈<br>감았다 떴다 하는새끼 고양이의 눈처럼<br>보드라운<br>봄봄 하늘<br>봄 하늘의 눈</div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717934,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(가)에 나타난 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8216_0.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>나무<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8217_1.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 상황을 <u>잘못</u> 말한 것은?</p>",
+          "question": "<p>(가)에 나타난 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8216_0.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>나무<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8217_1.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 상황을 <u>잘못</u> 말한 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>나무는 몸이 아팠음</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>눈보라와 빗방울에 상처 입은 곳들이 근지러웠음</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>살을 에는 바람과 외로움을 견딜 수 없어 도망쳤음</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>마음의 헌데 자리가 아플 때마다 이파리를 하나씩 피웠음</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>봄이 오면 좋은 일이 있을 거라고 말하며 스스로를 위로했음</p>"
+            }
+          ],
+          "choiceAnswer": [3],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "1",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717935,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(가)~(다)에 사용된 표현 방법과 효과를 바르게 말한 것은?</p>",
+          "question": "<p>(가)~(다)에 사용된 표현 방법과 효과를 바르게 말한 것은?</p>",
+          "refer": "",
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>(가) 나무를 의인화하여 사랑하는 사람에 대한 그리움을 생생하게 표현하였다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>(가) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8216_2.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>겨우내 몸을 덥히던 물<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8217_3.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 시선으로 나무를 바라봄으로써 봄나무의 화려함을 강조하였다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>(가) 공간의 이동에 따른 시상 전개로 시련을 이겨내는 나무의 자세를 효과적으로 표현하였다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>(나) 비유적 표현으로 번개와 천둥의 이미지를 참신하고 재미있게 나타냈다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>(다) 눈의 차가운 느낌을 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8216_4.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>새끼 고양이의 눈<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p1_8217_5.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>에 비유함으로써 실감나게 표현하였다.</p>"
+            }
+          ],
+          "choiceAnswer": [4],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "2",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717936,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p><보기>를 바탕으로 (가)와 관련한 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p2_8216_6.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>심미적 체험<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p2_8217_7.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>을 가장 적절하게 말한 사람은?</p><div class='reference'><보기><br>눈 온 다음 날 산에 가면 중동이 부러졌거나 몸을 찢기며 떨어져 나온 생솔가지들로 눈이 아프다. 그러나 아무리 혹독한 추위가 닥쳐도 나무들은 갈 곳이 없다. 저 자신이 집이기 때문이다. 그래서 눈의 무게가 몸을 찢고 얼음이 전신을 뒤덮더라도 나무들은 견딘다. …… 이제 날이 풀리고 바람이 순해지면 몸을 덥히던 물들이 갑갑하다고 밖으로 나가고 싶어 하는 자리마다 나무들은 새잎을 낼 것이다.- 이상국, <나무들은 몸이 아팠다></div>",
+          "question": "<p><보기>를 바탕으로 (가)와 관련한 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p2_8216_6.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>심미적 체험<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p2_8217_7.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>을 가장 적절하게 말한 사람은?</p>",
+          "refer": "<div class='reference'><보기><br>눈 온 다음 날 산에 가면 중동이 부러졌거나 몸을 찢기며 떨어져 나온 생솔가지들로 눈이 아프다. 그러나 아무리 혹독한 추위가 닥쳐도 나무들은 갈 곳이 없다. 저 자신이 집이기 때문이다. 그래서 눈의 무게가 몸을 찢고 얼음이 전신을 뒤덮더라도 나무들은 견딘다. …… 이제 날이 풀리고 바람이 순해지면 몸을 덥히던 물들이 갑갑하다고 밖으로 나가고 싶어 하는 자리마다 나무들은 새잎을 낼 것이다.- 이상국, <나무들은 몸이 아팠다></div>",
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>류진: 겨울 산행을 갔을 때의 즐거움을 다른 사람과 함께 나누고 싶어서 이 시를 썼어.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>리아: 눈 오는 날 친구들과 산으로 놀러갔던 추억을 오래도록 간직하고 싶어서 이 시를 썼어.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>예지: 산에 갔을 때 상처 입은 나무들을 보며 자연을 보호해야겠다는 다짐을 이 시로 표현했어.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>유나: 눈 온 다음 날 산에 가서 부러지거나 찢긴 나뭇가지들을 보고 느낀 외로움과 쓸쓸함을 이 시로 표현했어.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>채령: 눈 온 다음 날 혹독한 추위를 견디는 나무들을 보며 시련과 고통을 이겨내야 새잎을 낼 수 있다는 사실에 감동을 받고 이 시를 썼어.</p>"
+            }
+          ],
+          "choiceAnswer": [5],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "3",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 1667009,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) 옛날 중국의 곽휘원이란 사람이 떨어져 살고 있는 아내에게 편지를 보냈는데, 그 편지를 받은 아내의 답 시는 이러했다.<br>벽사창에 기대어 당신의 글월을 받으니<br>처음부터 끝까지 흰 종이뿐이옵니다.<br>아마도 당신께서 이 몸을 그리워하심이<br>㉠<u>차라리 말 아니 하려는 뜻임</u>을 전하고자 하신 듯하여이다.<br>이 답 시를 받고 어리둥절해진 곽휘원이 그제야 주위를 둘러보니, 아내에게 쓴 의례적인 문안 편지는 책상 위에 그대로 있는 게 아닌가. 아마도 그 옆에 있던 흰 종이를 편지인 줄 알고 잘못 넣어 보낸 것인 듯했다.<br>(나) ㉡<u>실수라면 나 역시 일가견이 있는 사람이다</u>. 언젠가 비구니들이 사는 암자에서 하룻밤을 묵은 적이 있다. 다음 날 아침 부스스해진 머리를 정돈하려고 하는데, 빗이 마땅히 눈에 띄지 않았다. 원래 여행할 때 빗이나 화장품을 찬찬히 챙겨 가지고 다니는 성격이 아닌 데다 그날은 아예 가방조차 가지고 있지 않았다. 그러던 중에 마침 노스님 한 분이 나오시기에 나는 아무 생각도 없이 이렇게 여쭈었다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p2_8220_8.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>스님, 빗 좀 빌릴 수 있을까요?<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p2_8221_9.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>스님은 갑자기 당황한 얼굴로 나를 바라보셨다.<br>(다) 나는 그 빗으로 머리를 빗으면서 자꾸만 웃음이 나오는 걸 참을 수가 없었다. 절에서 빗을 찾은 나의 엉뚱함도 ㉢<u>우물가에서 숭늉 찾는 격</u>이려니와, 빗이라는 말 한마디에 그토록 당황하고 어리둥절해하던 노스님의 표정이 자꾸 생각나서였다. 그러나 그 순간 나는 보았다. 시간을 거슬러 올라가 검은 머리칼이 있던, 빗을 썼던 그 까마득한 시절을 더듬고 있는 그분의 눈빛을. 이십 년 또는 삼십 년, ㉣<u>마치 물길을 거슬러 올라가는 연어 떼처럼</u> 참으로 오랜 시간이 그 눈빛 위로 스쳐 지나가는 듯했다. 그 순식간에 이루어진 회상의 끄트머리에는 그리움인지 무상함인지 모를 묘한 미소가 반짝하고 빛났다.<br>(라) 이처럼 악의가 섞이지 않은 실수는 봐줄 만한 구석이 있다. 그래서인지 내가 번번이 저지르는 실수는 나를 곤경에 빠뜨리거나 어떤 관계를 불화로 이끌기보다는 ㉤<u>의외의 수확이나 즐거움</u>을 가져다줄 때가 많았다. 겉으로는 비교적 차분하고 꼼꼼해 보이는 인상이어서 나에게 긴장을 하던 상대방도 이내 나의 모자란 구석을 발견하고는 긴장을 푸는 때가 많았다. 또 실수로 인해 웃음을 터뜨리다 보면 어색한 분위기가 가시고 초면에 쉽게 마음을 트게 되기도 했다.<br>(마) 결국 실수는 삶과 정신의 여백에 해당한다. 그 여백마저 없다면 이 각박한 세상에서 어떻게 숨을 돌리며 살 수 있겠는가. 그리고 발 빠르게 돌아가는 세상에 어떻게 휩쓸려 가지 않고 남아 있을 수 있겠는가. 어쩌면 사람을 키우는 것은 능력이 아니라 실수의 힘일지도 모른다.<br>그러나 날이 갈수록 실수가 용납되는 땅은 점점 좁아지고 있다. 사소한 실수조차 짜증과 비난의 대상이 되기가 십상이다. 남의 실수를 웃으면서 눈감아 주거나 그 실수가 나오는 내면의 풍경을 헤아려 주는 사람을 만나기도 어려워져 간다. 나 역시 스스로는 수많은 실수를 저지르고 살면서도 다른 사람의 실수에 대해서는 조급하게 굴거나 너그럽게 받아 주지 못한 때가 적지 않았던 것 같다.</div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717937,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>㉠~㉤의 의미를 바르게 설명한 것은?</p>",
+          "question": "<p>㉠~㉤의 의미를 바르게 설명한 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>㉠ : 남편에 대한 서운함을 직접적으로 표현함</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>㉡ : 실수를 자주 하지 않는 자신의 성격을 나타냄</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>㉢ : 말과 행동이 일치하지 않는 상황을 의미함</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>㉣ : 노스님이 세속에서의 시간을 회상하는 모습을 비유함</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>㉤ : 실수가 가져오는 부정적인 결과를 의미함</p>"
+            }
+          ],
+          "choiceAnswer": [4],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "4",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717938,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>윗글을 통해 알 수 있는 글쓴이의 성격으로 가장 적절한 것은?</p>",
+          "question": "<p>윗글을 통해 알 수 있는 글쓴이의 성격으로 가장 적절한 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>꼼꼼하지 않고 덜렁거리는 편이다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>상대방을 웃게 하려고 노력하는 편이다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>계획성 있고 준비를 철저히 하는 성격이다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>어떤 일이든 힘든 일은 피하려는 성격이다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>상대방의 단점보다는 장점을 찾으려고 노력하는 편이다.</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "5",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717939,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>윗글의 특징을 바르게 말한 것은?</p>",
+          "question": "<p>윗글의 특징을 바르게 말한 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>옛날이야기를 모아 중심 소재로 쓴 교훈적인 글이다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>상징적 표현을 사용하여 글의 내용을 다양하게 해석할 수 있다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>부정적 인식의 대상을 긍정적으로 바라보는 새로운 시각이 담겨있다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>자신의 실수에 대한 글쓴이의 부정적이고 비판적 인식을 엿볼 수 있다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>(가)와 (나)의 일화는 글쓴이의 상상력에 바탕을 둔 허구적 이야기이다.</p>"
+            }
+          ],
+          "choiceAnswer": [3],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "6",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717940,
+          "type": "SHORT",
+          "subject": "KOREAN",
+          "instruction": "<p>윗글에 나타난 글쓴이의 생각을 바탕으로 다음 문장의 의미를 서술하시오.<br>(1) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_13.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>실수는 삶과 정신의 여백에 해당한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_14.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>(2) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_15.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>날이 갈수록 실수가 용납되는 땅은 점점 좁아지고 있다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_16.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/></p><div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_17234_10.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8216_11.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8217_12.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것.</div>",
+          "question": "<p>윗글에 나타난 글쓴이의 생각을 바탕으로 다음 문장의 의미를 서술하시오.<br>(1) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_13.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>실수는 삶과 정신의 여백에 해당한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_14.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>(2) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_15.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>날이 갈수록 실수가 용납되는 땅은 점점 좁아지고 있다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_16.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/></p>",
+          "refer": "<div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_17234_10.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8216_11.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8217_12.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것.</div>",
+          "level": 5,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "<p>(1) 실수는 우리 삶과 정신에 여유를 주는 긍정적인 기능을 수행한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p9_26526_139.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/> (2) 작은 실수도 용납하지 않는 각박한 세태를 부정적으로 바라본다.</p>",
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "7",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 1667010,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) 잠에서 깨어난 박씨는 더 이상 잠을 이루지 못하고 이런저런 생각에 잠겨 있었다. 어느덧 동방이 밝아 오는 것을 보고 박씨는 급히 밖으로 나왔다. ㉠<u>연못에다가가니 과연 꽃 아래에 연적이 놓여 있는데, 꿈속에서본 바로 그 연적이었다</u>. 반가운 마음에 연적을 방에 갖다 놓고 계화를 불렀다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_17.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>급히 가서 서방님을 모셔 오너라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_18.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>이 말을 들은 시백은 정색을 하며 꾸짖었다.<br>㉡<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_19.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><u>무슨 일이 있기에 감히 장부의 과것길을 지체케한단 말이냐?</u><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_20.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>(나) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_21.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>슬프다. 나로 인해 죄 없는 네가 매를 맞았구나. 이렇게 안타까운 일이 어디 있단 말이냐?<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_22.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>슬프게 탄식한 뒤 계화에게 연적을 주며 시백에게 말을 전했다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_23.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>이 연적의 물로 먹을 갈아 글을 지어 바치면 장원 급제할 것입니다. 크게 출세하여 이름을 떨치거든 부모님께 영화(<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_27054_24.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_2282_25.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>)를 보이고 가문을 빛내십시오. 그런 후 나같이 복 없는 사람은 생각하지 말고, 이름난 집안에서 아름다운 여자를 얻어 함께 평생 사십시오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_26.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>계화에게 이 말을 들은 시백이 연적을 들어 찬찬히 살펴보니 천하에 둘도 없는 보배였다.<br>(다) 상공이 서운해 하는 모습을 본 부인이 물었다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_27.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>오늘 이 경사는 평생에 두 번 보지 못할 경사입니다. 이런 날, 대감의 낯빛이 좋지 않은 것은 무슨 까닭입니까? 추한 박씨가 이 자리에 없어서 그런 것입니까? 참으로 우습습니다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_28.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>상공은 즉시 얼굴빛을 고치고 엄숙하게 말했다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_29.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>부인의 소견이 아무리 얕고 짧다고 한들, 어찌 그렇게 가벼운 말을 하는 것이오? 며느리의 신통한 재주는 옛날 제갈공명의 부인 황씨를 누릴 것이고, 뛰어난 덕행은 주나라의 임사(<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_22922_30.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_22994_31.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>)에 비할 것이오 . 우리 가문에 과분한 며느리이거늘, 부인은 다만 생김새만 보고 속에 품은 재주는 생각하지 않으시니 그저 답답할 따름이오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_32.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>(라) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8220_33.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>㉢<u>사람의 길흉화복은 하늘에 달린 것이라 인력으로는 어찌할 수 없다</u>. 그러기에 탕왕은 하걸에게 갇힘을 당하고 문왕도 유리옥에 갇혔으며, 공자 같은 성인도 진채에게 욕을 보신 것이 아니겠느냐? 하물며 아녀자가 되어 어찌 남편의 사랑만 기다리고 있겠느냐? 그저 분수를 지키며 하늘의 뜻을 기다리는 것이 옳을 터이니, 다시는 그런 말을 하지 말아라. ㉣<u>혹 바깥 사람들이 들</u><u>으면 나의 행실을 천하다 할 것이다.</u> <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p3_8221_34.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>(마) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_35.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>험한 길 다니기가 어려운 줄 알지만, 부득이 가 볼 일이 있습니다. 염려 마시고 허락해 주십시오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_36.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_37.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>네 뜻이 그렇다면 말리지는 못하겠구나. 내일 채비를 해 줄 테니 부디 무사히 다녀오너라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_38.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_39.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>채비는 차릴 것 없습니다. 저 혼자 며칠 내로 다녀올 것이오니 번거로운 말씀 마십시오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_40.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>상공이 며느리의 재주를 알고 허락은 했지만, 속으로는 걱정이 되어 잠자리가 편안하지 않았다.<br>㉤<u>박씨는 금강산에서 며칠을 머문 뒤 다시 구름을 타고 잠깐 만에 피화당으로 돌아왔다</u>.</div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717941,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>윗글의 특징으로 적절한 것은?</p>",
+          "question": "<p>윗글의 특징으로 적절한 것은?</p>",
+          "refer": "",
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>고전 소설이며 남녀 간의 애정 소설이다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>인물의 말과 행동을 통하여 당시 사람들의 삶의 방식과 가치관을 알 수 있다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>1인칭 서술자인 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8216_41.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>나<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8217_42.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>가 등장하여 이야기를 전달함으로써 작품에 사실감을 부여한다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>남성 주인공을 통해 남성의 능력을 부각하고 여성 중심 사회의 모순점을 비판하고 있다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>비극적인 영웅 이야기로서 비범한 주인공이 자신의 능력을 발휘하지 못하고 죽음을 맞게 된다.</p>"
+            }
+          ],
+          "choiceAnswer": [2],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "8",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717942,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>㉠~㉤에 대한 설명으로 적절한 것은?</p>",
+          "question": "<p>㉠~㉤에 대한 설명으로 적절한 것은?</p>",
+          "refer": "",
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>㉠ : 고전 문학의 전기적 특성이 드러난다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>㉡ : 여성의 권위가 남성보다 우위에 있다고 생각하는 가치관이 담겨있다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>㉢ : 주어진 운명보다 자신의 노력과 선택을 중요시하는 당시 사람들의 생각이 담겨있다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>㉣ : 여성들이 주변의 시선에 얽매이지 않고 자신의 감정을 자유롭게 표현하는 사회 분위기가 반영되어 있다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>㉤ : 인물들 간의 갈등의 원인이 된 사건이다.</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "9",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717943,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(다)에서 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8216_43.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>상공<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8217_44.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>이 부인을 꾸짖는 이유로 가장 적절한 것은?</p>",
+          "question": "<p>(다)에서 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8216_43.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>상공<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8217_44.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>이 부인을 꾸짖는 이유로 가장 적절한 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>부인이 잔치에서 실수를 했기 때문이다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>부인이 아들을 사랑하는 마음이 지나치기 때문이다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>부인이 박씨로 하여금 잔치에 나오지 못하게 했기 때문이다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>부인이 박씨의 비범한 능력을 시기하고 질투했기 때문이다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>박씨의 내면을 보지 못한 채 외모만 평가하는 부인에게 화가 났기 때문이다.</p>"
+            }
+          ],
+          "choiceAnswer": [5],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "10",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 1667011,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) 하루는 처사가 후원으로 들어가 딸을 불러 앉혔다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_45.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>너의 ㉠<u>액운</u>이 다 끝났으니 누추한 허물을 벗어라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_46.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>처사는 허물을 벗고 변화하는 술법을 딸에게 가르친 뒤 말 하였다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_47.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>허물을 벗거든 버리지 말고 시아버지에게 옥으로 된 함을 짜 달라고 해서 그 속에 넣어 두거라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_48.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>그러고는 딸과 함께 정담을 나누다가 밖으로 나와 상공에게 작별 인사를 드렸다. 상공이 못내 섭섭해하며 만류했지만 처사는 듣지 않았다. 할 수 없이 한잔 술로 작별을 고하고 문밖으로 나가 전송하였다.<br>(나) 그날 밤, 박씨는 몸을 깨끗이 씻은 뒤 둔갑술을 부려 허물을 벗었다.<br>날이 밝은 후, 박씨는 계화를 불렀다. 계화가 들어가 보니 전에 없던 <u>절세가인(</u><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_625_49.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_19990_50.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_20339_51.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_20154_52.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><u>)</u>이 방 안에 앉아 있었다. 여인의 얼굴은 아름답기 그지없었으며, 그 태도는 너무도 기이했다. 월궁항아(<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_26376_53.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_23470_54.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_23022_55.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_23077_56.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>)나 무산선녀(<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_24043_57.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_23665_58.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_20185_59.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_22899_60.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>)라도 따르지 못할 듯했고, 서시와 양귀비도 미치지 못할 정도였다.<br>(다) 이시백은 그동안 박씨를 박대했던 것을 뉘우치고 부부간의 정은 날로 깊어 간다. 병조 판서를 지내던 이시백은 임경업과 함께 청나라를 위협하던 가달국을 물리치고, 그 공으로 우의정 벼슬을 받게 된다. 그러나 날이 갈수록 세력이 커진 청나라는 그 은혜를 잊고 조선을 침범한다. 임경업을 피해 동쪽으로 쳐들어온 청나라의 용골대, 용울대 형제에게 조선은 속수무책으로 당하고, 임금은 남한산성으로 피신했으나 결국 항복한다. 박씨는 피화당을 침범한 용울대의 목숨을 빼앗는다.<br>(라) 화가 머리끝까지 치밀어 오른 용골대가 다시 군사를 몰아쳤다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_61.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>모든 군사는 한꺼번에 화살을 쏘아라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_62.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>명령을 들은 군사들이 앞다투어 화살을 쏘았지만 역시 하나도 맞히지 못했다. 화살만 허비한 채 가슴이 막혀 어찌할 바를 모르고 있던 용골대는 황급히 김자점을 불렀다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_63.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>너희도 이제 우리나라의 백성이다. 얼른 도성의 군사들을 뽑아서 저 팔문금사진을 깨뜨리고 박씨와 계화를 잡아들여라. 만일 거역한다면 군법에 따라 처벌할 것이다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8221_64.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>(마) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p4_8220_65.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>박씨 부인은 무슨 재주로 화를 면하고 고국에안전하게 있으며, 우리는 무슨 죄로 <u>만리타국</u>에 잡혀가는가? 이제 가면 삶과 죽음을 기약할 수 없을 것인데, 어느 때 <u>고국산천</u>을 다시 볼 수 있으리오?<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8221_66.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>박씨는 땅바닥을 치며 통곡하는 부인들을 달랬다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8220_67.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>여러 부인은 슬픔을 진정하시고 내 말을 들으십시오. 세상사는 곧 <u>고진감래(</u><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_2017_68.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_30433_69.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_29976_70.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_20358_71.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><u>)</u>요 <u>흥진비래(</u><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_1795_72.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_30433_73.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_24754_74.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_20358_75.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><u>)</u>라 합니다. 너무 서러워하지 마시고 평안히 가 계시면, 삼 년 후에 우리 세자와 대군, 그리고 그대들을 데려올 사람들이 있을 것입니다. 아무쪼록 너무 슬퍼하지 말고 몸성히 지내다가 삼 년 뒤 무사히 돌아오도록 하십시오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8221_76.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/></div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717944,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>윗글의 밑줄 친 단어가 적절하게 쓰인 문장은?</p>",
+          "question": "<p>윗글의 밑줄 친 단어가 적절하게 쓰인 문장은?</p>",
+          "refer": "",
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p><u>흥진비래</u>라고 친구를 만나니 더할 나위 없이 반가웠다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>젊디젊은 여인이 <u>고진감래</u>를 지키느라 얼마나 외로웠겠니?</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>그녀는 <u>절세가인</u>은 아니지만 나름대로 아름다운 얼굴을 가졌다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>열심히 공부한 보람도 없이 <u>고국산천</u>처럼 성적이 떨어져서 실망스러워.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>내가 지금은 낯선 외국 땅에 살고 있지만, 죽어서는 <u>만리타국</u>에 묻히고 싶구나.</p>"
+            }
+          ],
+          "choiceAnswer": [3],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "11",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717945,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(가)~(마)의 내용에 관한 설명으로 적절한 것은?</p>",
+          "question": "<p>(가)~(마)의 내용에 관한 설명으로 적절한 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>(가) 처사는 박씨가 도와달라고 했지만 외면하고 떠났다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>(나) 박씨가 둔갑술로 아름다운 외모로 변했다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>(다) 박씨가 추한 외모로 살아온 이유가 제시되어 있다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>(라) 용골대는 박씨와 계화의 능력에 놀라 즉시 항복하였다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>(마) 포로로 잡혀가는 부인들은 당당한 모습을 잃지 않았다.</p>"
+            }
+          ],
+          "choiceAnswer": [2],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "12",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717946,
+          "type": "SHORT",
+          "subject": "KOREAN",
+          "instruction": "<p>위 작품의 전체적인 흐름을 고려하여 물음에 대한 답을 쓰시오.<br>(1) (가)의 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_77.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>㉠액운<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_78.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 의미를 <조건>에 맞게 서술하시오.<br>(2) 위 작품의 창작 의도를 <보기>의 내용과 관련지어 <조건>에 맞게 서술하시오.</p><div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_79.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_80.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>외모<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_81.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>와 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_82.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>능력<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_83.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>, 두 단어를 모두 포함하여 쓸 것<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_84.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_85.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_86.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것</div><br><div class='reference'><보기><br>용골대가 갑옷을 벗고 창칼을 버린 뒤 무릎을 꿇고 애걸하였다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8220_87.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>소장이 천하를 두루 다니다 조선까지 나왔지만, 지금까지 무릎을 꿇은 적은 한 번도 없었습니다. 이제 부인 앞에 무릎을 꿇어 비나이다. 부인의 명대로 왕비는 모셔 가지 않을 것이니, 부디 길을 열어 무사히 돌아가게 해 주십시오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8221_88.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>무수히 애원하자 그제야 박씨가 발을 걷고 나왔다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8220_89.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>원래는 너희의 씨도 남기지 않고 모두 죽이려 했었다. 하지만 내가 사람 목숨 죽이는 것을 좋아하지 않기에 용서하는 것이니, 네 말대로 왕비는 모셔 가지 마라. 너희가 부득이 세자와 대군을 모셔 간다면 그 또한 하늘의 뜻이기에 거역하지 못하겠구나. 부디 조심하여 모셔 가라. 그렇게 하지 않으면 신장과 갑옷 입은 군사를 몰아 너희를 다 죽인 뒤, 너희 국왕을 사로잡아 분함을 풀고 무죄한 백성까지 남기지 않을 것이다. 나는 앉아 있어도 모든 일을 알 수 있다. 부디 내 말을 명심하여라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8221_90.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/></div><br><div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_91.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><보기>에 반영된 백성들의 소망을 포함할 것<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_92.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>괄호 안에 들어갈 말을 쓸 것<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_93.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_94.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_95.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것</div><br><div class='reference'>역사적 사실을 허구적으로 재구성함으로써,<br>(<u> </u>)</div>",
+          "question": "<p>위 작품의 전체적인 흐름을 고려하여 물음에 대한 답을 쓰시오.<br>(1) (가)의 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_77.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>㉠액운<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_78.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 의미를 <조건>에 맞게 서술하시오.<br>(2) 위 작품의 창작 의도를 <보기>의 내용과 관련지어 <조건>에 맞게 서술하시오.</p>",
+          "refer": "<div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_79.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_80.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>외모<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_81.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>와 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_82.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>능력<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_83.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>, 두 단어를 모두 포함하여 쓸 것<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_84.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_85.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_86.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것</div><br><div class='reference'><보기><br>용골대가 갑옷을 벗고 창칼을 버린 뒤 무릎을 꿇고 애걸하였다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8220_87.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>소장이 천하를 두루 다니다 조선까지 나왔지만, 지금까지 무릎을 꿇은 적은 한 번도 없었습니다. 이제 부인 앞에 무릎을 꿇어 비나이다. 부인의 명대로 왕비는 모셔 가지 않을 것이니, 부디 길을 열어 무사히 돌아가게 해 주십시오.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8221_88.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>무수히 애원하자 그제야 박씨가 발을 걷고 나왔다.<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8220_89.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>원래는 너희의 씨도 남기지 않고 모두 죽이려 했었다. 하지만 내가 사람 목숨 죽이는 것을 좋아하지 않기에 용서하는 것이니, 네 말대로 왕비는 모셔 가지 마라. 너희가 부득이 세자와 대군을 모셔 간다면 그 또한 하늘의 뜻이기에 거역하지 못하겠구나. 부디 조심하여 모셔 가라. 그렇게 하지 않으면 신장과 갑옷 입은 군사를 몰아 너희를 다 죽인 뒤, 너희 국왕을 사로잡아 분함을 풀고 무죄한 백성까지 남기지 않을 것이다. 나는 앉아 있어도 모든 일을 알 수 있다. 부디 내 말을 명심하여라.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8221_90.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/></div><br><div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_91.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><보기>에 반영된 백성들의 소망을 포함할 것<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_92.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>괄호 안에 들어갈 말을 쓸 것<br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_17234_93.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8216_94.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p5_8217_95.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것</div><br><div class='reference'>역사적 사실을 허구적으로 재구성함으로써,<br>(<u> </u>)</div>",
+          "level": 5,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "<p>(1) 액운은 능력을 인정받지 못하고 흉한 외모로 박대 받으며 살아가는 것을 의미한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p9_26526_140.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/> (2) 병자호란에서 우리나라가 당한 치욕을 씻고 상처 입은 민족의 자존심을 회복하고자 했을 것이다.</p>",
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "13",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 1667012,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) 선생님 : 토론을 준비하려면 먼저 토론의 논제를 정확하게 이해하는 것이 중요해. 그러려면 논제와 관련된 자료를 살펴보면서 쟁점을 설정해 보는 것이 좋아.<br>민재 : 쟁점을 설정해 보면 논제와 관련된 찬성 측과 반대 측의 의견 차이를 잘 이해할 수 있겠네요. 그 다음에는 무엇을 해야 하나요?<br>선생님 : 쟁점과 관련된 다양한 자료를 수집하고 정리해서 찬성 측과 반대 측의 주장을 뒷받침하는 근거를 마련해야 해. 이때 주장을 뒷받침하는 구체적인 사례나 통계 등을 근거로 활용할 수 있지.<br>세윤 : 그렇게 쟁점별로 주장을 뒷받침하는 근거를 마련하면 입론을 준비할 때 도움이 되겠네요.<br>선생님 : 그렇지, 논제와 관련된 핵심적인 주장과 근거를 정리해서 입론을 준비하면 토론에서 자신의 주장을 논리적으로 내세울 수 있어.<br>민재 : 선생님, 그럼 반론은 어떻게 준비하면 좋을까요?선생님: 상대측이 입론에서 제시할 주장과 근거를 예상해 보고 이를 어떻게 반박할지 생각해 봐야지. 또 우리 측의 입론과 관련된 상대측의 반론도 예상해 보고 이를 논리적으로 재반박할 수 있게 준비하면 좋아. 이렇게 반론을 준비하면 토론할 때 상대측의 주장을 비판적으로 듣고 효과적으로 논박할 수 있어.<br>세윤 : 최종 발언은 어떻게 해야 할까요?<br>선생님 : 최종 발언은 우리 측의 발언 내용을 요약해서 정리하고, 우리 측의 주장과 근거를 다시한번 강조하면 돼.(나) ㉠ <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8220_96.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>동물원 코끼리, 독방에 갇힌 사람처럼 스트레스 극심<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8221_97.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>- <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_12298_98.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>연합뉴스<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_12299_99.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>, 2017년 10월 27일 자㉡ <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_9675_100.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_9675_101.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/> 대공원 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8216_102.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>순수 혈통<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8217_103.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/> 백두산 호랑이 4마리 탄생 …… <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8220_104.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>세계적으로 희귀<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8221_105.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><br>- <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_12298_106.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>국제신문<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_12299_107.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>, 2018년 6월 9일 자</div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717947,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>다음 중 토론에 대한 설명으로 적절하지 <u>않은</u> 것은?</p>",
+          "question": "<p>다음 중 토론에 대한 설명으로 적절하지 <u>않은</u> 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>주장을 뒷받침할 수 있는 타당한 근거를 제시해야 한다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>나의 주장이 받아들여질 때까지 상대방의 주장을 비난한다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>자신의 주장이 옳음을 증명하기 위해서 논리적으로 반박한다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>의견이 엇갈리는 문제에 대해서 근거를 바탕으로 상대측을 논박할 수 있다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>다른 사람의 주장을 비판적으로 검토하여 합리적으로 의사소통할 수 있다.</p>"
+            }
+          ],
+          "choiceAnswer": [2],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "14",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717948,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(가)의 내용과 일치하는 것은?</p>",
+          "question": "<p>(가)의 내용과 일치하는 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>입론을 준비하기 전에 반론을 준비한다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>최종 발언에서 상대방의 주장을 재반박한다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>구체적인 사례는 근거로 사용하기에 부적절하다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>논제를 이해하는 것이 토론 준비 과정에서 중요한 사항이다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>쟁점은 논제와 상관이 없어도 주장을 뒷받침하는 근거로 사용할 수 있다.</p>"
+            }
+          ],
+          "choiceAnswer": [4],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "15",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717949,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(나)의 ㉠과 ㉡을 활용하여 설정할 수 있는 쟁점은?</p>",
+          "question": "<p>(나)의 ㉠과 ㉡을 활용하여 설정할 수 있는 쟁점은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>동물원은 동물을 보호하는가?</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>동물원은 도시에 있어야 하는가?</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>동물원은 학생들에게 교육적인가?</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>멸종 위기 동물 복원 사업은 필요한가?</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>동물원을 유지할 수 있는 방안은 없는가?</p>"
+            }
+          ],
+          "choiceAnswer": [1],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "16",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 1667013,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) 사회자 : 지금부터 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8216_108.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>동물원을 폐지해야 한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8217_109.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>라는 논제로 교내 토론 대회를 시작하겠습니다. 동물원은 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8216_110.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>동물 보호와 연구를 진행하고 관람객에게 동물 관련 지식과 오락을 제공하려는 목적으로 동물을 모아 기르는 곳<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8217_111.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>입니다. 그런데 최근 동물원을 둘러싼 사회적 논란이 커지고 있습니다. 이와 관련하여 동물원 폐지에 찬성하는 측과 반대하는 측 토론자가 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8216_112.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>입론 - 반론 - 최종 발언<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8217_113.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 순서로 토론한 뒤 배심원들이 판정하도록 하겠습니다.<br>(나) 찬성 1(정세운) : 저희는 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8216_114.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>동물원을 폐지해야 한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p6_8217_115.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>에 찬성합니다. 그 첫 번째 이유는 ㉠<u>동물원이 동물을 제대로 보호하지 못하기 때문입니다</u>. 사진에서 보시는 것처럼 동물원의 많은 동물이 좁은 사육장에 갇혀 살면서 관람객의 시선과 소음에 시달리고 있습니다. 이 때문에 동물들이 극심한 스트레스를 받아 이상 행동을 보이며 심지어 죽기도 합니다. 동물원을 폐지해야 하는 두 번째 이유는 동물원이 교육적인 기능을 하지 못하기 때문입니다. 동물원에 갇혀 있는 동물을 보는 것이 과연 교육적인 효과가 있을까요? 오히려 관람객은 동물을 전시와 오락의 대상으로 여기고 동물의 생명과 생태를 존중하지 않는 그릇된 인식을 지니게 될 수 있습니다. 이와 같이 동물을 제대로 보호하지 못하고 교육적이지도 않은 동물원은 폐지해야 합니다.사회자 : 네, 잘 들었습니다. 이어서 반대 측 토론자께서 입론해 주십시오.<br>(다) 사회자 : (2분 뒤) 이제 반박과 재반박의 순서로 양측의 반론을 듣겠습니다. 먼저 반대 측에서 찬성 측 입론의 내용을 반박해 주십시오.<br>반대 2(이수진) : 찬성 측에서는 동물들이 극심한 스트레스를 받는다는 이유를 들어 동물원이 동물을 제대로 보호하지 못한다고 했습니다. 그러나 야생의 동물들도 천적의 위협이나 먹이 부족, 서식지 파괴 등 위험한 상황에 노출될 수 있고 불행하게 죽는 일도 많습니다. 동물원은 오히려 이런 야생의 위협으로부터 동물을 안전하게 보호하고 있습니다. 또 입론에서 말씀드린 것처럼 많은 동물원이 동물의 스트레스를 줄이려고 노력하고 있습니다. 예를 들어 2018년에 한 동물원은 곰이 생활하던 기존의 공간을 열 배 이상 넓히고, 물웅덩이와 통나무 등 곰의 생태 특성에 맞는 다양한 시설을 마련했습니다. 이뿐만 아니라 동물원은 반달가슴곰이나 삵 등 멸종 위기종을 보호하고 성공적으로 복원하고 있습니다.<br>(라) 찬성 1(정세운) : 반대 측에서는 동물원을 방문한 관람객이 동물과 관련된 지식을 얻고 생명 존중 의식을 기를 수 있다는 점을 들어 동물원이 교육적이라고 보았습니다. 그러나 동물원에 갇혀 사는 동물은 야생 상태에서와는 다르게 행동하고, 스트레스 때문에 이상 행동을 반복하거나 공격적으로 변하기도 합니다. 그런 모습에서 동물과 관련된 제대로 된 지식을 얻기는 어렵습니다. 제 경험으로도 동물원에서 유익한 지식을 얻은 적이 한 번도 없었습니다.<br>(마) 사회자 : (2분 뒤) 반대 측 토론자께서는 최종 발언을 해 주십시오.<br>반대 2(이수진) : 일부 동물원에서 동물이 과도한 스트레스를 받거나 불행하게 죽는 사례가 있다는 것은 인정합니다. 그러나 이를 모든 동물원의 문제로 일반화하여 동물원 폐지를 주장하는 것은 옳지 않습니다. 오히려 대부분의 동물원이 동물을 보호하고 종을 보존하는 역할을 하고 있으며, 동물원을 방문한 관람객은 동물과 관련된 지식을 얻고 동물을 사랑하는 태도를 기를 수 있습니다. 이러한 점에서 동물원을 폐지해서는 안 된다고 생각합니다.</div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717950,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(가)~(마)에 대한 설명으로 적절하지 <u>않은</u> 것은?</p>",
+          "question": "<p>(가)~(마)에 대한 설명으로 적절하지 <u>않은</u> 것은?</p>",
+          "refer": "",
+          "level": 1,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>(가) 논제를 제시하고 토론의 순서를 소개하고 있다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>(나) 논제와 관련한 두 가지 쟁점으로 주장을 펼치고 있다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>(다) 구체적인 예를 들어 찬성 측의 주장을 반박하고 있다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>(라) 객관적인 통계를 활용하여 자신의 주장을 뒷받침하고 있다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>(마) 쟁점과 관련된 자기 측의 주장을 다시 한 번 강조하고 있다.</p>"
+            }
+          ],
+          "choiceAnswer": [4],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "17",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717951,
+          "type": "CHOICE",
+          "subject": "KOREAN",
+          "instruction": "<p>(나)의 ㉠에 대한 근거로 가장 적절한 것은?</p>",
+          "question": "<p>(나)의 ㉠에 대한 근거로 가장 적절한 것은?</p>",
+          "refer": "",
+          "level": 2,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": [
+            {
+              "number": 1,
+              "content": "<p>동물원의 동물들은 정기적으로 건강검진을 받는다.</p>"
+            },
+            {
+              "number": 2,
+              "content": "<p>곰이 생활하는 기존의 공간을 열 배 이상으로 넓힌 동물원이 있다.</p>"
+            },
+            {
+              "number": 3,
+              "content": "<p>동물원은 반달가슴곰과 삵 등 멸종 위기종 동물을 보호하고 복원한다.</p>"
+            },
+            {
+              "number": 4,
+              "content": "<p>동물원에서 이루어지는 교육은 동물을 만지거나 먹이를 주는 체험에 그친다.</p>"
+            },
+            {
+              "number": 5,
+              "content": "<p>수족관에 살고 있는 돌고래의 평균 수명은 야생 돌고래의 평균 수명의 십분의 일에 불과하다.</p>"
+            }
+          ],
+          "choiceAnswer": [5],
+          "shortAnswer": null,
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "18",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        },
+        {
+          "id": 1717952,
+          "type": "SHORT",
+          "subject": "KOREAN",
+          "instruction": "<p>(라)에서 (1)논리적인 허점이나 오류가 있는 문장을 찾아 쓰고, (2)그 이유를 서술하시오.<br>(1) 논리적인 허점이나 오류가 있는 문장<br>(2) 그 이유[<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8216_116.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8217_117.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것.<br></p>",
+          "question": "<p>(라)에서 (1)논리적인 허점이나 오류가 있는 문장을 찾아 쓰고, (2)그 이유를 서술하시오.<br>(1) 논리적인 허점이나 오류가 있는 문장<br>(2) 그 이유[<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8216_116.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8217_117.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것.<br></p>",
+          "refer": "",
+          "level": 5,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "<p>1) 제 경험으로도 동물원에서 유익한 지식을 얻은 적이 한 번도 없었습니다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p9_26526_141.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/> 2) 개인적인 경험을 성급하게 일반화한 부적절한 근거이다.</p>",
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "19",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    },
+    {
+      "id": 1667014,
+      "sourceId": 79737,
+      "pdfFileId": null,
+      "subject": "KOREAN",
+      "instruction": null,
+      "passage": "<div class='passage'>(가) <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8216_118.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>쓰레기통 없는 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_9651_119.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_9651_120.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>시<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8217_121.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/> 6년 만에 결국 포기<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_9651_122.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_9651_123.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>시가 2012년부터 고수해 온 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8216_124.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>쓰레기통 없는 도시<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8217_125.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/> 방침을 결국 포기했다. 버스 정류장 등에 쓰레기가 끊이지 않고, 쓰레기통 설치가 필요하다는 시민 여론도 높은 데 따른 것이다. …… 시민들은 쓰레기통이 없어 불편이 이만저만 아니라며 민원을 계속 제기했다. 시의 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8216_126.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>쓰레기통 없는 도시<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p7_8217_127.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/> 방침에 아랑곳없이 버스 승강장과 공원 등지에는 쓰레기가 곳곳에 버려져 미관은 물론, 환경에도 악영향을 주고 있기 때문이다. …….<br>- <한국일보>, 2018년 7월 11일 자(나) 재활용 쓰레기 배출 - 비우고 헹구고 제거하고 섞이지 않게!<br>재활용 쓰레기 분리배출 시 꼭 지켜야 할 네 가지 원칙이 있다. 첫 번째는 캔이나 플라스틱 용기 혹은 비닐에 들어 있는 모든 내용물을 비워야 한다. 두 번째는 비닐, 캔, 플라스틱이 이물질로 더러워졌다면 반드시 헹궈야 한다. 세 번째는 페트병이나 캔에 붙어있는 비닐 소재 라벨 등 다른 재질은 제거해야 한다. …….<br>- <여성조선>, 2018년 7월 호(다) 먹었으면 좀 가져가!<br>테이크아웃 일회용 컵은 몇 년 사이 길거리 쓰레기의 주범이 됐다. 사용한 일회용 컵을 매장으로 가져오면 일정 금액을 환불해주는 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8216_128.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>일회용 컵 보증금 제도<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8217_129.png\" style=\"display: inline-block; margin: 0; width:13px; height:16px; position: relative; top:3px;\"/>가 2008년 폐지되면서 사용량이 급증했다. …… <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_27725_130.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_27725_131.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>구청이 지난해 12월부터 세 차례에 걸쳐 <img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_27725_132.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_27725_133.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/>구 길거리에 버려진 쓰레기를 수거해 분석한 결과, 플라스틱 컵(36.2퍼센트)과 종이컵(36.2퍼센트)이 쓰레기의 70퍼센트 이상을 차지하는 것으로 나타났다. …….<br>- <한겨레>, 2016년 6월 6일 자(라) 쓰레기통의 기능<br>쓰레기통의 기능이 아무리 뛰어나다고 해도 거리를 공유하는 시민들의 시민 의식과 관리자의 책임감이 따라주지 않으면 그 기능을 발휘할 수 없다. 꼭 필요한 장소에 적정한 수량의 쓰레기통이 설치되고 정기적으로 환경미화원의 관리가 잘 이루어질 때, 시민들이 공동 공간인 거리를 존중할 때 쓰레기통 역시 제 역할을 다할 수 있을 것이다. …….<br>- 박찬숙·권영걸 외, <유럽의 도시, 공공 디자인을 입다></div>",
+      "passageMemo": null,
+      "academicYear": "M3",
+      "passageMainUnit": null,
+      "passageSubUnit": null,
+      "passageClassification": null,
+      "passageVariationLevel": null,
+      "passagePublisher": null,
+      "passageCurriculumRevision": null,
+      "passageDetailSubject": null,
+      "passageYear": null,
+      "subQuestions": [
+        {
+          "id": 1717953,
+          "type": "SHORT",
+          "subject": "KOREAN",
+          "instruction": "<p><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8216_134.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>길거리에 쓰레기통의 수를 늘려야 한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8217_135.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>는 주제로 주장하는 글을 쓰려고 한다. (가)~(라)에서 주장을 뒷받침하는 근거를 2개 구성하여 쓰시오.</p><div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_17234_136.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8216_137.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8217_138.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것</div>",
+          "question": "<p><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8216_134.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>길거리에 쓰레기통의 수를 늘려야 한다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8217_135.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>는 주제로 주장하는 글을 쓰려고 한다. (가)~(라)에서 주장을 뒷받침하는 근거를 2개 구성하여 쓰시오.</p>",
+          "refer": "<div class='reference'><조건><br><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_17234_136.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/><img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8216_137.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>-다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p8_8217_138.png\" style=\"display: inline-block; margin: 0; width:15px; height:16px; position: relative; top:3px;\"/>의 완결된 문장으로 끝맺을 것</div>",
+          "level": 5,
+          "year": "M3",
+          "mainUnit": null,
+          "subUnit": null,
+          "mainCategory": null,
+          "subCategory": null,
+          "options": null,
+          "choiceAnswer": null,
+          "shortAnswer": "<p>근거 1:(가)를 활용해 길거리에 쓰레기통의 수를 늘리면 거리 환경을 개선할 수 있다는 근거를 구성해 볼 수 있다.<img src=\"https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/o/symbol/[2021년+기출]+야음중학교+(울산+남구)+3학년+1학기+중간+국어+천재(노미숙).pdf/p9_26526_142.png\" style=\"display: inline-block; margin: 0; width:15px; height:18px; position: relative; top:3px;\"/> 근거 2:(다)를 활용해 길거리에 쓰레기통의 수를 늘리면 재활용 쓰레기의 수거율을 높일 수 있다는 근거를 구성해 볼 수 있다.</p>",
+          "essayAnswer": null,
+          "solution": null,
+          "purpose": null,
+          "origin": "2021년 3학년 1학기 야음중",
+          "isAiGenerated": false,
+          "tags": [],
+          "questionNumber": "20",
+          "similarity": null,
+          "isServable": true,
+          "memo": null,
+          "humanReview": "UNVERIFIED"
+        }
+      ],
+      "fileUrl": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/n/axw77jxkr5mm/b/classday-dev-ml-assets/oNone",
+      "fileName": "[2021년 기출] 야음중학교 (울산 남구) 3학년 1학기 중간 국어 천재(노미숙).pdf",
+      "isPassageUnlocked": null,
+      "isBlocked": false
+    }
+  ]
+}
