@@ -113,7 +113,7 @@ export function convertApiDataToQuestionPaper(
   return {
     id: `paper-${Date.now()}`,
     title: subject === 'KOREAN' ? '국어 문제지' : '수학 문제지',
-    layout: 'single',
+    layout: 'double',
     questionGroups,
     pageBreaks: [],
     totalPages: Math.ceil(questionGroups.length / 2),

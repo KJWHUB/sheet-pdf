@@ -44,7 +44,7 @@ interface QuestionStore {
 }
 
 const defaultLayoutSettings: LayoutSettings = {
-  layout: 'single',
+  layout: 'double',
   paperSize: 'A4',
   margins: {
     top: 20,
