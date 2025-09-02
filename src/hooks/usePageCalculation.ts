@@ -64,8 +64,14 @@ export function usePageCalculation() {
       });
       
       if (hasChanges) {
-        // 높이 변경이 있을 때 페이지 재계산
-        setTimeout(() => recalculatePageLayout(), 100);
+        // 높이 변경이 있을 때 페이지 재계산 (함수가 정의된 후에 실행되도록)
+        setTimeout(() => {
+          calculatePageLayout();
+          
+          if (questionPaper) {
+            recalculatePages();
+          }
+        }, 100);
       }
     });
     
@@ -74,7 +80,7 @@ export function usePageCalculation() {
         resizeObserver.current.disconnect();
       }
     };
-  }, [recalculatePageLayout]);
+  }, []);
 
   // 요소 관찰 시작
   const observeElement = useCallback((element: HTMLElement, elementId: string) => {

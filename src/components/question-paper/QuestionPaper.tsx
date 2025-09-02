@@ -166,7 +166,7 @@ export function QuestionPaper() {
       </div>
 
       {/* Print Styles */}
-      <style jsx>{`
+      <style>{`
         @media print {
           body {
             background: white !important;

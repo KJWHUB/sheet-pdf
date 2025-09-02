@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, ReactNode } from 'react';
+import { useState, useRef, useCallback, type ReactNode } from 'react';
 import { useQuestionStore } from '@/stores/questionStore';
 
 interface ResizableContainerProps {

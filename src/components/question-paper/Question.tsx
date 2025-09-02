@@ -4,6 +4,7 @@ import type { SubQuestion, Choice } from '@/types/question';
 interface QuestionProps {
   question: SubQuestion;
   groupId: string;
+  isFirst?: boolean;
 }
 
 export function Question({ question, groupId }: QuestionProps) {
