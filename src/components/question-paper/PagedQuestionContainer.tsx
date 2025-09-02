@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { useQuestionStore } from '@/stores/questionStore';
 import { usePageCalculation } from '@/hooks/usePageCalculation';
 import { PageContainer } from './PageContainer';
-import { TwoColumnLayout } from './TwoColumnLayout';
+import { SmartTwoColumnLayout } from './TwoColumnLayout';
 import type { QuestionGroup as QuestionGroupType } from '@/types/question';
 
 interface PagedQuestionContainerProps {
@@ -117,21 +117,12 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
       {pages.map((page) => (
         <PageContainer key={page.pageNumber} pageNumber={page.pageNumber}>
           {layoutSettings.layout === 'double' ? (
-            <TwoColumnLayout>
-              {page.groups.map((group, index) => (
-                <div 
-                  key={group.id}
-                  data-group-id={group.id}
-                  className="mb-6"
-                  style={{
-                    breakInside: 'avoid',
-                    pageBreakInside: 'avoid',
-                  }}
-                >
-                  {children(group, index)}
-                </div>
-              ))}
-            </TwoColumnLayout>
+            <SmartTwoColumnLayout 
+              questionGroups={page.groups}
+              maxHeight={950} // A4 컨텐츠 영역 높이 (약 257mm - 여백)
+            >
+              {children}
+            </SmartTwoColumnLayout>
           ) : (
             <div className="space-y-6">
               {page.groups.map((group, index) => (

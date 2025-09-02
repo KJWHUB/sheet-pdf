@@ -1,7 +1,7 @@
 import { useRef, useEffect, type JSX } from "react";
 import { useQuestionStore } from "@/stores/questionStore";
 import { Button } from "@/components/ui/button";
-import { Passage } from "./Passage";
+import { SplittablePassage } from "./SplittablePassage";
 import { Question } from "./Question";
 import { ResizableContainer } from "./ResizableContainer";
 import type { QuestionGroup as QuestionGroupType } from "@/types/question";
@@ -73,7 +73,17 @@ export function QuestionGroup({ group, isDragOverlay = false }: QuestionGroupPro
       {/* Passage Section */}
       {group.passage && (
         <div className="passage-section mb-6">
-          <Passage passage={group.passage} groupId={group.id} />
+          <SplittablePassage 
+            passage={group.passage} 
+            groupId={group.id}
+            maxHeight={300}
+            onHeightChange={(height) => {
+              // 높이 변경 시 그룹 높이 업데이트
+              if (editMode.isEditing && isSelected) {
+                updateQuestionGroup(group.id, { height: height + 200 }); // 여백 포함
+              }
+            }}
+          />
         </div>
       )}
 

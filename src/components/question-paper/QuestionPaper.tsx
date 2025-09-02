@@ -5,6 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Button } from '@/components/ui/button';
 import { QuestionGroup } from './QuestionGroup';
 import { PagedQuestionContainer } from './PagedQuestionContainer';
+import { DebugPanel } from './DebugPanel';
 import { usePDF } from '@/hooks/usePDF';
 import { FileText, Download, Edit, Eye, Loader } from 'lucide-react';
 import {
@@ -231,6 +232,9 @@ export function QuestionPaper() {
       </div>
 
       {/* Page Info는 PagedQuestionContainer에서 표시됨 */}
+
+      {/* Debug Panel - 개발 모드에서만 표시 */}
+      <DebugPanel />
 
       {/* Print Styles */}
       <style>{`
