@@ -31,7 +31,7 @@ export interface FlowPageSingle {
 const DEFAULT_FONT_SIZE = 14; // px
 const DEFAULT_LINE_HEIGHT = 1.6; // unitless
 const LINE_HEIGHT_PX = DEFAULT_FONT_SIZE * DEFAULT_LINE_HEIGHT; // ~22.4px
-const CHARS_PER_LINE = 40; // heuristic
+const CHARS_PER_LINE = 20; // heuristic for narrow columns
 
 function estimateQuestionHeight(q: SubQuestion): number {
   // Rough heuristic by type
@@ -49,9 +49,11 @@ function estimateQuestionHeight(q: SubQuestion): number {
   }
 }
 
-function estimateTextHeight(chars: number, containerHeight: number): number {
+function estimateTextHeight(text: string, containerHeight: number): number {
   const maxLines = Math.floor(containerHeight / LINE_HEIGHT_PX);
-  const lines = Math.ceil(chars / CHARS_PER_LINE);
+  const lines = text
+    .split(/\n/)
+    .reduce((acc, line) => acc + Math.max(1, Math.ceil(line.length / CHARS_PER_LINE)), 0);
   const usedLines = Math.min(lines, maxLines);
   return usedLines * LINE_HEIGHT_PX;
 }
@@ -89,34 +91,43 @@ export function paginateQuestionGroupsDouble(
 
   for (const group of groups) {
     // 1) Passage parts
-    if (group.passage?.content) {
-      const text = group.passage.content.replace(/<[^>]*>/g, '');
-      const split = splitTextByHeight(text, columnHeight, DEFAULT_FONT_SIZE, DEFAULT_LINE_HEIGHT);
-      const parts = split.parts.length ? split.parts : [text];
+      if (group.passage?.content) {
+        const text = group.passage.content.replace(/<[^>]*>/g, '');
+        const split = splitTextByHeight(
+          text,
+          columnHeight,
+          DEFAULT_FONT_SIZE,
+          DEFAULT_LINE_HEIGHT,
+          CHARS_PER_LINE
+        );
+        const parts = split.parts.length ? split.parts : [text];
 
-      parts.forEach((part, idx) => {
-        const h = estimateTextHeight(part.length, columnHeight);
-        // If not enough remaining height in current column, move to next column/page
-        if ((side === 'left' && remaining.left < h) || (side === 'right' && remaining.right < h)) {
-          nextColumn();
-        }
+        parts.forEach((part, idx) => {
+          const h = estimateTextHeight(part, columnHeight);
+          // If not enough remaining height in current column, move to next column/page
+          if ((side === 'left' && remaining.left < h) || (side === 'right' && remaining.right < h)) {
+            nextColumn();
+          }
 
-        pushItem({
-          kind: 'passage-part',
-          groupId: group.id,
-          title: group.title,
-          content: part,
-          estHeight: Math.min(h, columnHeight),
-          partNumber: idx + 1,
-          totalParts: parts.length,
+          pushItem({
+            kind: 'passage-part',
+            groupId: group.id,
+            title: group.title,
+            content: part,
+            estHeight: Math.min(h, columnHeight),
+            partNumber: idx + 1,
+            totalParts: parts.length,
+          });
+
+          // If this passage part used almost the whole column, move to next
+          if (
+            (side === 'left' && remaining.left < LINE_HEIGHT_PX * 2) ||
+            (side === 'right' && remaining.right < LINE_HEIGHT_PX * 2)
+          ) {
+            nextColumn();
+          }
         });
-
-        // If this passage part used almost the whole column, move to next
-        if ((side === 'left' && remaining.left < LINE_HEIGHT_PX * 2) || (side === 'right' && remaining.right < LINE_HEIGHT_PX * 2)) {
-          nextColumn();
-        }
-      });
-    }
+      }
 
     // 2) Questions
     let i = 0;
@@ -163,26 +174,32 @@ export function paginateQuestionGroupsSingle(
     remaining = pageHeight;
   };
 
-  for (const group of groups) {
-    if (group.passage?.content) {
-      const text = group.passage.content.replace(/<[^>]*>/g, '');
-      const split = splitTextByHeight(text, pageHeight, DEFAULT_FONT_SIZE, DEFAULT_LINE_HEIGHT);
-      const parts = split.parts.length ? split.parts : [text];
-      parts.forEach((part, idx) => {
-        const h = estimateTextHeight(part.length, pageHeight);
-        if (remaining < h) nextPage();
-        push({
-          kind: 'passage-part',
-          groupId: group.id,
-          title: group.title,
-          content: part,
-          estHeight: Math.min(h, pageHeight),
-          partNumber: idx + 1,
-          totalParts: parts.length,
+    for (const group of groups) {
+      if (group.passage?.content) {
+        const text = group.passage.content.replace(/<[^>]*>/g, '');
+        const split = splitTextByHeight(
+          text,
+          pageHeight,
+          DEFAULT_FONT_SIZE,
+          DEFAULT_LINE_HEIGHT,
+          CHARS_PER_LINE
+        );
+        const parts = split.parts.length ? split.parts : [text];
+        parts.forEach((part, idx) => {
+          const h = estimateTextHeight(part, pageHeight);
+          if (remaining < h) nextPage();
+          push({
+            kind: 'passage-part',
+            groupId: group.id,
+            title: group.title,
+            content: part,
+            estHeight: Math.min(h, pageHeight),
+            partNumber: idx + 1,
+            totalParts: parts.length,
+          });
+          if (remaining < LINE_HEIGHT_PX * 2) nextPage();
         });
-        if (remaining < LINE_HEIGHT_PX * 2) nextPage();
-      });
-    }
+      }
 
     let i = 0;
     while (i < group.subQuestions.length) {
