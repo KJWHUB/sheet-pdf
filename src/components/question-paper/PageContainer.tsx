@@ -1,5 +1,4 @@
-import { type ReactNode, useRef, useEffect } from 'react';
-import { usePageCalculation } from '@/hooks/usePageCalculation';
+import { type ReactNode, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
 interface PageContainerProps {
@@ -10,18 +9,6 @@ interface PageContainerProps {
 
 export function PageContainer({ pageNumber, children, className }: PageContainerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { PAGE_CONFIG, observeElement, unobserveElement } = usePageCalculation();
-
-  useEffect(() => {
-    const element = containerRef.current;
-    if (element) {
-      observeElement(element, `page-${pageNumber}`);
-      
-      return () => {
-        unobserveElement(element);
-      };
-    }
-  }, [pageNumber, observeElement, unobserveElement]);
 
   return (
     <div
@@ -29,12 +16,14 @@ export function PageContainer({ pageNumber, children, className }: PageContainer
       className={cn(
         "page-container bg-white shadow-lg border border-gray-200 mx-auto mb-6",
         "print:shadow-none print:border-0 print:mb-0",
+        "overflow-hidden", // 페이지 경계 엄격 적용
         className
       )}
       style={{
-        width: `${PAGE_CONFIG.A4_WIDTH_PX}px`,
-        minHeight: `${PAGE_CONFIG.A4_HEIGHT_PX}px`,
-        padding: `${PAGE_CONFIG.MARGIN_PX}px`,
+        width: '210mm', // A4 너비 고정 (mm 단위 사용)
+        height: '297mm', // A4 높이 고정 (mm 단위 사용)
+        padding: '20mm', // 여백 고정
+        boxSizing: 'border-box',
       }}
       data-element-id={`page-${pageNumber}`}
       data-page-number={pageNumber}

@@ -104,7 +104,12 @@ export function usePageCalculation() {
     const results: PageCalculationResult[] = [];
     let currentPage = 1;
     let currentY = 0;
-    const pageHeight = PAGE_CONFIG.CONTENT_HEIGHT_PX - 100; // 여유 공간 확보
+    
+    // 2분할 모드에서는 칼럼당 사용 가능한 높이 계산
+    const basePageHeight = PAGE_CONFIG.CONTENT_HEIGHT_PX - 100; // 여유 공간 확보
+    const pageHeight = layoutSettings.layout === 'double' 
+      ? basePageHeight // 2분할에서도 전체 페이지 높이 사용 (CSS columns가 자동 분할)
+      : basePageHeight;
     
     questionPaper.questionGroups.forEach((group, index) => {
       // 다양한 selector 시도해서 요소 찾기
@@ -113,7 +118,13 @@ export function usePageCalculation() {
         groupElement = document.querySelector(`[data-element-id="group-${group.id}"]`) as HTMLElement;
       }
       
-      const groupHeight = groupElement?.offsetHeight || 350; // 기본값 증가
+      let groupHeight = groupElement?.offsetHeight || 350; // 기본값 증가
+      
+      // 2분할 모드에서는 높이를 보정 (CSS columns 때문에 실제 높이가 다를 수 있음)
+      if (layoutSettings.layout === 'double') {
+        // 2분할 모드에서는 컨텐츠가 칼럼으로 나뉘므로 높이 보정
+        groupHeight = Math.ceil(groupHeight * 0.6); // 대략적인 보정값
+      }
       
       // 현재 페이지에 들어갈 수 있는지 확인 (첫 번째 그룹이 아닌 경우만)
       if (index > 0 && currentY + groupHeight > pageHeight) {
@@ -143,7 +154,7 @@ export function usePageCalculation() {
     });
     
     return results;
-  }, [questionPaper]);
+  }, [questionPaper, layoutSettings.layout]);
 
   // 페이지 레이아웃 재계산
   const recalculatePageLayout = useCallback(() => {

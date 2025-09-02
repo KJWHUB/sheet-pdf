@@ -2,6 +2,7 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { useQuestionStore } from '@/stores/questionStore';
 import { usePageCalculation } from '@/hooks/usePageCalculation';
 import { PageContainer } from './PageContainer';
+import { TwoColumnLayout } from './TwoColumnLayout';
 import type { QuestionGroup as QuestionGroupType } from '@/types/question';
 
 interface PagedQuestionContainerProps {
@@ -115,23 +116,35 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
     <div className="space-y-8">
       {pages.map((page) => (
         <PageContainer key={page.pageNumber} pageNumber={page.pageNumber}>
-          <div className={
-            layoutSettings.layout === 'double' 
-              ? 'grid grid-cols-2 gap-6' 
-              : 'space-y-6'
-          }>
-            {page.groups.map((group, index) => (
-              <div 
-                key={group.id}
-                data-group-id={group.id}
-                className={`${
-                  layoutSettings.layout === 'single' && index > 0 ? "mt-8" : ""
-                }`}
-              >
-                {children(group, index)}
-              </div>
-            ))}
-          </div>
+          {layoutSettings.layout === 'double' ? (
+            <TwoColumnLayout>
+              {page.groups.map((group, index) => (
+                <div 
+                  key={group.id}
+                  data-group-id={group.id}
+                  className="mb-6"
+                  style={{
+                    breakInside: 'avoid',
+                    pageBreakInside: 'avoid',
+                  }}
+                >
+                  {children(group, index)}
+                </div>
+              ))}
+            </TwoColumnLayout>
+          ) : (
+            <div className="space-y-6">
+              {page.groups.map((group, index) => (
+                <div 
+                  key={group.id}
+                  data-group-id={group.id}
+                  className={index > 0 ? "mt-8" : ""}
+                >
+                  {children(group, index)}
+                </div>
+              ))}
+            </div>
+          )}
         </PageContainer>
       ))}
 

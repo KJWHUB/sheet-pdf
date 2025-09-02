@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { generatePDF, generatePDFFromElement, type PdfOptions } from '@/utils/pdfGenerator';
+import { generatePDF, generatePDFFromElement, type PdfOptions } from '@/utils/pdfGeneratorFixed';
 import { useQuestionStore } from '@/stores/questionStore';
 
 interface UsePDFReturn {

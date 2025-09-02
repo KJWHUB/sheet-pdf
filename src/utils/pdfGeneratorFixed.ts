@@ -18,6 +18,42 @@ const DEFAULT_OPTIONS: Required<PdfOptions> = {
 };
 
 /**
+ * PDF 스타일을 동적으로 추가/제거하는 헬퍼
+ */
+function addPdfStyles(): void {
+  const style = document.createElement('style');
+  style.id = 'pdf-generation-styles';
+  style.textContent = `
+    .print-mode .page-container {
+      width: 210mm !important;
+      height: 297mm !important;
+      padding: 20mm !important;
+      overflow: hidden !important;
+      box-sizing: border-box !important;
+      page-break-after: always !important;
+    }
+    .print-mode .two-column-layout {
+      column-count: 2 !important;
+      column-gap: 20mm !important;
+      column-rule: 1px solid #e5e7eb !important;
+      column-fill: auto !important;
+    }
+    .print-mode .print\\:hidden {
+      display: none !important;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function removePdfStyles(): void {
+  document.body.classList.remove('print-mode');
+  const pdfStyle = document.getElementById('pdf-generation-styles');
+  if (pdfStyle) {
+    document.head.removeChild(pdfStyle);
+  }
+}
+
+/**
  * 페이지 컨테이너들을 PDF로 변환
  */
 export async function generatePDF(options: PdfOptions = {}): Promise<void> {
@@ -38,32 +74,9 @@ export async function generatePDF(options: PdfOptions = {}): Promise<void> {
       format: 'a4'
     });
 
-    // print 모드를 활성화하여 print 전용 스타일 적용
+    // print 모드 활성화 및 스타일 적용
     document.body.classList.add('print-mode');
-    
-    // PDF 생성을 위한 추가 스타일 적용
-    const style = document.createElement('style');
-    style.id = 'pdf-generation-styles';
-    style.textContent = `
-      .print-mode .page-container {
-        width: 210mm !important;
-        height: 297mm !important;
-        padding: 20mm !important;
-        overflow: hidden !important;
-        box-sizing: border-box !important;
-        page-break-after: always !important;
-      }
-      .print-mode .two-column-layout {
-        column-count: 2 !important;
-        column-gap: 20mm !important;
-        column-rule: 1px solid #e5e7eb !important;
-        column-fill: auto !important;
-      }
-      .print-mode .print\\:hidden {
-        display: none !important;
-      }
-    `;
-    document.head.appendChild(style);
+    addPdfStyles();
 
     for (let i = 0; i < pageContainers.length; i++) {
       const pageContainer = pageContainers[i] as HTMLElement;
@@ -115,15 +128,15 @@ export async function generatePDF(options: PdfOptions = {}): Promise<void> {
       }
     }
 
-    // print 모드 해제
-    document.body.classList.remove('print-mode');
+    // 정리
+    removePdfStyles();
 
     // PDF 다운로드
     pdf.save(`${opts.filename}.pdf`);
     
   } catch (error) {
-    // print 모드 해제 (에러 발생 시에도)
-    document.body.classList.remove('print-mode');
+    // 에러 발생 시에도 정리
+    removePdfStyles();
     console.error('PDF 생성 중 오류가 발생했습니다:', error);
     throw error;
   }
@@ -139,8 +152,9 @@ export async function generatePDFFromElement(
   const opts = { ...DEFAULT_OPTIONS, ...options };
   
   try {
-    // print 모드를 활성화하여 print 전용 스타일 적용
+    // print 모드 활성화
     document.body.classList.add('print-mode');
+    addPdfStyles();
 
     // html2canvas로 요소를 이미지로 변환
     const canvas = await html2canvas(element, {
@@ -169,15 +183,15 @@ export async function generatePDFFromElement(
     // 이미지 추가
     pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight);
 
-    // print 모드 해제
-    document.body.classList.remove('print-mode');
+    // 정리
+    removePdfStyles();
 
     // PDF 다운로드
     pdf.save(`${opts.filename}.pdf`);
     
   } catch (error) {
-    // print 모드 해제 (에러 발생 시에도)
-    document.body.classList.remove('print-mode');
+    // 에러 발생 시에도 정리
+    removePdfStyles();
     console.error('PDF 생성 중 오류가 발생했습니다:', error);
     throw error;
   }
