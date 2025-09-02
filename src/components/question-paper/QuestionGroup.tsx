@@ -76,7 +76,9 @@ export function QuestionGroup({ group, isDragOverlay = false }: QuestionGroupPro
           <SplittablePassage 
             passage={group.passage} 
             groupId={group.id}
+            // allowOverflow=true 로 내용이 절대 잘리지 않도록 렌더링
             maxHeight={300}
+            allowOverflow={true}
             onHeightChange={(height) => {
               // 높이 변경 시 그룹 높이 업데이트
               if (editMode.isEditing && isSelected) {

@@ -10,6 +10,11 @@ interface SplittablePassageProps {
   maxHeight?: number;
   isInColumn?: boolean;
   onHeightChange?: (height: number) => void;
+  /**
+   * If true (default), the passage will not be visually clipped even if it exceeds the suggested maxHeight.
+   * Set to false to keep legacy clamped behavior using maxHeight and overflow hidden.
+   */
+  allowOverflow?: boolean;
 }
 
 export function SplittablePassage({ 
@@ -17,7 +22,8 @@ export function SplittablePassage({
   groupId, 
   maxHeight = 400,
   isInColumn = false,
-  onHeightChange 
+  onHeightChange,
+  allowOverflow = true,
 }: SplittablePassageProps) {
   const { editMode, selectQuestion, layoutSettings } = useQuestionStore();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,6 +36,13 @@ export function SplittablePassage({
   useEffect(() => {
     if (!passage.content) {
       setPassageParts([{ content: '', isPartial: false }]);
+      return;
+    }
+
+    // allowOverflow가 true면 클램핑/분할을 하지 않고 전체를 그대로 렌더링
+    if (allowOverflow) {
+      const textContent = passage.content.replace(/<[^>]*>/g, '');
+      setPassageParts([{ content: textContent, isPartial: false }]);
       return;
     }
 
@@ -81,7 +94,7 @@ export function SplittablePassage({
         setPassageParts([{ content: textContent, isPartial: false }]);
       }
     }
-  }, [passage.content, maxHeight, layoutSettings.layout, isInColumn]);
+  }, [passage.content, maxHeight, layoutSettings.layout, isInColumn, allowOverflow]);
 
   // 실제 높이 측정
   useEffect(() => {
@@ -108,7 +121,7 @@ export function SplittablePassage({
         passage-container relative
         ${isSelected ? 'ring-2 ring-blue-500 rounded-md p-2 -m-2' : ''}
       `}
-      style={{ maxHeight: `${maxHeight}px` }}
+      style={allowOverflow ? undefined : { maxHeight: `${maxHeight}px` }}
     >
       {passage.title && (
         <h3 className="font-medium mb-3 text-gray-900">
@@ -122,9 +135,9 @@ export function SplittablePassage({
       )}
       
       <div 
-        className="passage-content border border-gray-300 rounded-sm p-3 bg-gray-50/30 overflow-hidden"
+        className={`passage-content border border-gray-300 rounded-sm p-3 bg-gray-50/30 ${allowOverflow ? '' : 'overflow-hidden'}`}
         onClick={handleClick}
-        style={{ maxHeight: `${maxHeight - 60}px` }} // 제목 영역 제외
+        style={allowOverflow ? undefined : { maxHeight: `${maxHeight - 60}px` }} // 제목 영역 제외
       >
         <div className="text-sm leading-relaxed text-gray-900 whitespace-pre-line">
           {currentPart.content || '지문을 입력하세요...'}
@@ -146,4 +159,3 @@ export function SplittablePassage({
     </div>
   );
 }
-
