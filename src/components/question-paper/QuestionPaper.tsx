@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useQuestionStore } from '@/stores/questionStore';
 import { Card } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -11,13 +12,14 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
+  DragOverlay,
 } from '@dnd-kit/core';
 import {
   SortableContext,
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import type { DragEndEvent } from '@dnd-kit/core';
+import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 
 export function QuestionPaper() {
   const {
@@ -28,6 +30,8 @@ export function QuestionPaper() {
     setEditMode,
     reorderQuestionGroups,
   } = useQuestionStore();
+
+  const [activeId, setActiveId] = useState<string | null>(null);
 
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -44,12 +48,18 @@ export function QuestionPaper() {
     setEditMode(!editMode.isEditing);
   };
 
+  const handleDragStart = (event: DragStartEvent) => {
+    setActiveId(event.active.id as string);
+  };
+
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
 
     if (over && active.id !== over.id) {
       reorderQuestionGroups(active.id as string, over.id as string);
     }
+    
+    setActiveId(null);
   };
 
   if (!questionPaper) {
@@ -149,6 +159,7 @@ export function QuestionPaper() {
               <DndContext
                 sensors={sensors}
                 collisionDetection={closestCenter}
+                onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
               >
                 <SortableContext
@@ -156,7 +167,12 @@ export function QuestionPaper() {
                   strategy={verticalListSortingStrategy}
                 >
                   {questionPaper.questionGroups.map((group, index) => (
-                    <div key={group.id} className={index > 0 ? "mt-8" : ""}>
+                    <div 
+                      key={group.id} 
+                      className={`${index > 0 ? "mt-8" : ""} ${
+                        activeId === group.id ? 'transition-all duration-200 ease-out' : ''
+                      }`}
+                    >
                       <QuestionGroup 
                         group={group}
                         isFirst={index === 0}
@@ -164,6 +180,29 @@ export function QuestionPaper() {
                     </div>
                   ))}
                 </SortableContext>
+                <DragOverlay dropAnimation={null}>
+                  {activeId ? (
+                    <div 
+                      className="bg-white shadow-2xl border-2 border-blue-400 rounded-lg transform rotate-1 scale-105 z-[10000]"
+                      style={{
+                        width: '100%',
+                        maxWidth: 'none',
+                        cursor: 'grabbing'
+                      }}
+                    >
+                      {(() => {
+                        const group = questionPaper.questionGroups.find(g => g.id === activeId);
+                        return group ? (
+                          <QuestionGroup 
+                            group={group}
+                            isFirst={false}
+                            isDragOverlay={true}
+                          />
+                        ) : null;
+                      })()}
+                    </div>
+                  ) : null}
+                </DragOverlay>
               </DndContext>
             </div>
           </div>

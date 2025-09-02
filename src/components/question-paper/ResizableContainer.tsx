@@ -62,11 +62,13 @@ export function ResizableContainer({
     document.addEventListener('mouseup', handleMouseUp);
   }, [disabled, id, minHeight, maxHeight, startResize, updateResize, endResize, onResize]);
 
-  const containerStyle = {
-    height: currentHeight === 'auto' ? 'auto' : `${currentHeight}px`,
-    minHeight: `${minHeight}px`,
-    maxHeight: `${maxHeight}px`,
-  };
+  const containerStyle = disabled 
+    ? { height: 'auto', minHeight: 'auto' }
+    : {
+        height: currentHeight === 'auto' ? 'auto' : `${currentHeight}px`,
+        minHeight: `${minHeight}px`,
+        maxHeight: `${maxHeight}px`,
+      };
 
   return (
     <div 
@@ -74,7 +76,7 @@ export function ResizableContainer({
       className={`
         relative
         ${isResizing ? 'select-none' : ''}
-        ${disabled ? '' : 'resize-container'}
+        ${disabled ? 'h-auto' : 'resize-container'}
       `}
       style={containerStyle}
     >
