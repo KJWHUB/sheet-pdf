@@ -4,7 +4,9 @@ import { Card } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import { QuestionGroup } from './QuestionGroup';
-import { FileText, Download, Edit, Eye } from 'lucide-react';
+import { PagedQuestionContainer } from './PagedQuestionContainer';
+import { usePDF } from '@/hooks/usePDF';
+import { FileText, Download, Edit, Eye, Loader } from 'lucide-react';
 import {
   DndContext,
   closestCenter,
@@ -31,6 +33,7 @@ export function QuestionPaper() {
     reorderQuestionGroups,
   } = useQuestionStore();
 
+  const { isGenerating, error, generateQuestionPaperPDF, clearError } = usePDF();
   const [activeId, setActiveId] = useState<string | null>(null);
 
   const sensors = useSensors(
@@ -46,6 +49,16 @@ export function QuestionPaper() {
 
   const toggleEditMode = () => {
     setEditMode(!editMode.isEditing);
+  };
+
+  const handlePDFDownload = async () => {
+    if (error) clearError();
+    try {
+      await generateQuestionPaperPDF();
+    } catch (err) {
+      // 에러는 이미 usePDF 훅에서 처리됨
+      console.error('PDF 다운로드 실패:', err);
+    }
   };
 
   const handleDragStart = (event: DragStartEvent) => {
@@ -115,9 +128,23 @@ export function QuestionPaper() {
                     </>
                   )}
                 </Button>
-                <Button variant="outline" size="sm">
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF 내보내기
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  onClick={handlePDFDownload}
+                  disabled={isGenerating}
+                >
+                  {isGenerating ? (
+                    <>
+                      <Loader className="w-4 h-4 mr-2 animate-spin" />
+                      PDF 생성 중...
+                    </>
+                  ) : (
+                    <>
+                      <Download className="w-4 h-4 mr-2" />
+                      PDF 내보내기
+                    </>
+                  )}
                 </Button>
               </div>
             </div>
@@ -125,51 +152,45 @@ export function QuestionPaper() {
         </div>
       </div>
 
+      {/* Error Display */}
+      {error && (
+        <div className="w-full px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-sm">
+              <div className="flex items-center justify-between">
+                <span>⚠️ {error}</span>
+                <button
+                  onClick={clearError}
+                  className="text-red-500 hover:text-red-700 font-medium"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Question Paper Pages */}
       <div className="w-full px-6">
         <div className="flex justify-center">
-          {/* 현재는 단일 페이지로 모든 문제 그룹 표시 */}
-          <div 
-            className={`bg-white border ${
-              editMode.isEditing 
-                ? 'shadow-lg border-slate-300 rounded-lg' 
-                : 'shadow-2xl border-gray-300'
-            }`}
-            style={{
-              width: '210mm',
-              minHeight: '297mm',
-              padding: '20mm'
-            }}
-          >
-            {/* 페이지 헤더 */}
-            <div className="print:hidden mb-4 pb-2 border-b border-gray-200">
-              <div className="flex justify-between items-center text-sm text-gray-500">
-                <span>페이지 1</span>
-                <span>{questionPaper.questionGroups.length}개 문제 그룹</span>
-                {editMode.isEditing && (
-                  <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
-                    편집 모드
-                  </span>
-                )}
-              </div>
-            </div>
-            
-            {/* 문제 그룹들 */}
-            <div className="space-y-6">
-              <DndContext
-                sensors={sensors}
-                collisionDetection={closestCenter}
-                onDragStart={handleDragStart}
-                onDragEnd={handleDragEnd}
+          <div className="w-full max-w-none">
+            <DndContext
+              sensors={sensors}
+              collisionDetection={closestCenter}
+              onDragStart={handleDragStart}
+              onDragEnd={handleDragEnd}
+            >
+              <SortableContext
+                items={questionPaper.questionGroups.map(group => group.id)}
+                strategy={verticalListSortingStrategy}
               >
-                <SortableContext
-                  items={questionPaper.questionGroups.map(group => group.id)}
-                  strategy={verticalListSortingStrategy}
+                <PagedQuestionContainer
+                  questionGroups={questionPaper.questionGroups}
                 >
-                  {questionPaper.questionGroups.map((group, index) => (
+                  {(group, index) => (
                     <div 
-                      key={group.id} 
-                      className={`${index > 0 ? "mt-8" : ""} ${
+                      className={`${
                         activeId === group.id ? 'transition-all duration-200 ease-out' : ''
                       }`}
                     >
@@ -178,48 +199,38 @@ export function QuestionPaper() {
                         isFirst={index === 0}
                       />
                     </div>
-                  ))}
-                </SortableContext>
-                <DragOverlay dropAnimation={null}>
-                  {activeId ? (
-                    <div 
-                      className="bg-white shadow-2xl border-2 border-blue-400 rounded-lg transform rotate-1 scale-105 z-[10000]"
-                      style={{
-                        width: '100%',
-                        maxWidth: 'none',
-                        cursor: 'grabbing'
-                      }}
-                    >
-                      {(() => {
-                        const group = questionPaper.questionGroups.find(g => g.id === activeId);
-                        return group ? (
-                          <QuestionGroup 
-                            group={group}
-                            isFirst={false}
-                            isDragOverlay={true}
-                          />
-                        ) : null;
-                      })()}
-                    </div>
-                  ) : null}
-                </DragOverlay>
-              </DndContext>
-            </div>
+                  )}
+                </PagedQuestionContainer>
+              </SortableContext>
+              <DragOverlay dropAnimation={null}>
+                {activeId ? (
+                  <div 
+                    className="bg-white shadow-2xl border-2 border-blue-400 rounded-lg transform rotate-1 scale-105 z-[10000]"
+                    style={{
+                      width: '100%',
+                      maxWidth: 'none',
+                      cursor: 'grabbing'
+                    }}
+                  >
+                    {(() => {
+                      const group = questionPaper.questionGroups.find(g => g.id === activeId);
+                      return group ? (
+                        <QuestionGroup 
+                          group={group}
+                          isFirst={false}
+                          isDragOverlay={true}
+                        />
+                      ) : null;
+                    })()}
+                  </div>
+                ) : null}
+              </DragOverlay>
+            </DndContext>
           </div>
         </div>
       </div>
 
-      {/* Page Info */}
-      <div className="w-full px-6 mt-6 pb-6">
-        <div className="max-w-6xl mx-auto">
-          <Card className="p-4 bg-white/95 backdrop-blur">
-            <div className="flex items-center justify-between text-sm text-muted-foreground">
-              <span>총 {questionPaper.questionGroups.length}개 문제 그룹</span>
-              <span>1 페이지</span>
-            </div>
-          </Card>
-        </div>
-      </div>
+      {/* Page Info는 PagedQuestionContainer에서 표시됨 */}
 
       {/* Print Styles */}
       <style>{`

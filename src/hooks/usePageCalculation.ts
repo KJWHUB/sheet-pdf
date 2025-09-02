@@ -63,14 +63,10 @@ export function usePageCalculation() {
         }
       });
       
-      if (hasChanges) {
+      if (hasChanges && questionPaper) {
         // 높이 변경이 있을 때 페이지 재계산 (함수가 정의된 후에 실행되도록)
         setTimeout(() => {
-          calculatePageLayout();
-          
-          if (questionPaper) {
-            recalculatePages();
-          }
+          recalculatePages();
         }, 100);
       }
     });
@@ -80,7 +76,7 @@ export function usePageCalculation() {
         resizeObserver.current.disconnect();
       }
     };
-  }, []);
+  }, [questionPaper, recalculatePages]);
 
   // 요소 관찰 시작
   const observeElement = useCallback((element: HTMLElement, elementId: string) => {
@@ -108,19 +104,19 @@ export function usePageCalculation() {
     const results: PageCalculationResult[] = [];
     let currentPage = 1;
     let currentY = 0;
-    let pageHeight = PAGE_CONFIG.CONTENT_HEIGHT_PX;
+    const pageHeight = PAGE_CONFIG.CONTENT_HEIGHT_PX - 100; // 여유 공간 확보
     
-    // 2분할 모드에서는 페이지 높이가 절반
-    if (layoutSettings.layout === 'double') {
-      pageHeight = PAGE_CONFIG.CONTENT_HEIGHT_PX;
-    }
-    
-    questionPaper.questionGroups.forEach((group) => {
-      const groupElement = document.querySelector(`[data-element-id="group-${group.id}"]`) as HTMLElement;
-      const groupHeight = groupElement?.offsetHeight || 300; // 기본값
+    questionPaper.questionGroups.forEach((group, index) => {
+      // 다양한 selector 시도해서 요소 찾기
+      let groupElement = document.querySelector(`[data-group-id="${group.id}"]`) as HTMLElement;
+      if (!groupElement) {
+        groupElement = document.querySelector(`[data-element-id="group-${group.id}"]`) as HTMLElement;
+      }
       
-      // 현재 페이지에 들어갈 수 있는지 확인
-      if (currentY + groupHeight > pageHeight) {
+      const groupHeight = groupElement?.offsetHeight || 350; // 기본값 증가
+      
+      // 현재 페이지에 들어갈 수 있는지 확인 (첫 번째 그룹이 아닌 경우만)
+      if (index > 0 && currentY + groupHeight > pageHeight) {
         // 다음 페이지로 이동
         currentPage++;
         currentY = 0;
@@ -134,18 +130,20 @@ export function usePageCalculation() {
         y: currentY
       });
       
+      const shouldBreak = index > 0 && currentY + groupHeight > pageHeight;
+      
       results.push({
         currentPage,
         totalPages: currentPage,
         remainingHeight: pageHeight - (currentY + groupHeight),
-        shouldBreak: currentY + groupHeight > pageHeight
+        shouldBreak
       });
       
-      currentY += groupHeight;
+      currentY += groupHeight + 20; // 간격 추가
     });
     
     return results;
-  }, [questionPaper, layoutSettings.layout]);
+  }, [questionPaper]);
 
   // 페이지 레이아웃 재계산
   const recalculatePageLayout = useCallback(() => {
