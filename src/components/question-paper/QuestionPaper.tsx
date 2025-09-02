@@ -89,7 +89,7 @@ export function QuestionPaper() {
               
               <div className="flex items-center gap-2">
                 <Button
-                  variant={editMode.isEditing ? "default" : "outline"}
+                  variant={editMode.isEditing ? "secondary" : "outline"}
                   size="sm"
                   onClick={toggleEditMode}
                 >
