@@ -64,57 +64,67 @@ export function QuestionPaper() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-400 p-6">
+    <div className={`min-h-screen ${
+      editMode.isEditing 
+        ? 'bg-slate-50' 
+        : 'bg-gray-100'
+    }`}>
       {/* Control Panel */}
-      <div className="max-w-6xl mx-auto mb-6">
-        <Card className="p-4 bg-white/95 backdrop-blur">
-          <div className="flex items-center justify-between flex-wrap gap-4">
-            <div className="flex items-center gap-4">
-              <h1 className="text-lg font-semibold">{questionPaper.title}</h1>
-              <Select value={layoutSettings.layout} onValueChange={handleLayoutChange}>
-                <SelectTrigger className="w-32">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="single">1분할</SelectItem>
-                  <SelectItem value="double">2분할</SelectItem>
-                </SelectContent>
-              </Select>
+      <div className="w-full px-6 py-6">
+        <div className="max-w-6xl mx-auto">
+          <Card className="p-4 bg-white/95 backdrop-blur">
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              <div className="flex items-center gap-4">
+                <h1 className="text-lg font-semibold">{questionPaper.title}</h1>
+                <Select value={layoutSettings.layout} onValueChange={handleLayoutChange}>
+                  <SelectTrigger className="w-32">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="single">1분할</SelectItem>
+                    <SelectItem value="double">2분할</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <Button
+                  variant={editMode.isEditing ? "default" : "outline"}
+                  size="sm"
+                  onClick={toggleEditMode}
+                >
+                  {editMode.isEditing ? (
+                    <>
+                      <Eye className="w-4 h-4 mr-2" />
+                      미리보기
+                    </>
+                  ) : (
+                    <>
+                      <Edit className="w-4 h-4 mr-2" />
+                      편집
+                    </>
+                  )}
+                </Button>
+                <Button variant="outline" size="sm">
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF 내보내기
+                </Button>
+              </div>
             </div>
-            
-            <div className="flex items-center gap-2">
-              <Button
-                variant={editMode.isEditing ? "default" : "outline"}
-                size="sm"
-                onClick={toggleEditMode}
-              >
-                {editMode.isEditing ? (
-                  <>
-                    <Eye className="w-4 h-4 mr-2" />
-                    미리보기
-                  </>
-                ) : (
-                  <>
-                    <Edit className="w-4 h-4 mr-2" />
-                    편집
-                  </>
-                )}
-              </Button>
-              <Button variant="outline" size="sm">
-                <Download className="w-4 h-4 mr-2" />
-                PDF 내보내기
-              </Button>
-            </div>
-          </div>
-        </Card>
+          </Card>
+        </div>
       </div>
 
       {/* Question Paper Pages */}
-      <div className="max-w-4xl mx-auto">
-        <div className="space-y-6">
+      <div className="w-full px-6">
+        <div className="flex justify-center">
           {/* 현재는 단일 페이지로 모든 문제 그룹 표시 */}
           <div 
-            className="bg-white shadow-2xl border border-gray-300 mx-auto"
+            className={`bg-white border ${
+              editMode.isEditing 
+                ? 'shadow-lg border-slate-300 rounded-lg' 
+                : 'shadow-2xl border-gray-300'
+            }`}
             style={{
               width: '210mm',
               minHeight: '297mm',
@@ -126,6 +136,11 @@ export function QuestionPaper() {
               <div className="flex justify-between items-center text-sm text-gray-500">
                 <span>페이지 1</span>
                 <span>{questionPaper.questionGroups.length}개 문제 그룹</span>
+                {editMode.isEditing && (
+                  <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
+                    편집 모드
+                  </span>
+                )}
               </div>
             </div>
             
@@ -156,13 +171,15 @@ export function QuestionPaper() {
       </div>
 
       {/* Page Info */}
-      <div className="max-w-4xl mx-auto mt-6">
-        <Card className="p-4 bg-white/95 backdrop-blur">
-          <div className="flex items-center justify-between text-sm text-muted-foreground">
-            <span>총 {questionPaper.questionGroups.length}개 문제 그룹</span>
-            <span>1 페이지</span>
-          </div>
-        </Card>
+      <div className="w-full px-6 mt-6 pb-6">
+        <div className="max-w-6xl mx-auto">
+          <Card className="p-4 bg-white/95 backdrop-blur">
+            <div className="flex items-center justify-between text-sm text-muted-foreground">
+              <span>총 {questionPaper.questionGroups.length}개 문제 그룹</span>
+              <span>1 페이지</span>
+            </div>
+          </Card>
+        </div>
       </div>
 
       {/* Print Styles */}

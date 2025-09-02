@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { useQuestionStore } from '@/stores/questionStore';
-import { QuestionPaper } from '@/components/question-paper/QuestionPaper';
-import { convertApiDataToQuestionPaper } from '@/utils/apiDataConverter';
-import api from '@/api';
-import type { Subject, ApiQuestionGroup } from '@/types/api';
+import { useEffect, useState } from "react";
+import { useQuestionStore } from "@/stores/questionStore";
+import { QuestionPaper } from "@/components/question-paper/QuestionPaper";
+import { convertApiDataToQuestionPaper } from "@/utils/apiDataConverter";
+import api from "@/api";
+import type { Subject, ApiQuestionGroup } from "@/types/api";
 import "./App.css";
 
 function App() {
@@ -16,18 +16,17 @@ function App() {
       try {
         setLoading(true);
         setError(null);
-        
+
         // 기본적으로 국어 데이터를 로드
-        const subject: Subject = 'KOREAN';
+        const subject: Subject = "KOREAN";
         const apiData = await api.getQuestions(subject);
-        
+
         // API 데이터를 QuestionPaper 형태로 변환
         const paper = convertApiDataToQuestionPaper(apiData as ApiQuestionGroup[], subject);
         setQuestionPaper(paper);
-        
       } catch (error) {
-        console.error('Failed to load question paper:', error);
-        setError('문제지를 불러오는데 실패했습니다.');
+        console.error("Failed to load question paper:", error);
+        setError("문제지를 불러오는데 실패했습니다.");
       } finally {
         setLoading(false);
       }
@@ -57,7 +56,11 @@ function App() {
     );
   }
 
-  return <QuestionPaper />;
+  return (
+    <main className="w-full">
+      <QuestionPaper />
+    </main>
+  );
 }
 
 export default App;

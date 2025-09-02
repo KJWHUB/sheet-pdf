@@ -75,7 +75,7 @@ export function QuestionGroup({ group }: QuestionGroupProps) {
           question-group relative
           ${isSelected ? 'ring-2 ring-blue-500 rounded-lg p-2 -m-2' : ''}
           ${editMode.isEditing ? 'cursor-pointer' : ''}
-          ${isDragging ? 'z-50' : ''}
+          ${isDragging ? 'z-[9999] shadow-2xl' : ''}
         `}
         onClick={handleSelect}
       >
