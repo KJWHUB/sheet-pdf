@@ -194,18 +194,44 @@ function splitHtmlText(html: string, maxLength: number): SplitResult {
  * 칼럼 높이를 기준으로 텍스트 분할
  */
 export function splitTextByHeight(
-  text: string, 
+  text: string,
   containerHeight: number,
   fontSize: number = 16,
-  lineHeight: number = 1.5
+  lineHeight: number = 1.5,
+  charsPerLine: number = 40
 ): SplitResult {
-  // 대략적인 줄 수 계산
+  // 대략적인 줄 수 계산 (개행 문자를 한 줄로 계산)
   const lineHeightPx = fontSize * lineHeight;
   const maxLines = Math.floor(containerHeight / lineHeightPx);
-  const charactersPerLine = 40; // 대략적인 글자 수
-  const maxLength = maxLines * charactersPerLine;
+  const maxLength = maxLines * charsPerLine;
 
-  return splitText(text, { maxLength });
+  const parts: string[] = [];
+  let current = '';
+  let currentLength = 0;
+
+  for (const ch of text) {
+    if (ch === '\n') {
+      current += ch;
+      currentLength += charsPerLine;
+    } else {
+      current += ch;
+      currentLength += 1;
+    }
+
+    if (currentLength >= maxLength) {
+      parts.push(current);
+      current = '';
+      currentLength = 0;
+    }
+  }
+
+  if (current) parts.push(current);
+
+  return {
+    parts,
+    originalLength: text.length,
+    splitMethod: 'character'
+  };
 }
 
 /**
