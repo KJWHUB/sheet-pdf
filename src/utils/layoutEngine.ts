@@ -10,6 +10,8 @@ export type RenderItem =
       estHeight: number;
       partNumber: number;
       totalParts: number;
+      isFirstPart?: boolean;
+      isLastPart?: boolean;
     }
   | {
       kind: 'question-range';
@@ -139,15 +141,20 @@ export function paginateQuestionGroupsDouble(
             CHARS_PER_LINE
           );
           const h = estimateTextHeight(htmlToPlainWithBreaks(first), columnHeight);
+          const isFirst = partIndex === 0;
+          const hasNext = !!rest;
           pushItem({
             kind: 'passage-part',
             groupId: group.id,
-            title: partIndex === 1 ? group.title : undefined,
+            title: isFirst ? group.title : undefined,
             content: first,
             estHeight: Math.min(h + ITEM_GAP, columnHeight),
-            partNumber: ++partIndex,
-            totalParts: 0, // 채우기용 (렌더러는 유무만 사용)
+            partNumber: partIndex + 1,
+            totalParts: 0,
+            isFirstPart: isFirst,
+            isLastPart: !hasNext,
           });
+          partIndex += 1;
           restHtml = rest;
           if (restHtml) nextColumn();
         }
@@ -217,15 +224,20 @@ export function paginateQuestionGroupsSingle(
           );
           const h = estimateTextHeight(htmlToPlainWithBreaks(first), pageHeight);
           if (h > remaining) nextPage();
+          const isFirst = partIndex === 0;
+          const hasNext = !!rest;
           push({
             kind: 'passage-part',
             groupId: group.id,
-            title: partIndex === 1 ? group.title : undefined,
+            title: isFirst ? group.title : undefined,
             content: first,
             estHeight: Math.min(h + ITEM_GAP, pageHeight),
-            partNumber: ++partIndex,
+            partNumber: partIndex + 1,
             totalParts: 0,
+            isFirstPart: isFirst,
+            isLastPart: !hasNext,
           });
+          partIndex += 1;
           restHtml = rest;
           if (restHtml && remaining < LINE_HEIGHT_PX * 3) nextPage();
         }

@@ -9,11 +9,14 @@ interface PassagePartViewProps {
   partNumber: number;
   totalParts: number;
   groupId: string;
+  isFirstPart?: boolean;
+  isLastPart?: boolean;
 }
 
-export function PassagePartView({ title, content, partNumber, totalParts, groupId }: PassagePartViewProps) {
+export function PassagePartView({ title, content, partNumber, totalParts, groupId, isFirstPart, isLastPart }: PassagePartViewProps) {
   const { editMode, selectQuestion } = useQuestionStore();
   const isSelected = editMode.selectedGroupId === groupId && !editMode.selectedQuestionId;
+  const borderMod = `${isFirstPart ? '' : 'border-t-0 rounded-t-none'} ${isLastPart ? '' : 'border-b-0 rounded-b-none'}`;
   return (
     <div className={`passage-container relative mb-3 ${isSelected ? "ring-2 ring-blue-500 rounded-md p-2 -m-2" : ""}`}>
       {title && (
@@ -27,13 +30,22 @@ export function PassagePartView({ title, content, partNumber, totalParts, groupI
         </h3>
       )}
       <div
-        className="passage-content border border-gray-300 rounded-sm p-3 pb-2 bg-gray-50/30"
+        className={`passage-content border border-gray-300 rounded-sm p-3 pb-2 bg-gray-50/30 ${borderMod}`}
         onClick={() => editMode.isEditing && selectQuestion(groupId)}
       >
         <div
           className="text-sm leading-relaxed text-gray-900"
           dangerouslySetInnerHTML={{ __html: content || '<span class="text-gray-400">지문을 입력하세요...</span>' }}
         />
+        {editMode.isEditing && (
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); selectQuestion(groupId); }}
+            className="absolute -top-3 left-2 text-[10px] px-1.5 py-0.5 rounded bg-blue-50 text-blue-600 border border-blue-200"
+          >
+            선택
+          </button>
+        )}
       </div>
     </div>
   );
@@ -65,7 +77,7 @@ interface FragmentRendererProps {
 
 export function FragmentRenderer({ item, group }: FragmentRendererProps) {
   if (item.kind === "passage-part") {
-    return <PassagePartView title={item.title} content={item.content} partNumber={item.partNumber} totalParts={item.totalParts} groupId={group.id} />;
+    return <PassagePartView title={item.title} content={item.content} partNumber={item.partNumber} totalParts={item.totalParts} groupId={group.id} isFirstPart={item.isFirstPart} isLastPart={item.isLastPart} />;
   }
   return <QuestionRangeView group={group} startIndex={item.startIndex} endIndex={item.endIndex} />;
 }

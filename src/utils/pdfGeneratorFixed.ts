@@ -32,6 +32,11 @@ function addPdfStyles(): void {
       box-sizing: border-box !important;
       page-break-after: always !important;
     }
+    .print-mode .page-container::after {
+      content: attr(data-page-number) "/" attr(data-total-pages);
+      position: absolute; left: 50%; transform: translateX(-50%);
+      bottom: 6mm; font-size: 10px; color: #666;
+    }
     .print-mode .question-container, 
     .print-mode .passage-container, 
     .print-mode .questions-section > div {

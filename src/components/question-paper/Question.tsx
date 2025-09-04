@@ -33,6 +33,15 @@ export function Question({ question, groupId }: QuestionProps) {
       ${isSelected ? "ring-2 ring-blue-500 rounded-lg p-2 -m-2" : ""}
     `}
     >
+      {editMode.isEditing && (
+        <button
+          type="button"
+          onClick={(e) => { e.stopPropagation(); selectQuestion(groupId, question.id); }}
+          className="absolute -top-3 left-0 text-[10px] px-1.5 py-0.5 rounded bg-blue-50 text-blue-600 border border-blue-200"
+        >
+          선택
+        </button>
+      )}
       {/* Question Number and Content */}
       <div className="flex gap-2 mb-3">
         <div className="flex-shrink-0">

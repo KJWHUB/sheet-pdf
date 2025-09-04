@@ -145,11 +145,15 @@
 }
 
 /* Avoid splitting questions and passages across columns/pages */
-.question-container,
 .passage-container,
 .questions-section > div {
   break-inside: avoid;
   page-break-inside: avoid;
+}
+/* Allow questions to split across columns/pages */
+.question-container {
+  break-inside: auto;
+  page-break-inside: auto;
 }
 
 /* Refer / 참고 설명 상자 스타일 (질문 본문 내부에 삽입되는 .refer 요소) */

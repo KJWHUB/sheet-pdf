@@ -126,10 +126,11 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
   // 새 플로우 레이아웃 우선 적용
   if (flowPagesDouble.length > 0 || flowPagesSingle.length > 0) {
     if (layoutSettings.layout === "double") {
+      const total = flowPagesDouble.length;
       return (
         <div className="space-y-8">
           {flowPagesDouble.map((pg, pageIndex) => (
-            <PageContainer key={pageIndex + 1} pageNumber={pageIndex + 1}>
+            <PageContainer key={pageIndex + 1} pageNumber={pageIndex + 1} totalPages={total}>
               <div className="grid grid-cols-2 gap-0" style={{ height: `${Math.floor(PAGE_CONFIG.CONTENT_HEIGHT_PX) - 12}px` }}>
                 {/* left */}
                 <div className="space-y-0" style={{ borderRight: "1px solid #e5e7eb", paddingRight: "8mm", height: '100%' }}>
@@ -167,7 +168,7 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
     return (
       <div className="space-y-8">
         {flowPagesSingle.map((pg, pageIndex) => (
-          <PageContainer key={pageIndex + 1} pageNumber={pageIndex + 1}>
+          <PageContainer key={pageIndex + 1} pageNumber={pageIndex + 1} totalPages={flowPagesSingle.length}>
             <div className="space-y-6">
               {(pg.items ?? []).map((item, idx) => {
                 const group = questionGroups.find((g) => g.id === item.groupId)!;
@@ -190,7 +191,7 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
   return (
     <div className="space-y-8">
       {pages.map((page) => (
-        <PageContainer key={page.pageNumber} pageNumber={page.pageNumber}>
+        <PageContainer key={page.pageNumber} pageNumber={page.pageNumber} totalPages={pages.length}>
           {layoutSettings.layout === "double" ? (
             <SmartTwoColumnLayout
               questionGroups={page.groups}
