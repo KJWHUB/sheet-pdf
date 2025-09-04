@@ -1,5 +1,6 @@
 import { useQuestionStore } from "@/stores/questionStore";
 import type { SubQuestion, Choice } from "@/types/question";
+import { ResizableContainer } from "./ResizableContainer";
 
 interface QuestionProps {
   question: SubQuestion;
@@ -8,7 +9,7 @@ interface QuestionProps {
 }
 
 export function Question({ question, groupId }: QuestionProps) {
-  const { editMode, selectQuestion } = useQuestionStore();
+  const { editMode, selectQuestion, updateSubQuestion } = useQuestionStore();
 
   const isSelected = editMode.selectedQuestionId === question.id;
 
@@ -19,9 +20,13 @@ export function Question({ question, groupId }: QuestionProps) {
     }
   };
 
-  // All editing functions disabled - content is read-only
+  // snap height to rough line units
+  const snapHeight = (h: number) => {
+    const unit = Math.round(14 * 1.6); // ~22px
+    return Math.max(unit, Math.round(h / unit) * unit);
+  };
 
-  return (
+  const content = (
     <div
       className={`
       question-container pb-6
@@ -81,6 +86,23 @@ export function Question({ question, groupId }: QuestionProps) {
         </div>
       )}
     </div>
+  );
+
+  // Non-edit or not selected → static render
+  if (!editMode.isEditing || !isSelected) return content;
+
+  // Edit + selected → resizable
+  return (
+    <ResizableContainer
+      id={question.id}
+      initialHeight={question.height || "auto"}
+      minHeight={80}
+      maxHeight={2000}
+      onResize={(h) => updateSubQuestion(groupId, question.id, { height: snapHeight(h) })}
+      disabled={false}
+    >
+      {content}
+    </ResizableContainer>
   );
 }
 

@@ -48,6 +48,10 @@ function lineCountByWidth(text: string): number {
 }
 
 function estimateQuestionHeight(q: SubQuestion): number {
+  // If user provided explicit height, respect it (snap/dragged value)
+  if (typeof q.height === 'number' && q.height > 0) {
+    return Math.ceil(q.height + ITEM_GAP);
+  }
   const baseText = plain(q.content);
   const baseLines = lineCountByWidth(baseText);
   let h = 12 + baseLines * LINE_HEIGHT_PX; // question text + spacing
