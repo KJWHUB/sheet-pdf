@@ -1,4 +1,4 @@
-import type { QuestionGroup, SubQuestion } from '@/types/question';
+import type { QuestionGroup } from '@/types/question';
 import { htmlToPlainWithBreaks, takeFirstHtmlPartByHeight } from '@/utils/passageUtils';
 
 export type RenderItem =
@@ -12,6 +12,24 @@ export type RenderItem =
       totalParts: number;
       isFirstPart?: boolean;
       isLastPart?: boolean;
+    }
+  | {
+      kind: 'question-stem-part';
+      groupId: string;
+      questionId: string;
+      number: number;
+      content: string; // html part
+      estHeight: number;
+      isFirstPart: boolean;
+      isLastPart: boolean;
+    }
+  | {
+      kind: 'choice-range';
+      groupId: string;
+      questionId: string;
+      startIndex: number; // inclusive
+      endIndex: number;   // inclusive
+      estHeight: number;
     }
   | {
       kind: 'question-range';
@@ -34,56 +52,10 @@ const DEFAULT_FONT_SIZE = 14; // px
 const DEFAULT_LINE_HEIGHT = 1.6; // unitless
 const LINE_HEIGHT_PX = DEFAULT_FONT_SIZE * DEFAULT_LINE_HEIGHT; // ~22.4px
 const CHARS_PER_LINE = 20; // heuristic for narrow columns
-const ITEM_GAP = 12; // modest breathing room between items
-const SAFETY_PX = LINE_HEIGHT_PX * 0.6; // lighter headroom
+const ITEM_GAP = 8; // small breathing room between items
+// SAFETY_PX removed; fragmentation path measures per part
 
-function plain(text?: string): string {
-  return (text || '').replace(/<[^>]*>/g, '');
-}
-
-function lineCountByWidth(text: string): number {
-  if (!text) return 1;
-  const lines = text
-    .split(/\n/)
-    .reduce((acc, line) => acc + Math.max(1, Math.ceil(line.length / CHARS_PER_LINE)), 0);
-  return Math.max(1, lines);
-}
-
-function estimateQuestionHeight(q: SubQuestion): number {
-  // If user provided explicit height, respect it (snap/dragged value)
-  if (typeof q.height === 'number' && q.height > 0) {
-    return Math.ceil(q.height + ITEM_GAP);
-  }
-  const baseText = plain(q.content);
-  const baseLines = lineCountByWidth(baseText);
-  let h = 12 + baseLines * LINE_HEIGHT_PX; // question text + spacing
-
-  switch (q.type) {
-    case 'multiple-choice': {
-      const choices = q.choices || [];
-      let choiceHeight = 8; // container padding
-      for (const c of choices) {
-        const clines = lineCountByWidth(plain(c.content));
-        choiceHeight += clines * LINE_HEIGHT_PX + 6; // each option spacing
-      }
-      h += choiceHeight + 8;
-      break;
-    }
-    case 'short-answer':
-      h += 32; // answer line
-      break;
-    case 'essay':
-      h += 80; // answer area
-      break;
-    case 'fill-in-blank':
-      h += 24; // small extra input line
-      break;
-    default:
-      h += 24;
-  }
-  // safety margin so items don't get clipped
-  return Math.ceil(h + ITEM_GAP + SAFETY_PX);
-}
+// (legacy estimate function removed; fragmentation path derives heights per part)
 
 function estimateTextHeight(text: string, containerHeight: number): number {
   const maxLines = Math.floor(containerHeight / LINE_HEIGHT_PX);
@@ -92,6 +64,12 @@ function estimateTextHeight(text: string, containerHeight: number): number {
     .reduce((acc, line) => acc + Math.max(1, Math.ceil(line.length / CHARS_PER_LINE)), 0);
   const usedLines = Math.min(lines, maxLines);
   return usedLines * LINE_HEIGHT_PX;
+}
+
+function estimateChoiceHeight(html: string): number {
+  const t = htmlToPlainWithBreaks(html);
+  const lines = Math.max(1, Math.ceil(t.length / CHARS_PER_LINE));
+  return lines * LINE_HEIGHT_PX + 6; // small spacing per item
 }
 
 export function paginateQuestionGroupsDouble(
@@ -160,25 +138,65 @@ export function paginateQuestionGroupsDouble(
         }
       }
 
-    // 2) Questions
-    let i = 0;
-    while (i < group.subQuestions.length) {
-      const q = group.subQuestions[i];
-      const qh = estimateQuestionHeight(q);
-      const avail = side === 'left' ? remaining.left : remaining.right;
+    // 2) Questions (fine-grained fragmentation: stem parts + choice ranges)
+    for (const q of group.subQuestions) {
+      // 2-1) Question stem: split by available height as needed
+      let restStem = q.content || '';
+      let stemPartIndex = 0;
+      while (restStem) {
+        const avail = side === 'left' ? remaining.left : remaining.right;
+        if (avail < LINE_HEIGHT_PX * 1.2) { nextColumn(); continue; }
+        const { first, rest } = takeFirstHtmlPartByHeight(
+          restStem,
+          avail,
+          DEFAULT_FONT_SIZE,
+          DEFAULT_LINE_HEIGHT,
+          CHARS_PER_LINE
+        );
+        const h = estimateTextHeight(htmlToPlainWithBreaks(first), columnHeight);
+        pushItem({
+          kind: 'question-stem-part',
+          groupId: group.id,
+          questionId: q.id,
+          number: q.number,
+          content: first,
+          estHeight: Math.min(h + ITEM_GAP, columnHeight),
+          isFirstPart: stemPartIndex === 0,
+          isLastPart: !rest,
+        });
+        stemPartIndex += 1;
+        restStem = rest;
+        if (restStem) nextColumn();
+        else break;
+      }
 
-      if (qh > columnHeight) {
-        // Extremely tall item: place it alone and move on to avoid infinite loops
-        pushItem({ kind: 'question-range', groupId: group.id, startIndex: i, endIndex: i, estHeight: columnHeight });
-        i += 1;
-        nextColumn();
-      } else if (qh <= avail) {
-        // place this question as a single range item
-        pushItem({ kind: 'question-range', groupId: group.id, startIndex: i, endIndex: i, estHeight: qh });
-        i += 1;
-      } else {
-        // move to next column/page and try again
-        nextColumn();
+      // 2-2) Choices: pack by available height, allow multiple ranges
+      const choices = q.choices || [];
+      let ci = 0;
+      while (ci < choices.length) {
+        let avail = side === 'left' ? remaining.left : remaining.right;
+        if (avail < LINE_HEIGHT_PX * 1.2) { nextColumn(); continue; }
+        let end = ci - 1;
+        let hsum = 0;
+        for (let k = ci; k < choices.length; k++) {
+          const ch = estimateChoiceHeight(choices[k].content);
+          if (k === ci && ch > columnHeight) { // pathological, force place one
+            end = k; hsum = Math.min(ch, columnHeight); break;
+          }
+          if (hsum + ch <= avail) { hsum += ch; end = k; }
+          else break;
+        }
+        if (end < ci) { nextColumn(); continue; }
+        pushItem({
+          kind: 'choice-range',
+          groupId: group.id,
+          questionId: q.id,
+          startIndex: ci,
+          endIndex: end,
+          estHeight: Math.min(hsum + ITEM_GAP, columnHeight),
+        });
+        ci = end + 1;
+        if (ci < choices.length) nextColumn();
       }
     }
   }
@@ -243,20 +261,56 @@ export function paginateQuestionGroupsSingle(
         }
       }
 
-    let i = 0;
-    while (i < group.subQuestions.length) {
-      const q = group.subQuestions[i];
-      const qh = estimateQuestionHeight(q);
-      if (qh > pageHeight) {
-        // Force place and go next page to avoid infinite loops
-        push({ kind: 'question-range', groupId: group.id, startIndex: i, endIndex: i, estHeight: pageHeight });
-        i += 1;
-        nextPage();
-      } else if (qh <= remaining) {
-        push({ kind: 'question-range', groupId: group.id, startIndex: i, endIndex: i, estHeight: qh });
-        i += 1;
-      } else {
-        nextPage();
+    for (const q of group.subQuestions) {
+      // stem parts
+      let restStem = q.content || '';
+      let stemPartIndex = 0;
+      while (restStem) {
+        if (remaining < LINE_HEIGHT_PX * 1.2) nextPage();
+        const { first, rest } = takeFirstHtmlPartByHeight(
+          restStem,
+          remaining,
+          DEFAULT_FONT_SIZE,
+          DEFAULT_LINE_HEIGHT,
+          CHARS_PER_LINE
+        );
+        const h = estimateTextHeight(htmlToPlainWithBreaks(first), pageHeight);
+        push({
+          kind: 'question-stem-part',
+          groupId: group.id,
+          questionId: q.id,
+          number: q.number,
+          content: first,
+          estHeight: Math.min(h + ITEM_GAP, pageHeight),
+          isFirstPart: stemPartIndex === 0,
+          isLastPart: !rest,
+        });
+        stemPartIndex += 1;
+        restStem = rest;
+        if (restStem) nextPage();
+      }
+      // choices
+      const choices = q.choices || [];
+      let ci = 0;
+      while (ci < choices.length) {
+        if (remaining < LINE_HEIGHT_PX * 1.2) nextPage();
+        let end = ci - 1; let hsum = 0;
+        for (let k = ci; k < choices.length; k++) {
+          const ch = estimateChoiceHeight(choices[k].content);
+          if (k === ci && ch > pageHeight) { end = k; hsum = Math.min(ch, pageHeight); break; }
+          if (hsum + ch <= remaining) { hsum += ch; end = k; } else break;
+        }
+        if (end < ci) { nextPage(); continue; }
+        push({
+          kind: 'choice-range',
+          groupId: group.id,
+          questionId: q.id,
+          startIndex: ci,
+          endIndex: end,
+          estHeight: Math.min(hsum + ITEM_GAP, pageHeight),
+        });
+        ci = end + 1;
+        if (ci < choices.length) nextPage();
       }
     }
   }

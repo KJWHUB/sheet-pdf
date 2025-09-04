@@ -29,21 +29,21 @@ export function Question({ question, groupId }: QuestionProps) {
   const content = (
     <div
       className={`
-      question-container pb-6
-      ${isSelected ? "ring-2 ring-blue-500 rounded-lg p-2 -m-2" : ""}
+      question-container relative group pb-2
+      ${isSelected ? "ring-2 ring-blue-500 rounded-lg p-2" : "group-hover:ring-1 group-hover:ring-blue-300 rounded-lg"}
     `}
     >
       {editMode.isEditing && (
         <button
           type="button"
           onClick={(e) => { e.stopPropagation(); selectQuestion(groupId, question.id); }}
-          className="absolute -top-3 left-0 text-[10px] px-1.5 py-0.5 rounded bg-blue-50 text-blue-600 border border-blue-200"
+          className="hidden group-hover:block absolute -top-3 left-0 text-[10px] px-1.5 py-0.5 rounded bg-blue-50 text-blue-600 border border-blue-200"
         >
           선택
         </button>
       )}
       {/* Question Number and Content */}
-      <div className="flex gap-2 mb-3">
+      <div className="flex gap-2 mb-2">
         <div className="flex-shrink-0">
           <span className="text-sm font-medium text-gray-900">{question.number}.</span>
         </div>
@@ -73,21 +73,21 @@ export function Question({ question, groupId }: QuestionProps) {
 
       {/* Short Answer */}
       {question.type === "short-answer" && (
-        <div className="ml-6 mt-2">
+        <div className="ml-6 mt-1">
           <div className="border-b border-gray-300 w-32 h-6"></div>
         </div>
       )}
 
       {/* Essay Answer */}
       {question.type === "essay" && (
-        <div className="ml-6 mt-2">
+        <div className="ml-6 mt-1">
           <div className="border border-gray-300 rounded h-20 bg-gray-50/30"></div>
         </div>
       )}
 
       {/* Fill-in-blank */}
       {question.type === "fill-in-blank" && (
-        <div className="ml-6 mt-2">
+        <div className="ml-6 mt-1">
           <div className="flex items-center gap-2">
             <span className="text-sm">정답:</span>
             <div className="border-b border-gray-300 w-24 h-6"></div>
