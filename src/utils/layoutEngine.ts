@@ -134,7 +134,7 @@ export function paginateQuestionGroupsDouble(
           });
           partIndex += 1;
           restHtml = rest;
-          if (restHtml) nextColumn();
+          // keep filling the same column while space remains; column switch happens when space is too small
         }
       }
 
@@ -166,8 +166,11 @@ export function paginateQuestionGroupsDouble(
         });
         stemPartIndex += 1;
         restStem = rest;
-        if (restStem) nextColumn();
-        else break;
+        // continue same column while we still have space; switch if space too small
+        if (restStem) {
+          const rem = side === 'left' ? remaining.left : remaining.right;
+          if (rem <= LINE_HEIGHT_PX * 2) nextColumn();
+        } else break;
       }
 
       // 2-2) Choices: pack by available height, allow multiple ranges
@@ -196,7 +199,11 @@ export function paginateQuestionGroupsDouble(
           estHeight: Math.min(hsum + ITEM_GAP, columnHeight),
         });
         ci = end + 1;
-        if (ci < choices.length) nextColumn();
+        // continue using same column unless remaining is too small
+        if (ci < choices.length) {
+          const rem = side === 'left' ? remaining.left : remaining.right;
+          if (rem <= LINE_HEIGHT_PX * 2) nextColumn();
+        }
       }
     }
   }

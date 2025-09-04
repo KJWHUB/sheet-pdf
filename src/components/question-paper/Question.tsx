@@ -1,4 +1,5 @@
 import { useQuestionStore } from "@/stores/questionStore";
+import { useEffect, useRef } from "react";
 import type { SubQuestion, Choice } from "@/types/question";
 import { ResizableContainer } from "./ResizableContainer";
 
@@ -10,6 +11,7 @@ interface QuestionProps {
 
 export function Question({ question, groupId }: QuestionProps) {
   const { editMode, selectQuestion, updateSubQuestion } = useQuestionStore();
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const isSelected = editMode.selectedQuestionId === question.id;
 
@@ -26,8 +28,18 @@ export function Question({ question, groupId }: QuestionProps) {
     return Math.max(unit, Math.round(h / unit) * unit);
   };
 
+  // Measure natural height once to enforce as minHeight
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const natural = containerRef.current.scrollHeight;
+    if ((question.minHeight || 0) < natural) {
+      updateSubQuestion(groupId, question.id, { minHeight: natural });
+    }
+  }, []);
+
   const content = (
     <div
+      ref={containerRef}
       className={`
       question-container relative group pb-2
       ${isSelected ? "ring-2 ring-blue-500 rounded-lg p-2" : "group-hover:ring-1 group-hover:ring-blue-300 rounded-lg"}
@@ -105,9 +117,9 @@ export function Question({ question, groupId }: QuestionProps) {
     <ResizableContainer
       id={question.id}
       initialHeight={question.height || "auto"}
-      minHeight={80}
+      minHeight={Math.max(80, question.minHeight || 0)}
       maxHeight={2000}
-      onResize={(h) => updateSubQuestion(groupId, question.id, { height: snapHeight(h) })}
+      onResize={(h) => updateSubQuestion(groupId, question.id, { height: Math.max(snapHeight(h), question.minHeight || 0) })}
       disabled={false}
     >
       {content}

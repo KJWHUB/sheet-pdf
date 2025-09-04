@@ -80,14 +80,14 @@ interface QuestionStemPartViewProps {
   isLastPart: boolean;
 }
 
-export function QuestionStemPartView({ group, questionId, number, html }: QuestionStemPartViewProps) {
+export function QuestionStemPartView({ group, questionId, number, html, isFirstPart }: QuestionStemPartViewProps) {
   const { editMode, selectQuestion } = useQuestionStore();
   const isSelected = editMode.selectedQuestionId === questionId;
   return (
     <div className={`relative group ${isSelected ? 'ring-2 ring-blue-500 rounded-md p-2' : 'group-hover:ring-1 group-hover:ring-blue-300 rounded-md'}`}
          onClick={() => editMode.isEditing && selectQuestion(group.id, questionId)}>
       <div className="flex gap-2 mb-1">
-        <div className="flex-shrink-0"><span className="text-sm font-medium text-gray-900">{number}.</span></div>
+        <div className="flex-shrink-0"><span className="text-sm font-medium text-gray-900">{isFirstPart ? `${number}.` : ''}</span></div>
         <div className="flex-1 min-w-0">
           <div className="text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
