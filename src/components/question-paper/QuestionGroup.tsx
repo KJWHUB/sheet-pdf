@@ -73,8 +73,8 @@ export function QuestionGroup({ group, isDragOverlay = false }: QuestionGroupPro
       {/* Passage Section */}
       {group.passage && (
         <div className="passage-section mb-6">
-          <SplittablePassage 
-            passage={group.passage} 
+          <SplittablePassage
+            passage={group.passage}
             groupId={group.id}
             // allowOverflow=true 로 내용이 절대 잘리지 않도록 렌더링
             maxHeight={300}

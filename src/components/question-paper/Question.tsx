@@ -24,7 +24,7 @@ export function Question({ question, groupId }: QuestionProps) {
   return (
     <div
       className={`
-      question-container mb-12 pb-2
+      question-container pb-6
       ${isSelected ? "ring-2 ring-blue-500 rounded-lg p-2 -m-2" : ""}
     `}
     >
