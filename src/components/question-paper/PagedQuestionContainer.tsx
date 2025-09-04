@@ -1,12 +1,12 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { useQuestionStore } from '@/stores/questionStore';
-import { usePageCalculation } from '@/hooks/usePageCalculation';
-import { PageContainer } from './PageContainer';
-import { SmartTwoColumnLayout } from './TwoColumnLayout';
-import type { QuestionGroup as QuestionGroupType } from '@/types/question';
-import { paginateQuestionGroupsDouble, paginateQuestionGroupsSingle } from '@/utils/layoutEngine';
-import type { FlowPageDouble, FlowPageSingle } from '@/utils/layoutEngine';
-import { FragmentRenderer } from './GroupFragment';
+import { useEffect, useState, type ReactNode } from "react";
+import { useQuestionStore } from "@/stores/questionStore";
+import { usePageCalculation } from "@/hooks/usePageCalculation";
+import { PageContainer } from "./PageContainer";
+import { SmartTwoColumnLayout } from "./TwoColumnLayout";
+import type { QuestionGroup as QuestionGroupType } from "@/types/question";
+import { paginateQuestionGroupsDouble, paginateQuestionGroupsSingle } from "@/utils/layoutEngine";
+import type { FlowPageDouble, FlowPageSingle } from "@/utils/layoutEngine";
+import { FragmentRenderer } from "./GroupFragment";
 
 interface PagedQuestionContainerProps {
   questionGroups: QuestionGroupType[];
@@ -45,7 +45,7 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
         // DOM에서 실제 높이 측정 (기본값 300px)
         const groupElement = document.querySelector(`[data-group-id="${group.id}"]`) as HTMLElement;
         const groupHeight = groupElement?.offsetHeight || 300;
-        
+
         // 현재 페이지에 추가할 수 있는지 확인
         if (currentPage.height + groupHeight > maxPageHeight && currentPage.groups.length > 0) {
           // 현재 페이지를 저장하고 새 페이지 시작
@@ -95,8 +95,8 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
   // 새로운 플로우 레이아웃 계산 (콘텐츠 누락 방지, 칼럼/페이지 연속)
   useEffect(() => {
     if (!questionGroups.length) return;
-    const columnHeight = 950; // 기존 주석 기준
-    if (layoutSettings.layout === 'double') {
+    const columnHeight = Math.floor(PAGE_CONFIG.CONTENT_HEIGHT_PX) - 12; // A4 content height with small safety margin
+    if (layoutSettings.layout === "double") {
       const fp = paginateQuestionGroupsDouble(questionGroups, columnHeight);
       setFlowPagesDouble(fp);
       setFlowPagesSingle([]);
@@ -112,19 +112,9 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
   if (pages.length === 0 && flowPagesDouble.length === 0 && flowPagesSingle.length === 0) {
     return (
       <PageContainer pageNumber={1}>
-        <div className={
-          layoutSettings.layout === 'double' 
-            ? 'grid grid-cols-2 gap-6' 
-            : 'space-y-6'
-        }>
+        <div className={layoutSettings.layout === "double" ? "grid grid-cols-2 gap-0" : "space-y-6"}>
           {questionGroups.map((group, index) => (
-            <div 
-              key={group.id}
-              data-group-id={group.id}
-              className={`${
-                layoutSettings.layout === 'single' && index > 0 ? "mt-8" : ""
-              }`}
-            >
+            <div key={group.id} data-group-id={group.id} className={`${layoutSettings.layout === "single" && index > 0 ? "mt-8" : ""}`}>
               {children(group, index)}
             </div>
           ))}
@@ -135,16 +125,16 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
 
   // 새 플로우 레이아웃 우선 적용
   if (flowPagesDouble.length > 0 || flowPagesSingle.length > 0) {
-    if (layoutSettings.layout === 'double') {
+    if (layoutSettings.layout === "double") {
       return (
         <div className="space-y-8">
           {flowPagesDouble.map((pg, pageIndex) => (
             <PageContainer key={pageIndex + 1} pageNumber={pageIndex + 1}>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-0" style={{ height: `${Math.floor(PAGE_CONFIG.CONTENT_HEIGHT_PX) - 12}px` }}>
                 {/* left */}
-                <div className="space-y-6" style={{ borderRight: '1px solid #e5e7eb', paddingRight: '10mm' }}>
+                <div className="space-y-0" style={{ borderRight: "1px solid #e5e7eb", paddingRight: "8mm", height: '100%' }}>
                   {(pg.left ?? []).map((item, idx) => {
-                    const group = questionGroups.find(g => g.id === item.groupId)!;
+                    const group = questionGroups.find((g) => g.id === item.groupId)!;
                     return (
                       <div key={`${item.kind}-${idx}`} data-group-id={group.id}>
                         <FragmentRenderer item={item} group={group} />
@@ -153,9 +143,9 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
                   })}
                 </div>
                 {/* right */}
-                <div className="space-y-6" style={{ paddingLeft: '10mm' }}>
+                <div className="space-y-0" style={{ paddingLeft: "8mm", height: '100%' }}>
                   {(pg.right ?? []).map((item, idx) => {
-                    const group = questionGroups.find(g => g.id === item.groupId)!;
+                    const group = questionGroups.find((g) => g.id === item.groupId)!;
                     return (
                       <div key={`${item.kind}-${idx}`} data-group-id={group.id}>
                         <FragmentRenderer item={item} group={group} />
@@ -180,7 +170,7 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
           <PageContainer key={pageIndex + 1} pageNumber={pageIndex + 1}>
             <div className="space-y-6">
               {(pg.items ?? []).map((item, idx) => {
-                const group = questionGroups.find(g => g.id === item.groupId)!;
+                const group = questionGroups.find((g) => g.id === item.groupId)!;
                 return (
                   <div key={`${item.kind}-${idx}`} data-group-id={group.id}>
                     <FragmentRenderer item={item} group={group} />
@@ -201,8 +191,8 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
     <div className="space-y-8">
       {pages.map((page) => (
         <PageContainer key={page.pageNumber} pageNumber={page.pageNumber}>
-          {layoutSettings.layout === 'double' ? (
-            <SmartTwoColumnLayout 
+          {layoutSettings.layout === "double" ? (
+            <SmartTwoColumnLayout
               questionGroups={page.groups}
               maxHeight={950} // A4 컨텐츠 영역 높이 (약 257mm - 여백)
             >
@@ -211,11 +201,7 @@ export function PagedQuestionContainer({ questionGroups, children }: PagedQuesti
           ) : (
             <div className="space-y-6">
               {page.groups.map((group, index) => (
-                <div 
-                  key={group.id}
-                  data-group-id={group.id}
-                  className={index > 0 ? "mt-8" : ""}
-                >
+                <div key={group.id} data-group-id={group.id} className={index > 0 ? "mt-8" : ""}>
                   {children(group, index)}
                 </div>
               ))}

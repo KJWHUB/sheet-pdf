@@ -83,16 +83,9 @@ function convertApiQuestionGroupToQuestionGroup(apiGroup: ApiQuestionGroup): Que
     ? convertApiPassageToPassage(apiGroup.passage, apiGroup.id.toString())
     : undefined;
   
-  // 문제 번호 범위 생성
-  const startNum = 1;
-  const endNum = subQuestions.length;
-  const title = endNum === 1 
-    ? `[${startNum}] 다음을 읽고 물음에 답하시오.`
-    : `[${startNum}~${endNum}] 다음을 읽고 물음에 답하시오.`;
-  
   return {
     id: `group-${apiGroup.id}`,
-    title: passage ? title : undefined,
+    title: passage ? '' : undefined,
     layout: 'single',
     passage,
     subQuestions,
@@ -109,6 +102,21 @@ export function convertApiDataToQuestionPaper(
   subject: string
 ): QuestionPaper {
   const questionGroups = apiData.map(convertApiQuestionGroupToQuestionGroup);
+  
+  // 전체 번호 연속 증가 및 그룹 타이틀 범위 갱신
+  let globalNo = 1;
+  for (const group of questionGroups) {
+    const start = globalNo;
+    for (const q of group.subQuestions) {
+      q.number = globalNo++;
+    }
+    const end = globalNo - 1;
+    if (group.passage) {
+      group.title = start === end
+        ? `[${start}] 다음을 읽고 물음에 답하시오.`
+        : `[${start}-${end}] 다음을 읽고 물음에 답하시오.`;
+    }
+  }
   
   return {
     id: `paper-${Date.now()}`,

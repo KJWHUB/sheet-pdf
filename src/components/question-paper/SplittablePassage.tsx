@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useQuestionStore } from '@/stores/questionStore';
 import { splitTextForTwoColumns, splitText } from '@/utils/textSplitter';
-import { type PassagePart } from '@/utils/passageUtils';
+import { type PassagePart, htmlToPlainWithBreaks } from '@/utils/passageUtils';
 import type { Passage as PassageType } from '@/types/question';
 
 interface SplittablePassageProps {
@@ -41,12 +41,12 @@ export function SplittablePassage({
 
     // allowOverflow가 true면 클램핑/분할을 하지 않고 전체를 그대로 렌더링
     if (allowOverflow) {
-      const textContent = passage.content.replace(/<[^>]*>/g, '');
-      setPassageParts([{ content: textContent, isPartial: false }]);
+      // HTML 완전 보존 렌더링
+      setPassageParts([{ content: passage.content, isPartial: false }]);
       return;
     }
 
-    const textContent = passage.content.replace(/<[^>]*>/g, '');
+    const textContent = htmlToPlainWithBreaks(passage.content);
     
     // 2분할 모드일 때와 아닐 때 다른 처리
     if (layoutSettings.layout === 'double' && isInColumn) {
@@ -139,9 +139,10 @@ export function SplittablePassage({
         onClick={handleClick}
         style={allowOverflow ? undefined : { maxHeight: `${maxHeight - 60}px` }} // 제목 영역 제외
       >
-        <div className="text-sm leading-relaxed text-gray-900 whitespace-pre-line">
-          {currentPart.content || '지문을 입력하세요...'}
-        </div>
+        <div 
+          className="text-sm leading-relaxed text-gray-900"
+          dangerouslySetInnerHTML={{ __html: currentPart.content || '<span class="text-gray-400">지문을 입력하세요...</span>' }}
+        />
         
         {currentPart.isPartial && (
           <div className="text-xs text-blue-500 mt-2 text-right">

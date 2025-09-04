@@ -143,3 +143,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Avoid splitting questions and passages across columns/pages */
+.question-container,
+.passage-container,
+.questions-section > div {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Refer / 참고 설명 상자 스타일 (질문 본문 내부에 삽입되는 .refer 요소) */
+.question-content .refer,
+.question-content .reference,
+.question-content .note-box {
+  border: 1px solid #d1d5db; /* gray-300 */
+  background: rgba(249, 250, 251, 0.6); /* gray-50 */
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin: 10px 0;
+}

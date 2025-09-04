@@ -32,6 +32,12 @@ function addPdfStyles(): void {
       box-sizing: border-box !important;
       page-break-after: always !important;
     }
+    .print-mode .question-container, 
+    .print-mode .passage-container, 
+    .print-mode .questions-section > div {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
     .print-mode .two-column-layout {
       column-count: 2 !important;
       column-gap: 20mm !important;
