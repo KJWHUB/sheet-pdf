@@ -1,5 +1,5 @@
 import type { QuestionGroup, SubQuestion } from '@/types/question';
-import { htmlToPlainWithBreaks, splitHtmlByEstimatedHeight } from '@/utils/passageUtils';
+import { htmlToPlainWithBreaks, takeFirstHtmlPartByHeight } from '@/utils/passageUtils';
 
 export type RenderItem =
   | {
@@ -32,7 +32,8 @@ const DEFAULT_FONT_SIZE = 14; // px
 const DEFAULT_LINE_HEIGHT = 1.6; // unitless
 const LINE_HEIGHT_PX = DEFAULT_FONT_SIZE * DEFAULT_LINE_HEIGHT; // ~22.4px
 const CHARS_PER_LINE = 20; // heuristic for narrow columns
-const ITEM_GAP = 18; // extra breathing room between items
+const ITEM_GAP = 12; // modest breathing room between items
+const SAFETY_PX = LINE_HEIGHT_PX * 0.6; // lighter headroom
 
 function plain(text?: string): string {
   return (text || '').replace(/<[^>]*>/g, '');
@@ -49,17 +50,17 @@ function lineCountByWidth(text: string): number {
 function estimateQuestionHeight(q: SubQuestion): number {
   const baseText = plain(q.content);
   const baseLines = lineCountByWidth(baseText);
-  let h = 14 + baseLines * LINE_HEIGHT_PX; // question text + spacing
+  let h = 12 + baseLines * LINE_HEIGHT_PX; // question text + spacing
 
   switch (q.type) {
     case 'multiple-choice': {
       const choices = q.choices || [];
-      let choiceHeight = 0;
+      let choiceHeight = 8; // container padding
       for (const c of choices) {
         const clines = lineCountByWidth(plain(c.content));
         choiceHeight += clines * LINE_HEIGHT_PX + 6; // each option spacing
       }
-      h += choiceHeight + 6;
+      h += choiceHeight + 8;
       break;
     }
     case 'short-answer':
@@ -75,7 +76,7 @@ function estimateQuestionHeight(q: SubQuestion): number {
       h += 24;
   }
   // safety margin so items don't get clipped
-  return Math.ceil(h + ITEM_GAP);
+  return Math.ceil(h + ITEM_GAP + SAFETY_PX);
 }
 
 function estimateTextHeight(text: string, containerHeight: number): number {
@@ -121,41 +122,31 @@ export function paginateQuestionGroupsDouble(
   for (const group of groups) {
     // 1) Passage parts
       if (group.passage?.content) {
-        // HTML 보존 분할
-        const htmlSplit = splitHtmlByEstimatedHeight(
-          group.passage.content,
-          columnHeight,
-          DEFAULT_FONT_SIZE,
-          DEFAULT_LINE_HEIGHT,
-          CHARS_PER_LINE
-        );
-        const parts = htmlSplit.parts.length ? htmlSplit.parts : [group.passage.content];
-
-        parts.forEach((part, idx) => {
-          const h = estimateTextHeight(htmlToPlainWithBreaks(part), columnHeight);
-          // If not enough remaining height in current column, move to next column/page
-          if ((side === 'left' && remaining.left < h) || (side === 'right' && remaining.right < h)) {
-            nextColumn();
-          }
-
+        // HTML 보존 + 가용 높이에 맞춰 조각을 순차 배치 (빈칸 최소화)
+        let restHtml = group.passage.content;
+        let partIndex = 0;
+        while (restHtml && (side === 'left' ? remaining.left : remaining.right) > LINE_HEIGHT_PX * 2) {
+          const avail = side === 'left' ? remaining.left : remaining.right;
+          const { first, rest } = takeFirstHtmlPartByHeight(
+            restHtml,
+            avail,
+            DEFAULT_FONT_SIZE,
+            DEFAULT_LINE_HEIGHT,
+            CHARS_PER_LINE
+          );
+          const h = estimateTextHeight(htmlToPlainWithBreaks(first), columnHeight);
           pushItem({
             kind: 'passage-part',
             groupId: group.id,
-            title: group.title,
-            content: part, // HTML 그대로
+            title: partIndex === 1 ? group.title : undefined,
+            content: first,
             estHeight: Math.min(h + ITEM_GAP, columnHeight),
-            partNumber: idx + 1,
-            totalParts: parts.length,
+            partNumber: ++partIndex,
+            totalParts: 0, // 채우기용 (렌더러는 유무만 사용)
           });
-
-          // If this passage part used almost the whole column, move to next
-          if (
-            (side === 'left' && remaining.left < LINE_HEIGHT_PX * 2) ||
-            (side === 'right' && remaining.right < LINE_HEIGHT_PX * 2)
-          ) {
-            nextColumn();
-          }
-        });
+          restHtml = rest;
+          if (restHtml) nextColumn();
+        }
       }
 
     // 2) Questions
@@ -210,28 +201,30 @@ export function paginateQuestionGroupsSingle(
 
     for (const group of groups) {
       if (group.passage?.content) {
-        const htmlSplit = splitHtmlByEstimatedHeight(
-          group.passage.content,
-          pageHeight,
-          DEFAULT_FONT_SIZE,
-          DEFAULT_LINE_HEIGHT,
-          CHARS_PER_LINE
-        );
-        const parts = htmlSplit.parts.length ? htmlSplit.parts : [group.passage.content];
-        parts.forEach((part, idx) => {
-          const h = estimateTextHeight(htmlToPlainWithBreaks(part), pageHeight);
-          if (remaining < h) nextPage();
+        let restHtml = group.passage.content;
+        let partIndex = 0;
+        while (restHtml) {
+          const { first, rest } = takeFirstHtmlPartByHeight(
+            restHtml,
+            remaining,
+            DEFAULT_FONT_SIZE,
+            DEFAULT_LINE_HEIGHT,
+            CHARS_PER_LINE
+          );
+          const h = estimateTextHeight(htmlToPlainWithBreaks(first), pageHeight);
+          if (h > remaining) nextPage();
           push({
             kind: 'passage-part',
             groupId: group.id,
-            title: group.title,
-            content: part, // HTML 그대로
+            title: partIndex === 1 ? group.title : undefined,
+            content: first,
             estHeight: Math.min(h + ITEM_GAP, pageHeight),
-            partNumber: idx + 1,
-            totalParts: parts.length,
+            partNumber: ++partIndex,
+            totalParts: 0,
           });
-          if (remaining < LINE_HEIGHT_PX * 2) nextPage();
-        });
+          restHtml = rest;
+          if (restHtml && remaining < LINE_HEIGHT_PX * 3) nextPage();
+        }
       }
 
     let i = 0;

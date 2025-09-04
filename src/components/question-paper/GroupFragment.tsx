@@ -27,7 +27,7 @@ export function PassagePartView({ title, content, partNumber, totalParts, groupI
         </h3>
       )}
       <div
-        className="passage-content border border-gray-300 rounded-sm p-3 pb-4 bg-gray-50/30"
+        className="passage-content border border-gray-300 rounded-sm p-3 pb-2 bg-gray-50/30"
         onClick={() => editMode.isEditing && selectQuestion(groupId)}
       >
         <div

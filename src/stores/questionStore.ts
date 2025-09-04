@@ -19,6 +19,7 @@ interface QuestionStore {
   
   // Actions
   setQuestionPaper: (paper: QuestionPaper) => void;
+  setPaperTitle: (title: string) => void;
   updateQuestionGroup: (groupId: string, updates: Partial<QuestionGroup>) => void;
   updateSubQuestion: (groupId: string, questionId: string, updates: Partial<SubQuestion>) => void;
   reorderQuestionGroups: (activeId: string, overId: string) => void;
@@ -79,6 +80,12 @@ export const useQuestionStore = create<QuestionStore>()(
       // Actions
       setQuestionPaper: (paper) =>
         set({ questionPaper: paper }, false, 'setQuestionPaper'),
+
+      setPaperTitle: (title) =>
+        set((state) => {
+          if (!state.questionPaper) return state;
+          return { questionPaper: { ...state.questionPaper, title } };
+        }, false, 'setPaperTitle'),
       
       updateQuestionGroup: (groupId, updates) =>
         set((state) => {

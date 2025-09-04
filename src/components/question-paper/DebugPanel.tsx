@@ -14,7 +14,8 @@ interface ElementInfo {
 }
 
 export function DebugPanel() {
-  const { questionPaper, layoutSettings, editMode } = useQuestionStore();
+  const { questionPaper, layoutSettings, editMode, setPaperTitle } = useQuestionStore();
+  const [subject, setSubject] = useState<'KOREAN' | 'MATH'>('KOREAN');
   const [isVisible, setIsVisible] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [elements, setElements] = useState<ElementInfo[]>([]);
@@ -186,6 +187,21 @@ export function DebugPanel() {
                 </div>
                 <div className="text-xs text-gray-600">
                   편집: {editMode.isEditing ? '켜짐' : '꺼짐'}
+                </div>
+                <div className="mt-2">
+                  <label className="text-xs text-gray-600 mr-2">과목</label>
+                  <select
+                    className="text-xs border rounded px-1 py-0.5"
+                    value={subject}
+                    onChange={(e) => {
+                      const v = e.target.value as 'KOREAN' | 'MATH';
+                      setSubject(v);
+                      setPaperTitle(v === 'KOREAN' ? '국어 문제지' : '수학 문제지');
+                    }}
+                  >
+                    <option value="KOREAN">국어</option>
+                    <option value="MATH">수학</option>
+                  </select>
                 </div>
               </div>
 

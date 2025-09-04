@@ -41,7 +41,7 @@ export function splitHtmlByEstimatedHeight(
   const linePx = fontSize * lineHeight;
   const maxLines = Math.max(1, Math.floor(containerHeight / linePx));
   const maxChars = maxLines * charsPerLine;
-  const orphanThresholdChars = Math.max(charsPerLine, Math.floor(charsPerLine * 1.5)); // 1~1.5줄 남기면 다음 칼럼으로
+  const orphanThresholdChars = Math.floor(charsPerLine * 0.5); // 0.5줄 미만만 넘김
 
   const temp = document.createElement('div');
   temp.innerHTML = html;
@@ -107,6 +107,71 @@ export function splitHtmlByEstimatedHeight(
   flush();
 
   return { parts: parts.length ? parts : [html], splitMethod: 'html-block' };
+}
+
+/**
+ * 현재 남은 높이에 맞춰 HTML의 첫 파트만 잘라 반환합니다.
+ * 나머지는 rest로 돌려줘 이어서 배치할 수 있습니다.
+ */
+export function takeFirstHtmlPartByHeight(
+  html: string,
+  availableHeight: number,
+  fontSize: number = 14,
+  lineHeight: number = 1.6,
+  charsPerLine: number = 20
+): { first: string; rest: string } {
+  const linePx = fontSize * lineHeight;
+  const maxLines = Math.max(1, Math.floor(availableHeight / linePx));
+  const maxChars = maxLines * charsPerLine;
+  const orphanThresholdChars = Math.floor(charsPerLine * 0.5);
+
+  const temp = document.createElement('div');
+  temp.innerHTML = html || '';
+  const singleRoot = temp.children.length === 1 && temp.childNodes.length === 1;
+  const rootEl = singleRoot ? (temp.children[0] as HTMLElement) : null;
+  const nodes = rootEl ? Array.from(rootEl.childNodes) : Array.from(temp.childNodes);
+
+  const toHTML = (nodesSlice: Node[]): string => {
+    const inner = nodesSlice.map((n) => (n as HTMLElement).outerHTML ?? (n.textContent ?? '')).join('');
+    if (rootEl) {
+      const attrs = Array.from(rootEl.attributes)
+        .map((a) => `${a.name}="${a.value}"`)
+        .join(' ');
+      return `<${rootEl.tagName.toLowerCase()}${attrs ? ' ' + attrs : ''}>${inner}</${rootEl.tagName.toLowerCase()}>`;
+    }
+    return inner;
+  };
+
+  const firstNodes: Node[] = [];
+  let firstChars = 0;
+
+  for (let i = 0; i < nodes.length; i++) {
+    const n = nodes[i];
+    const measureText = htmlToPlainWithBreaks(n.nodeType === Node.ELEMENT_NODE ? (n as HTMLElement).outerHTML : (n.textContent ?? ''));
+    const size = Math.max(1, measureText.length);
+
+    const willBe = firstChars + size;
+    const leftover = maxChars - willBe;
+
+    // 넘치면 현재까지를 first로 확정
+    if (firstChars > 0 && willBe > maxChars) {
+      const first = toHTML(firstNodes);
+      const rest = toHTML(nodes.slice(i));
+      return { first, rest };
+    }
+    // 남는 공간이 너무 적으면 고아 방지로 확정
+    if (firstChars > 0 && leftover > 0 && leftover < orphanThresholdChars) {
+      const first = toHTML(firstNodes);
+      const rest = toHTML(nodes.slice(i));
+      return { first, rest };
+    }
+
+    firstNodes.push(n);
+    firstChars += size;
+  }
+
+  // 모두 첫 파트에 들어감
+  return { first: toHTML(nodes), rest: '' };
 }
 
 /**
